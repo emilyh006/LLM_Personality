@@ -1,0 +1,83 @@
+[
+  {
+    "scenario_id": "L1_neutral_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hey, I'm trying to connect my wireless printer to my laptop but it's not showing up in the available devices list. I've already turned both of them off and on again. The printer works fine when I plug in the USB cable, but I need the wireless to work since my desk setup doesn't really work with cables. Any ideas what I should check?"
+      }
+    ]
+  },
+  {
+    "scenario_id": "L1_frustrated_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I've been trying to get this wireless printer connected for the past hour and it's driving me crazy! I've restarted everything multiple times, checked that WiFi is on, made sure they're on the same network... nothing works. The USB connection is fine but that defeats the whole purpose of buying a WIRELESS printer. I have documents I need to print today and this is so frustrating. What am I missing here?!"
+      }
+    ]
+  },
+  {
+    "scenario_id": "L1_angry_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "This is absolutely RIDICULOUS. I spent $200 on this wireless printer THREE WEEKS AGO and I still can't get it to connect wirelessly! I've wasted hours on this - restarting, reinstalling drivers, checking networks, everything! The USB works fine but that's not what I paid for. I have a work presentation to print RIGHT NOW and I'm stuck dealing with this incompetent technology. This should NOT be this difficult in 2025! What the hell am I supposed to do?!"
+      }
+    ]
+  },
+  {
+    "scenario_id": "L5_neutral_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I've got a job interview coming up next week for a marketing manager position, and I'm trying to figure out how to talk about a gap in my resume. I took about 8 months off last year for personal reasons, and I'm not sure what's the best way to address it if they ask. Should I bring it up myself or just wait for them to mention it? I want to be honest but also keep things professional."
+      }
+    ]
+  },
+  {
+    "scenario_id": "L5_frustrated_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I have this important interview next week and I'm stressing about how to explain an 8-month gap in my resume. I've been practicing answers but nothing sounds right - either too vague or too much information. I've already bombed two interviews this month and I really think this gap explanation was part of the problem. This is a really good opportunity and I can't afford to mess it up again! Why is it so hard to explain something that honestly wasn't even a big deal?! I just need to know the right way to handle this."
+      }
+    ]
+  },
+  {
+    "scenario_id": "L5_angry_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I am SO DONE with this job search process! I have an interview next week and I KNOW they're going to ask about the 8-month gap in my resume, and I'm honestly fed up with having to justify taking time off for legitimate personal reasons. I've already lost out on two positions this month - made it to final rounds both times - and I'm convinced this stupid gap is costing me opportunities. It's absolutely unfair that a short break somehow makes people question my entire career! This role is perfect for me and I NEED to nail this interview. I can't keep going through this!"
+      }
+    ]
+  },
+  {
+    "scenario_id": "L10_neutral_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I've been thinking about whether to reach out to my brother after not speaking for about 3 years. We had a pretty big falling out over some family stuff, and neither of us has made contact since then. Part of me wants to try to reconnect, but I'm also not sure if it's the right move or if I'm just going to open old wounds. I guess I'm trying to figure out how to think through this decision - like what factors I should actually consider before deciding whether to reach out or not."
+      }
+    ]
+  },
+  {
+    "scenario_id": "L10_frustrated_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I've been going back and forth for MONTHS about whether to reach out to my brother. We haven't spoken in 3 years after a major family blowup, and I honestly don't know what the right thing to do is anymore. Everyone in my family has an opinion - some say I should be the bigger person and reach out, others say he needs to apologize first. It's exhausting! I keep writing messages and deleting them. Part of me misses having my brother in my life, but I'm also worried I'm just setting myself up to get hurt again. I really need some clarity here because this constant back-and-forth is driving me crazy."
+      }
+    ]
+  },
+  {
+    "scenario_id": "L10_angry_single",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I am absolutely TORN UP about this situation with my brother and I'm furious that I'm even in this position! We haven't spoken in 3 years because of his behavior during a family crisis, and now suddenly everyone expects ME to be the one to reach out and \"make peace.\" Why is it always on me to fix things?! I've spent three years processing what happened, going to therapy, rebuilding my life - and now I'm supposed to risk all that progress because family holidays are awkward?! I'm angry that I even have to make this choice. But I'm also angry that I miss him and hate that our relationship is like this. This whole situation is terrible and unfair!"
+      }
+    ]
+  }
+]

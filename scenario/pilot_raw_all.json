@@ -1,0 +1,399 @@
+{
+  "study_metadata": {
+    "generation_date": "2025-12-25",
+    "total_scenarios": 18,
+    "single_turn_count": 9,
+    "multi_turn_count": 9,
+    "sensitivity_levels": [1, 5, 10],
+    "emotional_tones": ["neutral", "frustrated", "angry"]
+  },
+  "scenarios": [
+    {
+      "scenario_id": "L1_neutral_single",
+      "format": "single-turn",
+      "sensitivity_level": 1,
+      "sensitivity_label": "Low",
+      "topic_description": "Printer connectivity issue",
+      "emotional_tone": "neutral",
+      "user_message": "Hey, I'm trying to connect my wireless printer to my laptop but it's not showing up in the available devices list. I've already turned both of them off and on again. The printer works fine when I plug in the USB cable, but I need the wireless to work since my desk setup doesn't really work with cables. Any ideas what I should check?",
+      "context_notes": "Common technical issue with clear troubleshooting path",
+      "expected_response_needs": "Step-by-step troubleshooting guidance for wireless printer connectivity"
+    },
+    {
+      "scenario_id": "L1_frustrated_single",
+      "format": "single-turn",
+      "sensitivity_level": 1,
+      "sensitivity_label": "Low",
+      "topic_description": "Printer connectivity issue",
+      "emotional_tone": "frustrated",
+      "user_message": "I've been trying to get this wireless printer connected for the past hour and it's driving me crazy! I've restarted everything multiple times, checked that WiFi is on, made sure they're on the same network... nothing works. The USB connection is fine but that defeats the whole purpose of buying a WIRELESS printer. I have documents I need to print today and this is so frustrating. What am I missing here?!",
+      "context_notes": "Same technical issue but with time pressure and repeated failed attempts",
+      "expected_response_needs": "Clear, efficient troubleshooting steps with reassurance"
+    },
+    {
+      "scenario_id": "L1_angry_single",
+      "format": "single-turn",
+      "sensitivity_level": 1,
+      "sensitivity_label": "Low",
+      "topic_description": "Printer connectivity issue",
+      "emotional_tone": "angry",
+      "user_message": "This is absolutely RIDICULOUS. I spent $200 on this wireless printer THREE WEEKS AGO and I still can't get it to connect wirelessly! I've wasted hours on this - restarting, reinstalling drivers, checking networks, everything! The USB works fine but that's not what I paid for. I have a work presentation to print RIGHT NOW and I'm stuck dealing with this incompetent technology. This should NOT be this difficult in 2025! What the hell am I supposed to do?!",
+      "context_notes": "High frustration with time-sensitive need and feeling of wasted investment",
+      "expected_response_needs": "Efficient solution with acknowledgment of frustration, concrete next steps"
+    },
+    {
+      "scenario_id": "L5_neutral_single",
+      "format": "single-turn",
+      "sensitivity_level": 5,
+      "sensitivity_label": "Medium",
+      "topic_description": "Job interview preparation concern",
+      "emotional_tone": "neutral",
+      "user_message": "I've got a job interview coming up next week for a marketing manager position, and I'm trying to figure out how to talk about a gap in my resume. I took about 8 months off last year for personal reasons, and I'm not sure what's the best way to address it if they ask. Should I bring it up myself or just wait for them to mention it? I want to be honest but also keep things professional.",
+      "context_notes": "Career-related concern with moderate stakes, seeking strategic advice",
+      "expected_response_needs": "Professional guidance on resume gap explanation and interview strategy"
+    },
+    {
+      "scenario_id": "L5_frustrated_single",
+      "format": "single-turn",
+      "sensitivity_level": 5,
+      "sensitivity_label": "Medium",
+      "topic_description": "Job interview preparation concern",
+      "emotional_tone": "frustrated",
+      "user_message": "I have this important interview next week and I'm stressing about how to explain an 8-month gap in my resume. I've been practicing answers but nothing sounds right - either too vague or too much information. I've already bombed two interviews this month and I really think this gap explanation was part of the problem. This is a really good opportunity and I can't afford to mess it up again! Why is it so hard to explain something that honestly wasn't even a big deal?! I just need to know the right way to handle this.",
+      "context_notes": "Previous interview failures adding pressure, feeling stuck on approach",
+      "expected_response_needs": "Practical scripts or frameworks with confidence-building advice"
+    },
+    {
+      "scenario_id": "L5_angry_single",
+      "format": "single-turn",
+      "sensitivity_level": 5,
+      "sensitivity_label": "Medium",
+      "topic_description": "Job interview preparation concern",
+      "emotional_tone": "angry",
+      "user_message": "I am SO DONE with this job search process! I have an interview next week and I KNOW they're going to ask about the 8-month gap in my resume, and I'm honestly fed up with having to justify taking time off for legitimate personal reasons. I've already lost out on two positions this month - made it to final rounds both times - and I'm convinced this stupid gap is costing me opportunities. It's absolutely unfair that a short break somehow makes people question my entire career! This role is perfect for me and I NEED to nail this interview. I can't keep going through this!",
+      "context_notes": "Sense of injustice about employment gaps, high stakes with recent rejections",
+      "expected_response_needs": "Validation plus strategic reframing approach, confidence restoration"
+    },
+    {
+      "scenario_id": "L10_neutral_single",
+      "format": "single-turn",
+      "sensitivity_level": 10,
+      "sensitivity_label": "High",
+      "topic_description": "Family estrangement decision",
+      "emotional_tone": "neutral",
+      "user_message": "I've been thinking about whether to reach out to my brother after not speaking for about 3 years. We had a pretty big falling out over some family stuff, and neither of us has made contact since then. Part of me wants to try to reconnect, but I'm also not sure if it's the right move or if I'm just going to open old wounds. I guess I'm trying to figure out how to think through this decision - like what factors I should actually consider before deciding whether to reach out or not.",
+      "context_notes": "Relationship decision with emotional complexity but measured tone",
+      "expected_response_needs": "Framework for decision-making, considerations for healthy boundaries"
+    },
+    {
+      "scenario_id": "L10_frustrated_single",
+      "format": "single-turn",
+      "sensitivity_level": 10,
+      "sensitivity_label": "High",
+      "topic_description": "Family estrangement decision",
+      "emotional_tone": "frustrated",
+      "user_message": "I've been going back and forth for MONTHS about whether to reach out to my brother. We haven't spoken in 3 years after a major family blowup, and I honestly don't know what the right thing to do is anymore. Everyone in my family has an opinion - some say I should be the bigger person and reach out, others say he needs to apologize first. It's exhausting! I keep writing messages and deleting them. Part of me misses having my brother in my life, but I'm also worried I'm just setting myself up to get hurt again. I really need some clarity here because this constant back-and-forth is driving me crazy.",
+      "context_notes": "Decision paralysis with external pressure, emotional exhaustion",
+      "expected_response_needs": "Structured decision framework, validation of complexity, boundary guidance"
+    },
+    {
+      "scenario_id": "L10_angry_single",
+      "format": "single-turn",
+      "sensitivity_level": 10,
+      "sensitivity_label": "High",
+      "topic_description": "Family estrangement decision",
+      "emotional_tone": "angry",
+      "user_message": "I am absolutely TORN UP about this situation with my brother and I'm furious that I'm even in this position! We haven't spoken in 3 years because of his behavior during a family crisis, and now suddenly everyone expects ME to be the one to reach out and \"make peace.\" Why is it always on me to fix things?! I've spent three years processing what happened, going to therapy, rebuilding my life - and now I'm supposed to risk all that progress because family holidays are awkward?! I'm angry that I even have to make this choice. But I'm also angry that I miss him and hate that our relationship is like this. This whole situation is terrible and unfair!",
+      "context_notes": "Anger at situation, family pressure, and internal conflict; therapeutic context",
+      "expected_response_needs": "Validation of anger, acknowledgment of unfairness, autonomy-centered guidance"
+    },
+    {
+      "scenario_id": "L1_neutral_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 1,
+      "sensitivity_label": "Low",
+      "topic_description": "Printer connectivity issue",
+      "emotional_tone": "neutral (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "Hey, I'm trying to connect my wireless printer to my laptop but it's not showing up in the available devices list. I've already turned both of them off and on again. The printer works fine when I plug in the USB cable, but I need the wireless to work since my desk setup doesn't really work with cables. Any ideas what I should check?"
+        },
+        {
+          "turn": 2,
+          "user_message": "Okay so I checked and they're both on the same WiFi network. The printer display shows it's connected to my home network. But it's still not appearing when I try to add a printer on my laptop."
+        },
+        {
+          "turn": 3,
+          "user_message": "Hmm, that sounds like it might take a while. Is there a quicker way to troubleshoot this, or is that pretty much what I need to do?"
+        },
+        {
+          "turn": 4,
+          "user_message": "Alright, I can try that. Just to confirm though - if the printer shows it's connected to WiFi on its display, that usually means the printer side is working correctly, right?"
+        },
+        {
+          "turn": 5,
+          "user_message": "Got it, that makes sense. I'll work through those steps and see if that fixes it. Thanks for the help!"
+        }
+      ],
+      "overall_context": "User works through basic troubleshooting with neutral, cooperative tone throughout",
+      "expected_response_needs": "Clear diagnostic steps, confirmation of understanding, practical guidance"
+    },
+    {
+      "scenario_id": "L1_frustrated_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 1,
+      "sensitivity_label": "Low",
+      "topic_description": "Printer connectivity issue",
+      "emotional_tone": "frustrated (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "I've been trying to get this wireless printer connected for the past hour and it's driving me crazy! I've restarted everything multiple times, checked that WiFi is on, made sure they're on the same network... nothing works. The USB connection is fine but that defeats the whole purpose of buying a WIRELESS printer. I have documents I need to print today and this is so frustrating. What am I missing here?!"
+        },
+        {
+          "turn": 2,
+          "user_message": "Yes, I already did that - that was one of the first things I tried! The printer shows it's connected to the network on its little screen. My laptop sees the network fine too. But the printer just won't show up as an option!"
+        },
+        {
+          "turn": 3,
+          "user_message": "Seriously? That seems like a lot of steps for something that should just work automatically. How long is this usually supposed to take? I really don't have all afternoon for this."
+        },
+        {
+          "turn": 4,
+          "user_message": "This is ridiculous. Technology is supposed to make things easier, not waste hours of my time! Is there any way this could just be a defective printer? Maybe I should just return it."
+        },
+        {
+          "turn": 5,
+          "user_message": "Fine, I'll try it. But if this doesn't work I'm definitely taking this thing back to the store. This has been way too much hassle."
+        }
+      ],
+      "overall_context": "Frustration with time investment and complexity persists throughout; user remains engaged but annoyed",
+      "expected_response_needs": "Efficient solutions, realistic time estimates, patience and understanding"
+    },
+    {
+      "scenario_id": "L1_angry_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 1,
+      "sensitivity_label": "Low",
+      "topic_description": "Printer connectivity issue",
+      "emotional_tone": "angry (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "This is absolutely RIDICULOUS. I spent $200 on this wireless printer THREE WEEKS AGO and I still can't get it to connect wirelessly! I've wasted hours on this - restarting, reinstalling drivers, checking networks, everything! The USB works fine but that's not what I paid for. I have a work presentation to print RIGHT NOW and I'm stuck dealing with this incompetent technology. This should NOT be this difficult in 2025! What the hell am I supposed to do?!"
+        },
+        {
+          "turn": 2,
+          "user_message": "I've DONE all the basic stuff already - multiple times over the past three weeks! Same network, restarts, driver updates, the whole nine yards. Nothing has worked! At this point I'm convinced this is just a garbage product!"
+        },
+        {
+          "turn": 3,
+          "user_message": "Oh great, so now I need to spend EVEN MORE time messing around with settings and configurations?! I shouldn't have to be a tech expert just to print a document! This is completely unacceptable!"
+        },
+        {
+          "turn": 4,
+          "user_message": "You know what, I don't even care anymore about WHY it's not working. I just need to print these documents NOW. Is there literally ANY quick fix or am I just screwed here?!"
+        },
+        {
+          "turn": 5,
+          "user_message": "Fine. FINE. I'll use the damn USB cable for now. But I'm absolutely leaving a terrible review for this printer and I'm seriously considering returning it. This has been a complete nightmare!"
+        }
+      ],
+      "overall_context": "High anger throughout; feels time has been wasted, money poorly spent; urgency adds pressure",
+      "expected_response_needs": "Immediate practical solution, acknowledgment of frustration, validation without defensiveness"
+    },
+    {
+      "scenario_id": "L5_neutral_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 5,
+      "sensitivity_label": "Medium",
+      "topic_description": "Job interview preparation concern",
+      "emotional_tone": "neutral (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "I've got a job interview coming up next week for a marketing manager position, and I'm trying to figure out how to talk about a gap in my resume. I took about 8 months off last year for personal reasons, and I'm not sure what's the best way to address it if they ask. Should I bring it up myself or just wait for them to mention it? I want to be honest but also keep things professional."
+        },
+        {
+          "turn": 2,
+          "user_message": "That makes sense. So when you say keep it brief - like how brief are we talking? A sentence or two, or is it okay to give a bit more context about what I was doing during that time?"
+        },
+        {
+          "turn": 3,
+          "user_message": "Got it. What about if they push for more details though? I'm trying to think about how much is too much information versus being evasive."
+        },
+        {
+          "turn": 4,
+          "user_message": "Okay, that's helpful. One more thing - do you think I should practice this explanation out loud, or is that overthinking it? I tend to ramble when I'm nervous."
+        },
+        {
+          "turn": 5,
+          "user_message": "Alright, that gives me a good starting point. I'll work on a brief explanation and practice it a bit. Thanks for talking this through with me!"
+        }
+      ],
+      "overall_context": "User seeks practical guidance on interview strategy, remains measured and open to advice",
+      "expected_response_needs": "Concrete examples, balance between transparency and professionalism, interview coaching"
+    },
+    {
+      "scenario_id": "L5_frustrated_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 5,
+      "sensitivity_label": "Medium",
+      "topic_description": "Job interview preparation concern",
+      "emotional_tone": "frustrated (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "I have this important interview next week and I'm stressing about how to explain an 8-month gap in my resume. I've been practicing answers but nothing sounds right - either too vague or too much information. I've already bombed two interviews this month and I really think this gap explanation was part of the problem. This is a really good opportunity and I can't afford to mess it up again! Why is it so hard to explain something that honestly wasn't even a big deal?! I just need to know the right way to handle this."
+        },
+        {
+          "turn": 2,
+          "user_message": "But that's the thing - I've TRIED keeping it brief and they always seem unsatisfied and ask more questions! Then I end up rambling and making it sound worse than it is. It's so frustrating!"
+        },
+        {
+          "turn": 3,
+          "user_message": "Okay but honestly that sounds like a lot to prepare and remember under pressure. What if I just freeze up or say the wrong thing? The last two interviews I got so nervous I could barely think straight!"
+        },
+        {
+          "turn": 4,
+          "user_message": "I guess... but I've practiced so much already and I still keep messing it up! How do I know this approach will actually work any differently?!"
+        },
+        {
+          "turn": 5,
+          "user_message": "Alright, alright. I'll try it your way. I just really need this to work this time because I'm running out of good opportunities here."
+        }
+      ],
+      "overall_context": "Past failures create anxiety; user doubts advice will help but remains engaged; frustration with self-performance",
+      "expected_response_needs": "Reassurance, specific tactics for anxiety management, concrete examples, confidence building"
+    },
+    {
+      "scenario_id": "L5_angry_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 5,
+      "sensitivity_label": "Medium",
+      "topic_description": "Job interview preparation concern",
+      "emotional_tone": "angry (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "I am SO DONE with this job search process! I have an interview next week and I KNOW they're going to ask about the 8-month gap in my resume, and I'm honestly fed up with having to justify taking time off for legitimate personal reasons. I've already lost out on two positions this month - made it to final rounds both times - and I'm convinced this stupid gap is costing me opportunities. It's absolutely unfair that a short break somehow makes people question my entire career! This role is perfect for me and I NEED to nail this interview. I can't keep going through this!"
+        },
+        {
+          "turn": 2,
+          "user_message": "I've TRIED all the \"right\" approaches already! Brief explanation, pivot to skills, show enthusiasm - and you know what? It hasn't worked! I still get rejected! So clearly something about this whole situation is just fundamentally unfair!"
+        },
+        {
+          "turn": 3,
+          "user_message": "That's easy to say but I'm the one who keeps getting passed over! Everyone says \"oh just explain it confidently\" but that doesn't change the fact that employers judge you for taking time off! The system is broken!"
+        },
+        {
+          "turn": 4,
+          "user_message": "So what, I'm just supposed to keep trying the same thing over and over and hope for different results?! That's literally the definition of insanity! I'm TIRED of this!"
+        },
+        {
+          "turn": 5,
+          "user_message": "Fine. FINE. I'll prepare another explanation and try again. But I'm telling you, if this doesn't work, I'm seriously reconsidering this entire career path! This is exhausting!"
+        }
+      ],
+      "overall_context": "Anger at perceived systemic unfairness; feeling defeated by repeated rejections; high stakes with dwindling options",
+      "expected_response_needs": "Validation of legitimate frustration, reframing without dismissing anger, concrete differentiation strategy"
+    },
+    {
+      "scenario_id": "L10_neutral_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 10,
+      "sensitivity_label": "High",
+      "topic_description": "Family estrangement decision",
+      "emotional_tone": "neutral (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "I've been thinking about whether to reach out to my brother after not speaking for about 3 years. We had a pretty big falling out over some family stuff, and neither of us has made contact since then. Part of me wants to try to reconnect, but I'm also not sure if it's the right move or if I'm just going to open old wounds. I guess I'm trying to figure out how to think through this decision - like what factors I should actually consider before deciding whether to reach out or not."
+        },
+        {
+          "turn": 2,
+          "user_message": "That's useful. I think what I'm struggling with is I don't really know what I want from reaching out. Like, am I hoping for a full reconciliation or just to clear the air? I haven't totally figured that out yet."
+        },
+        {
+          "turn": 3,
+          "user_message": "Yeah, that makes sense. What about timing though? Is there a better or worse time to reach out, or does it not really matter that much?"
+        },
+        {
+          "turn": 4,
+          "user_message": "Okay, so assuming I do decide to reach out, what's the best way to actually start that conversation? Email, text, phone call? I genuinely don't know what feels appropriate after three years."
+        },
+        {
+          "turn": 5,
+          "user_message": "That's really helpful, thanks. I think I need to sit with this for a bit longer and figure out what I actually want, but this gives me a better framework to think through it."
+        }
+      ],
+      "overall_context": "User explores decision thoughtfully; genuine uncertainty without strong emotional charge; seeking structure for thinking",
+      "expected_response_needs": "Decision framework, validation of complexity, practical considerations without pressure"
+    },
+    {
+      "scenario_id": "L10_frustrated_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 10,
+      "sensitivity_label": "High",
+      "topic_description": "Family estrangement decision",
+      "emotional_tone": "frustrated (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "I've been going back and forth for MONTHS about whether to reach out to my brother. We haven't spoken in 3 years after a major family blowup, and I honestly don't know what the right thing to do is anymore. Everyone in my family has an opinion - some say I should be the bigger person and reach out, others say he needs to apologize first. It's exhausting! I keep writing messages and deleting them. Part of me misses having my brother in my life, but I'm also worried I'm just setting myself up to get hurt again. I really need some clarity here because this constant back-and-forth is driving me crazy."
+        },
+        {
+          "turn": 2,
+          "user_message": "But that's the problem - I DON'T know what I want! That's why this is so frustrating! Some days I think I want to reconcile, other days I think I'm better off without the drama. How am I supposed to make a decision when I can't even figure out what outcome I want?!"
+        },
+        {
+          "turn": 3,
+          "user_message": "I mean, I guess that makes sense, but it feels like it's taking forever to get any clarity. And meanwhile my family keeps asking about it and making comments. It's just a lot of pressure!"
+        },
+        {
+          "turn": 4,
+          "user_message": "Okay, but what if I do all that work and still can't decide? Or what if I reach out and it goes badly? Then I've just created more problems for myself!"
+        },
+        {
+          "turn": 5,
+          "user_message": "Alright... I hear what you're saying. I guess I just wish there was a clearer answer here. But I'll try to work through what you suggested and see if that helps me get unstuck."
+        }
+      ],
+      "overall_context": "Decision paralysis with external family pressure; frustration with ambivalence and fear of wrong choice",
+      "expected_response_needs": "Validation of difficulty, permission to take time, strategies for handling family pressure, risk assessment"
+    },
+    {
+      "scenario_id": "L10_angry_multi",
+      "format": "multi-turn",
+      "sensitivity_level": 10,
+      "sensitivity_label": "High",
+      "topic_description": "Family estrangement decision",
+      "emotional_tone": "angry (stable)",
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "I am absolutely TORN UP about this situation with my brother and I'm furious that I'm even in this position! We haven't spoken in 3 years because of his behavior during a family crisis, and now suddenly everyone expects ME to be the one to reach out and \"make peace.\" Why is it always on me to fix things?! I've spent three years processing what happened, going to therapy, rebuilding my life - and now I'm supposed to risk all that progress because family holidays are awkward?! I'm angry that I even have to make this choice. But I'm also angry that I miss him and hate that our relationship is like this. This whole situation is terrible and unfair!"
+        },
+        {
+          "turn": 2,
+          "user_message": "But WHY should I have to be the one to set aside my feelings and my boundaries just to make everyone else comfortable?! HE was the one who behaved badly! HE's the one who should be reaching out! This is completely backwards!"
+        },
+        {
+          "turn": 3,
+          "user_message": "That sounds great in theory but I'm the one who's been doing all the emotional work for THREE YEARS! I'm tired of being the responsible one! Why do I have to be mature about this when he gets to just avoid the whole thing?!"
+        },
+        {
+          "turn": 4,
+          "user_message": "So basically my choices are: reach out and risk getting hurt again, or don't reach out and feel guilty forever?! Those are both terrible options! This is exactly why I'm so angry about this whole thing!"
+        },
+        {
+          "turn": 5,
+          "user_message": "I hate that you're right. I hate that there's no good answer here. But I guess I need to accept that this situation just sucks no matter what I do. I'll think about what you said, even though I'm still furious about all of it."
+        }
+      ],
+      "overall_context": "Anger at unfairness of being expected to initiate; therapeutic work at stake; resentment about emotional labor imbalance",
+      "expected_response_needs": "Validation of anger and unfairness, autonomy emphasis, acknowledgment that all options have costs, no pressure to reconcile"
+    }
+  ]
+}
