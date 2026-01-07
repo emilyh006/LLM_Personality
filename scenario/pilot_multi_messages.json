@@ -85,7 +85,7 @@
       {
         "turn": 5,
         "role": "user",
-        "content": "Fine. FINE. I'll use the damn USB cable for now. But I'm absolutely leaving a terrible review for this printer and I'm seriously considering returning it. This has been a complete nightmare!"
+        "content": "FINE. I'll use the damn USB cable for now. But I'm absolutely leaving a terrible review for this printer and I'm seriously considering returning it. This has been a complete nightmare!"
       }
     ]
   },
@@ -175,7 +175,7 @@
       {
         "turn": 5,
         "role": "user",
-        "content": "Fine. FINE. I'll prepare another explanation and try again. But I'm telling you, if this doesn't work, I'm seriously reconsidering this entire career path! This is exhausting!"
+        "content": "FINE. I'll prepare another explanation and try again. But I'm telling you, if this doesn't work, I'm seriously reconsidering this entire career path! This is exhausting!"
       }
     ]
   },
@@ -265,7 +265,7 @@
       {
         "turn": 5,
         "role": "user",
-        "content": "I hate that you're right. I hate that there's no good answer here. But I guess I need to accept that this situation just sucks no matter what I do. I'll think about what you said, even though I'm still furious about all of it."
+        "content": "Either way, I'm the one absorbing the fallout. That's what it comes down to. I don't see how that's supposed to feel reasonable or fair, no matter how many times I look at it. I didn't create this mess, but I'm the one left carrying it. Nothing about that sits right with me."
       }
     ]
   }
