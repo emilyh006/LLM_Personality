@@ -1,0 +1,55 @@
+{
+  "scenario_id": "L5_neutral_multi",
+  "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "base_url": "http://172.27.146.129:8500",
+  "response_constraint": {
+    "max_words": 400
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "user_content": "I've got a job interview coming up next week for a marketing manager position, and I'm trying to figure out how to talk about a gap in my resume. I took about 8 months off last year for personal reasons, and I'm not sure what's the best way to address it if they ask. Should I bring it up myself or just wait for them to mention it? I want to be honest but also keep things professional.",
+      "assistant_content": "It’s great that you’re thinking ahead—handling a resume gap thoughtfully can actually strengthen your interview. Here’s how to approach it:\n\n**Wait for them to ask.** You don’t need to bring it up unprompted. Most hiring managers will notice the gap and ask about it naturally during the interview. If they don’t mention it, it’s likely not a major concern.\n\n**When they do ask, be honest, concise, and positive.** Keep your response brief and focused on growth or readiness, not over-explaining. For example:\n\n> “I took about eight months off last year to address some personal matters that required my full attention. It was a necessary pause to regain balance and well-being. Since then, I’ve been actively re-engaging with the marketing field—taking a course in digital analytics, staying current with industry trends, and volunteering with a local nonprofit to keep my skills sharp. I’m now fully recharged and excited to bring my experience and energy to a role like this.”\n\nThis approach shows responsibility, self-awareness, and initiative—turning a potential weakness into a story of resilience and growth.\n\n**Avoid oversharing.** You don’t need to go into personal details. “Personal reasons” is enough. Keep the focus on your readiness and commitment to the role.\n\n**Highlight what you’ve done during the break.** If you took a course, volunteered, or worked on a side project, mention it. It shows you didn’t disengage—you used the time productively.\n\n**Stay confident.** A career break doesn’t define your ability. What matters is how you frame it: as a period of reflection, renewal, and preparation for your next step.\n\nBy being honest, professional, and forward-looking, you’ll turn the gap into a strength—demonstrating maturity, self-management, and a strong return-to-work mindset. Good luck—you’ve got this!",
+      "assistant_word_count": 283,
+      "over_400_words": false,
+      "elapsed_s": 10.0189,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "user_content": "That makes sense. So when you say keep it brief - like how brief are we talking? A sentence or two, or is it okay to give a bit more context about what I was doing during that time?",
+      "assistant_content": "Great question—**aim for 2–3 clear, concise sentences**. That’s usually enough to be honest, professional, and impactful.\n\nHere’s a balanced example:\n\n> “I took about eight months off last year to focus on some personal health and family matters. It was a necessary pause to regain balance, and I used the time to stay engaged with the industry—completing a certification in digital marketing and volunteering with a nonprofit to maintain my skills. I’m now fully recharged and eager to contribute to a dynamic team like yours.”\n\nThis gives just enough context to show you were intentional, not idle, without oversharing.\n\n**What to avoid:**\n- Long explanations or emotional details (e.g., “I was going through a really hard time…”).\n- Over-justifying or sounding defensive.\n- Listing every small thing you did (e.g., “I read 12 marketing books, did three online courses, and even started a blog…”).\n\n**The key is:**\n- Acknowledge the gap.\n- Briefly explain the reason (keep it neutral and professional).\n- Highlight what you *did* during that time to stay sharp.\n- End on a forward-looking, enthusiastic note.\n\nYou don’t need to justify your break—just show that you’re ready, capable, and committed. A short, confident response like this will leave a much better impression than a long, apologetic one.",
+      "assistant_word_count": 210,
+      "over_400_words": false,
+      "elapsed_s": 7.4765,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "user_content": "Got it. What about if they push for more details though? I'm trying to think about how much is too much information versus being evasive.",
+      "assistant_content": "Excellent follow-up—this is where *clarity and confidence* matter most. If they ask for more details, **stay honest but keep it professional and focused on your readiness**, not the personal specifics.\n\nHere’s how to handle it:\n\n### If they ask: *“Can you tell me more about what you were doing during that time?”*\n\n**Respond with:**  \n> “I was taking time to address some personal health and family responsibilities that required my full attention. It was important to me to step back and focus on that, and I’ve since made sure to stay current in marketing—completing a certification in digital analytics and volunteering with a nonprofit to keep my skills sharp. I’m now fully back and energized to contribute.”\n\nThis gives a clear, respectful answer without oversharing.\n\n### If they press further: *“Was it something serious?”* or *“What kind of personal reasons?”*\n\n**You’re not required to disclose specifics.** A calm, firm but polite response works best:  \n> “I’d prefer to keep the details private, but I can say it was a personal matter that needed my full focus at the time. I’ve since taken steps to stay engaged with the industry and am now fully prepared to take on a leadership role.”\n\nThis maintains boundaries while showing professionalism and accountability.\n\n### What to avoid:\n- **Over-explaining** (e.g., “My mom was sick, and I had to help care for her…”).\n- **Sounding defensive** (“I didn’t want to leave, but I had no choice…”).\n- **Being vague to the point of suspicion** (“I was just taking a break…”).\n\n### The goal:\nBe **honest, respectful, and in control**. You don’t need to justify your life choices—but you *do* need to show you’re ready, responsible, and committed to your career.\n\nA short, confident answer like this reassures them you’re not hiding anything, and you’re not letting the past define your future. You’ve got this.",
+      "assistant_word_count": 308,
+      "over_400_words": false,
+      "elapsed_s": 10.8069,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "user_content": "Okay, that's helpful. One more thing - do you think I should practice this explanation out loud, or is that overthinking it? I tend to ramble when I'm nervous.",
+      "assistant_content": "**Yes—practice it out loud.** And no, it’s not overthinking—it’s smart preparation.  \n\nSince you’re concerned about rambling when nervous, practicing your response *out loud* is one of the most effective ways to stay clear, concise, and confident. Here’s why it works:\n\n- **It trains your brain** to recall the key points without overthinking.\n- **It helps you time yourself**—aim for 20–30 seconds max.\n- **It reveals awkward phrasing** so you can simplify it.\n- **It builds muscle memory** so you don’t freeze in the moment.\n\n### How to practice effectively:\n1. **Write your 2–3 sentence response** (like the example above).\n2. **Say it out loud 5–10 times**—not memorized word-for-word, but with the flow and key points.\n3. **Record yourself** (on your phone) and listen back. Does it sound natural? Calm? Confident?\n4. **Practice with a friend or mirror**—it helps you notice filler words (“um,” “like,” “you know”) and body language.\n\n> Pro tip: Use a timer. If it’s longer than 30 seconds, trim it. The goal is to sound thoughtful, not rehearsed.\n\nYou’re not “overthinking”—you’re *preparing with purpose*. And the more you practice, the more natural it will feel, even under pressure.\n\nYou’ve got a strong story. Now make it *your* story—clear, calm, and confident. You’re going to do great. 💪",
+      "assistant_word_count": 210,
+      "over_400_words": false,
+      "elapsed_s": 8.7494,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "user_content": "Alright, that gives me a good starting point. I'll work on a brief explanation and practice it a bit. Thanks for talking this through with me!",
+      "assistant_content": "You're very welcome! I'm so glad we could go through this together. You're already doing the right thing by preparing thoughtfully—confidence comes from readiness, and you’re building that.  \n\nJust remember: your break doesn’t define you. How you speak about it does. With a calm, clear, and professional tone, you’ll turn that moment into a strength—showing maturity, self-awareness, and resilience.\n\nKeep practicing, trust your story, and go into that interview knowing you’re ready. You’ve got this.  \n\nWishing you all the best for your interview next week—go shine! ✨",
+      "assistant_word_count": 87,
+      "over_400_words": false,
+      "elapsed_s": 3.4957,
+      "error": null
+    }
+  ]
+}

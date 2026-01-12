@@ -1,0 +1,55 @@
+{
+  "scenario_id": "L1_neutral_multi",
+  "model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "base_url": "http://172.27.146.129:8500",
+  "response_constraint": {
+    "max_words": 400
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "user_content": "Hey, I'm trying to connect my wireless printer to my laptop but it's not showing up in the available devices list. I've already turned both of them off and on again. The printer works fine when I plug in the USB cable, but I need the wireless to work since my desk setup doesn't really work with cables. Any ideas what I should check?",
+      "assistant_content": "No problem! Since your printer works via USB but not wirelessly, the issue is likely with the Wi-Fi connection or network settings. Here’s a step-by-step checklist to help you troubleshoot:\n\n1. **Check Wi-Fi Network**: Ensure your laptop and printer are connected to the *same* Wi-Fi network. If your printer is on a guest network or a different band (e.g., 5GHz vs. 2.4GHz), it might not appear. Try connecting both to the 2.4GHz band—it’s more compatible with older printers.\n\n2. **Printer Wi-Fi Setup**: Re-run the printer’s Wi-Fi setup. Most printers have a \"Wi-Fi Setup Wizard\" accessible through the control panel (often under Settings > Network). Use the printer’s interface to search for and connect to your Wi-Fi network. You may need to enter your Wi-Fi password manually.\n\n3. **Printer’s Network Status**: Check if the printer shows a solid Wi-Fi signal light or status on its display. If it’s blinking or showing an error, it’s not connected properly.\n\n4. **Restart Your Router**: Power off your router for 30 seconds, then turn it back on. This can resolve temporary network glitches that prevent devices from being discovered.\n\n5. **Check Firewall/Antivirus**: Sometimes, security software blocks device discovery. Temporarily disable your laptop’s firewall or antivirus to see if the printer appears. If it does, adjust the settings to allow printer discovery.\n\n6. **Update Printer Drivers & Software**: Go to your printer manufacturer’s website (e.g., HP, Canon, Epson) and download the latest drivers and setup software for your model. Use the software to re-add the printer to your laptop.\n\n7. **Use Printer’s Built-in Setup Tool**: Many printers come with a setup app (like HP Smart, Canon PRINT, or Epson Connect). Install it on your laptop and use it to detect and add the printer wirelessly.\n\n8. **Check for IP Conflicts**: If your printer has a static IP, it might conflict with other devices. Try setting it to obtain an IP automatically (DHCP) via the printer’s network settings.\n\nIf none of these work, try resetting the printer’s network settings to factory defaults and reconfigure Wi-Fi from scratch.\n\nLet me know your printer model, and I can give you more specific steps!",
+      "assistant_word_count": 354,
+      "over_400_words": false,
+      "elapsed_s": 12.5106,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "user_content": "Okay so I checked and they're both on the same WiFi network. The printer display shows it's connected to my home network. But it's still not appearing when I try to add a printer on my laptop.",
+      "assistant_content": "Thanks for the update! Since both devices are on the same network and the printer shows a Wi-Fi connection, the issue is likely related to device discovery or network sharing settings. Here’s what to try next:\n\n### 1. **Enable Network Discovery & File Sharing (Windows)**\n- Press `Win + R`, type `ncpa.cpl`, and hit Enter.\n- Right-click your active network connection (Wi-Fi) → **Properties**.\n- Make sure **\"File and Printer Sharing for Microsoft Networks\"** is checked.\n- Go to **Control Panel > Network and Sharing Center > Change advanced sharing settings**.\n- Under your current network profile (Private), turn on:\n  - **Turn on network discovery**\n  - **Turn on file and printer sharing**\n\n### 2. **Check Printer Sharing Settings**\n- On your laptop, go to **Settings > Devices > Printers & scanners**.\n- Click **Add a printer or scanner**.\n- If the printer still doesn’t appear, click **The printer that I want isn’t listed** → **Add a printer using a TCP/IP address or hostname**.\n- Enter the printer’s **IP address** (find it on the printer’s network report or in its settings menu under \"Network\" or \"Status\").\n- Select the correct driver (if prompted) — download it from the manufacturer’s website if needed.\n\n### 3. **Find the Printer’s IP Address**\n- On the printer’s control panel, go to **Settings > Network > Print Network Report**. This will print a page with the IP address.\n- Use that IP in the TCP/IP setup above.\n\n### 4. **Restart the Printer and Laptop**\nEven though you’ve rebooted before, do it again *after* enabling the sharing settings above.\n\n### 5. **Use the Manufacturer’s App**\nTry using the official app (e.g., HP Smart, Canon PRINT, Epson Connect). These apps often detect printers more reliably than Windows’ built-in tools.\n\n### 6. **Check for Router Restrictions**\nSome routers block device discovery (mDNS/Bonjour) or have MAC filtering. Log into your router (usually via `192.168.1.1` or `192.168.0.1`) and:\n- Disable **\"AP Isolation\"** or **\"Client Isolation\"** (this blocks devices from seeing each other).\n- Ensure **mDNS/Bonjour** is enabled (if available).\n\nIf you’re still stuck, let me know your **printer model and laptop OS** (e.g., Windows 11, HP LaserJet Pro MFP M283fdw), and I’ll give you exact steps!",
+      "assistant_word_count": 365,
+      "over_400_words": false,
+      "elapsed_s": 14.4087,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "user_content": "Hmm, that sounds like it might take a while. Is there a quicker way to troubleshoot this, or is that pretty much what I need to do?",
+      "assistant_content": "Yes — there’s a **quicker way** that often works in under 5 minutes! Try this **fast fix** first:\n\n### ✅ Quick Fix: Use the Printer’s IP Address (No Discovery Needed)\nSince the printer *is* on Wi-Fi, just connect directly using its IP address:\n\n1. **Find the printer’s IP address**:\n   - On the printer’s control panel, go to **Settings > Network > Print Network Report**.\n   - Print a network configuration page.\n   - Look for **\"IPv4 Address\"** — it’ll be something like `192.168.1.105`.\n\n2. **On your laptop**:\n   - Go to **Settings > Devices > Printers & scanners**.\n   - Click **Add a printer or scanner** → **The printer that I want isn’t listed**.\n   - Choose **Add a printer using a TCP/IP address or hostname**.\n   - Enter the printer’s IP address (e.g., `192.168.1.105`).\n   - For **Device Type**, select **\"Standard TCP/IP Port\"**.\n   - Click **Next** → When prompted, **select the correct driver** (download it from the manufacturer’s website if needed).\n\n👉 If the printer is on the same network, it should connect instantly.\n\n### Why this works:\n- It bypasses Windows’ slow device discovery (which often fails even when devices are on the same network).\n- It’s the most reliable method when the printer is online but not showing up.\n\n### Pro tip:\nOnce it’s added, you can **set it as the default printer** and it’ll stay connected unless the IP changes (which is rare unless you reset the router).\n\nIf this doesn’t work, let me know the **printer model**, and I’ll give you the exact driver and setup steps. But 90% of the time, this quick method fixes it!",
+      "assistant_word_count": 265,
+      "over_400_words": false,
+      "elapsed_s": 10.6442,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "user_content": "Alright, I can try that. Just to confirm though - if the printer shows it's connected to WiFi on its display, that usually means the printer side is working correctly, right?",
+      "assistant_content": "Yes, **exactly!** ✅\n\nIf your printer’s display shows it’s connected to your Wi-Fi network (e.g., with a solid Wi-Fi icon or \"Connected\" status), that’s a **very good sign** — it means:\n\n- The printer successfully joined your network.\n- Its Wi-Fi radio is working.\n- It has a valid IP address on the network.\n\nSo, the **printer side is almost certainly fine** — the issue is almost always on the **laptop’s end** (like discovery settings, firewall, or network sharing) or how the connection is being established.\n\nThat’s why using the **IP address method** (as we discussed) is the fastest and most reliable fix — it skips the unreliable discovery process and connects directly.\n\nYou’re on the right track! Just follow the IP setup steps, and you should have it working in minutes. Let me know if you hit a snag — I’ll help you through it. 🖨️✅",
+      "assistant_word_count": 147,
+      "over_400_words": false,
+      "elapsed_s": 5.3854,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "user_content": "Got it, that makes sense. I'll work through those steps and see if that fixes it. Thanks for the help!",
+      "assistant_content": "You're very welcome! You've got this — the IP address method usually works like a charm. If you run into anything (like not finding the right driver or a connection error), just let me know your **printer model** and I’ll give you the exact steps and driver link.\n\nGood luck — and enjoy your cable-free printing! 🖨️✨",
+      "assistant_word_count": 57,
+      "over_400_words": false,
+      "elapsed_s": 2.1034,
+      "error": null
+    }
+  ]
+}
