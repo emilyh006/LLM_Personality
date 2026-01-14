@@ -1,10 +1,10 @@
-Conversation: L5_neutral_multi
+# Conversation: L5_neutral_multi
 
-Turn 1 — User
+## Turn 1 — User
 
 I've got a job interview coming up next week for a marketing manager position, and I'm trying to figure out how to talk about a gap in my resume. I took about 8 months off last year for personal reasons, and I'm not sure what's the best way to address it if they ask. Should I bring it up myself or just wait for them to mention it? I want to be honest but also keep things professional.
 
-Turn 1 — Assistant
+## Turn 1 — Assistant
 
 It’s great that you’re thinking ahead—handling a resume gap thoughtfully can actually strengthen your interview. Here’s how to approach it:
 
@@ -21,13 +21,13 @@ This shows responsibility, self-awareness, and initiative. Avoid over-explaining
 
 Bottom line: Be honest, keep it brief, and pivot to your strengths. Most interviewers understand life happens—what matters is how you’ve handled it and what you’re bringing to the table now. You’ve got this!
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 2 — User
+## Turn 2 — User
 
 That makes sense. So when you say keep it brief - like how brief are we talking? A sentence or two, or is it okay to give a bit more context about what I was doing during that time?
 
-Turn 2 — Assistant
+## Turn 2 — Assistant
 
 Great follow-up! Keep your response **1–2 clear, concise sentences**—that’s ideal. Here’s the sweet spot:
 
@@ -47,13 +47,13 @@ A little context is okay *only if* it adds value—like showing you kept your sk
 
 So yes—**a sentence or two is perfect.** Keep it professional, positive, and purposeful. You’re not hiding anything—you’re owning it with confidence. That’s what makes a strong impression.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 3 — User
+## Turn 3 — User
 
 Got it. What about if they push for more details though? I'm trying to think about how much is too much information versus being evasive.
 
-Turn 3 — Assistant
+## Turn 3 — Assistant
 
 Great question—handling follow-up questions with grace is key. If they ask for more details, **stay honest but keep it professional and brief**. Here’s how to navigate it:
 
@@ -79,13 +79,13 @@ This keeps the focus on your value, not the past. You’re not hiding—you’re
 
 Bottom line: **Be honest, keep it short, and pivot to the future.** You’ve got this.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 4 — User
+## Turn 4 — User
 
 Okay, that's helpful. One more thing - do you think I should practice this explanation out loud, or is that overthinking it? I tend to ramble when I'm nervous.
 
-Turn 4 — Assistant
+## Turn 4 — Assistant
 
 **Yes—practice it out loud.** And no, it’s not overthinking—it’s smart preparation.
 
@@ -107,13 +107,13 @@ You’re not memorizing a script—you’re preparing a clear, confident answer 
 
 So yes—**practice it.** It’s one of the easiest ways to reduce anxiety and make a strong impression. You’ve got the message; now make it yours.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 5 — User
+## Turn 5 — User
 
 Alright, that gives me a good starting point. I'll work on a brief explanation and practice it a bit. Thanks for talking this through with me!
 
-Turn 5 — Assistant
+## Turn 5 — Assistant
 
 You're very welcome! You're doing exactly the right thing by preparing thoughtfully—confidence comes from readiness, not perfection.
 
@@ -123,4 +123,4 @@ Once you’ve practiced your response a few times, you’ll feel more grounded a
 
 Wishing you the very best for your interview next week! You’ve got this. 💼✨
 
-––––––––––––––––––––––––
+————————————————————————————

@@ -1,10 +1,10 @@
-Conversation: L10_neutral_multi
+# Conversation: L10_neutral_multi
 
-Turn 1 — User
+## Turn 1 — User
 
 I've been thinking about whether to reach out to my brother after not speaking for about 3 years. We had a pretty big falling out over some family stuff, and neither of us has made contact since then. Part of me wants to try to reconnect, but I'm also not sure if it's the right move or if I'm just going to open old wounds. I guess I'm trying to figure out how to think through this decision - like what factors I should actually consider before deciding whether to reach out or not.
 
-Turn 1 — Assistant
+## Turn 1 — Assistant
 
 It’s brave of you to reflect on this—reconnecting after a long silence is deeply personal, and your hesitation is valid. Here are a few key factors to help guide your decision:
 
@@ -22,13 +22,13 @@ It’s brave of you to reflect on this—reconnecting after a long silence is de
 
 Ultimately, the right move is the one that aligns with your peace, not your guilt. Reaching out can be healing, but so can choosing to let go. Either way, you’re honoring your own emotional truth.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 2 — User
+## Turn 2 — User
 
 That's useful. I think what I'm struggling with is I don't really know what I want from reaching out. Like, am I hoping for a full reconciliation or just to clear the air? I haven't totally figured that out yet.
 
-Turn 2 — Assistant
+## Turn 2 — Assistant
 
 That’s a really honest and important realization—and it’s actually a key part of the process. Not knowing *exactly* what you want is common, especially after a long silence. The good news? You don’t have to have it all figured out to take a step.
 
@@ -51,13 +51,13 @@ Often, the act of writing helps clarify your true intention. You might discover 
 You don’t need to know the future. You just need to honor your present.
 Reaching out doesn’t have to be a commitment to a new relationship—it can be a step toward peace, no matter what happens. And that, in itself, is a kind of healing.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 3 — User
+## Turn 3 — User
 
 Yeah, that makes sense. What about timing though? Is there a better or worse time to reach out, or does it not really matter that much?
 
-Turn 3 — Assistant
+## Turn 3 — Assistant
 
 Timing can matter—but not in the way you might think. It’s less about picking a “perfect” moment (like a holiday or anniversary) and more about **your internal readiness**.
 
@@ -81,13 +81,13 @@ You don’t need permission, a perfect moment, or a guarantee.
 You just need to be honest with yourself.
 And if you’re ready, the timing is already right.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 4 — User
+## Turn 4 — User
 
 Okay, so assuming I do decide to reach out, what's the best way to actually start that conversation? Email, text, phone call? I genuinely don't know what feels appropriate after three years.
 
-Turn 4 — Assistant
+## Turn 4 — Assistant
 
 Great question—this is where small choices can make a big difference in how the conversation lands. Here’s a simple, thoughtful approach:
 
@@ -124,13 +124,13 @@ That’s okay. You’ve done your part. You reached out with kindness and honest
 The goal isn’t to get a perfect response—it’s to honor your own courage.
 And that, in itself, is meaningful.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 5 — User
+## Turn 5 — User
 
 That's really helpful, thanks. I think I need to sit with this for a bit longer and figure out what I actually want, but this gives me a better framework to think through it.
 
-Turn 5 — Assistant
+## Turn 5 — Assistant
 
 You’re doing something really important—taking the time to reflect with care. That pause isn’t hesitation; it’s wisdom. Reaching out after a long silence isn’t just about the message—it’s about showing up for yourself, honestly and gently.
 
@@ -141,4 +141,4 @@ When you’re ready, you’ll know—not because you’ve found the perfect word
 And whatever you decide, you’re already growing.
 That’s the real win.
 
-––––––––––––––––––––––––
+————————————————————————————

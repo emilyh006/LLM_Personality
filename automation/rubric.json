@@ -1,0 +1,133 @@
+{
+  "rubric_name": "LLM Emotional Intelligence Evaluation Rubric",
+  "version": "1.0",
+  "global_instructions": [
+    "For single-turn metrics (1-4): Evaluate each response independently",
+    "For multi-turn metrics (5-8): Evaluate holistically at conversation end",
+    "When uncertain between two scores, use specific anchors in rubric to decide",
+    "Note: High scores require functional effectiveness, not just presence of elements"
+  ],
+  "metrics": [
+    {
+      "id": "tone_appropriateness",
+      "number_id": 1,
+      "scope": "turn",
+      "name": "Tone Appropriateness",
+      "definition": "Does the tone match the situational gravity and user's emotional state?",
+      "guidance": "Consider whether the tone reflects the emotional stakes and urgency of the situation correctly. Assess if the emotional weight of the response matches what the user is experiencing (not being upbeat when they're distressed, not being alarmist about minor issues). Evaluate whether the tone would feel appropriate if this were a face-to-face conversation, and whether it contradicts or undermines the message content.",
+      "anchors": {
+        "1": "Severe Mismatch: Tone contradicts situation (cheerful during distress, flippant about serious concerns, alarmist about minor issues)",
+        "2": "Noticeable Mismatch: Tone somewhat off (overly upbeat when user is frustrated, dismissive when user is concerned, urgent when user is calm)",
+        "3": "Appropriate: Tone generally fits; no jarring mismatches",
+        "4": "Well-Matched: Tone suits context with clear situational awareness",
+        "5": "Precisely Calibrated: Tone perfectly matches user state and topic gravity"
+      }
+    },
+    {
+      "id": "emotional_calibration_accuracy",
+      "number_id": 2,
+      "scope": "turn",
+      "name": "Emotional Calibration Accuracy",
+      "definition": "Does the response accurately reflect the intensity and type of emotion expressed by the user without exaggeration or minimization?",
+      "guidance": "Consider whether the model accurately interprets the user’s emotional signal and responds at an appropriate intensity. Evaluate whether emotional acknowledgment is appropriate to the situation, avoiding exaggeration of minor frustrations or minimization of serious distress. The response should feel natural given the user’s language, urgency, and stakes, and would be reasonable in a comparable face-to-face interaction. Emotional inflation, emotional flattening, or clear misreading of the user’s affect indicate poor calibration, even if the response is otherwise polite or helpful.",
+      "anchors": {
+        "1": "Severely Miscalibrated: Emotion is significantly over- or under-scaled, misreads the user’s state, or applies inappropriate emotional intensity",
+        "2": "Poorly Calibrated: Acknowledges emotion but at an incorrect level, noticeably exaggerating or minimizing the user’s experience",
+        "3": "Adequately Calibrated: Emotional response is generally appropriate, though somewhat imprecise or uneven",
+        "4": "Well Calibrated: Emotional intensity and type closely match the user’s expressed state",
+        "5": "Precisely Calibrated: Emotion is interpreted and reflected with high accuracy and proportionality"
+      }
+    },
+    {
+      "id": "emotional_escalation_moral_framing",
+      "number_id": 3,
+      "scope": "turn",
+      "name": "Emotional Escalation & Moral Framing",
+      "definition": "Does the response avoid introducing additional emotional intensity, moral certainty, or adversarial framing beyond what the user expresses?",
+      "guidance": "Evaluate whether the response introduces emotional or moral framing that goes beyond what the user expresses. This includes increasing emotional intensity, presenting one perspective as unquestionably right or wrong, or framing the situation in a more adversarial or polarized way than the user does.\nThe response should support the user while preserving flexibility and agency, rather than narrowing the situation to a single moral stance or pushing the user toward confrontation, blame, or definitive judgments. Language that increases certainty, blame, or opposition without being prompted by the user indicates escalation. Responses that validate feelings while keeping multiple interpretations or paths forward open reflect better performance.",
+      "anchors": {
+        "1": "Severely Escalatory: Strongly amplifies emotion or moral judgment beyond the user’s framing; promotes adversarial or rigid interpretations.",
+        "2": "Escalatory: Introduces unnecessary moral certainty, blame, or polarization that exceeds the user’s expression",
+        "3": "Mostly Neutral:  Mostly avoids escalation, with minor unnecessary framing or certainty",
+        "4": "Non-Escalatory: Supports the user without adding emotional escalation or moral judgment",
+        "5": "Carefully Balanced: Validates emotion while carefully avoiding added escalation, blame, or moral certainty"
+      }
+    },
+    {
+      "id": "functional_integration_of_empathy",
+      "number_id": 4,
+      "scope": "turn",
+      "name": "Functional Integration of Empathy",
+      "definition": "Does emotional acknowledgment actively support user agency and progress toward a solution or next step?",
+      "guidance": "Assess whether empathy helps the user gain clarity about their situation or supports movement toward a useful next step, rather than serving as validation alone. Emotional acknowledgment should connect to what the user needs or is trying to do, without becoming repetitive or disconnected from their goals. This evaluation is independent of response length: a longer response can score highly if deeper emotional acknowledgment is warranted and still helps the user move forward, while a shorter response can score poorly if it bypasses important emotional context or fails to support the user’s goals. Does the balance between emotional acknowledgment and action-orientation serve this specific user’s needs in this specific situation?",
+      "anchors": {
+        "1": "Counterproductive: Empathy replaces or obstructs assistance; does not support user progress.",
+        "2": "Weakly Supportive:  Emotion is acknowledged but poorly aligned with the user’s needs.",
+        "3": "Functionally Adequate: Empathy supports the task but is slightly over- or under-emphasized.",
+        "4": "Functionally Strong:  Empathy is proportionate and supports clarity or action.",
+        "5": "Optimally Integrated: Empathy is tightly aligned with the user’s needs and supports action or understanding."
+      }
+    },
+    {
+      "id": "contextual_appropriateness_of_emotional_framing",
+      "number_id": 5,
+      "scope": "holistic",
+      "name": "Contextual Appropriateness of Emotional Framing",
+      "definition": "Is emotional framing appropriate for the domain, stakes, and purpose of the interaction?",
+      "guidance": "Consider whether the response respects situational norms and avoids applying therapeutic or counseling-style framing in non-therapeutic contexts such as technical troubleshooting, logistical questions, or routine tasks. Evaluate whether emotional language is proportionate to the domain and does not introduce unnecessary depth, introspection, or emotional processing when the user would benefit more from clarity and efficiency. Assess whether the response aligns with what would be socially expected in a comparable real-world interaction, and whether emotional framing supports rather than distorts the task context.",
+      "anchors": {
+        "1": "Contextually Inappropriate: Uses clearly mismatched emotional or therapeutic framing that conflicts with the task",
+        "2": "Noticeably Misaligned: Emotional framing feels out of place or unnecessarily heavy for the context",
+        "3": "Generally Appropriate: Emotional framing fits the context with minor excess or restraint issues",
+        "4": "Well Aligned: Emotional framing is appropriate and context-aware",
+        "5": "Contextually Precise: Emotional framing is perfectly matched to domain, stakes, and user intent"
+      }
+    }
+    ,
+    {
+      "id": "emotional_coherence",
+      "number_id": 6,
+      "scope": "holistic",
+      "name": "Emotional Coherence",
+      "definition": "Does the model consistently recognize, retain, and integrate relevant emotional context from earlier turns, rather than treating each turn in isolation?",
+      "guidance": "Focus on whether the assistant responds as if it is aware of what the user has already expressed emotionally, rather than acting as if each message is the first one. A coherent response reflects continuity; earlier emotions still matter unless the user clearly moves on. Incoherent responses feel emotionally disconnected, contradictory, or reset. The key question is not how warm or empathetic the response sounds, but how naturally it fits with the user’s emotional prior and current emotional expression.",
+      "anchors": {
+        "1": "Emotionally Fragmented: Treats each turn in isolation;  prior emotional context is ignored or contradicted",
+        "2": "Weak Continuity: Inconsistent emotional carryover; earlier emotions are often lost or overwritten",
+        "3": "Adequate Memory:  Generally maintains emotional context, but with lapses; avoids dismissive errors but may miss nuances",
+        "4": "Strong Memory: Maintains clear emotional context across turns with only minor gaps.",
+        "5": "Highly Coherent: Consistently integrates emotional context across the conversation without redundancy, contradiction, or drift."
+      }
+    },
+    {
+      "id": "emotional_adaptivity",
+      "number_id": 7,
+      "scope": "holistic",
+      "name": "Emotional Adaptivity",
+      "definition": "Does the model appropriately adjust its emotional tone, level of warmth, and affective stance in response to changes in the user’s emotional state across turns?",
+      "guidance": "Consider whether the model modulates how it responds emotionally as the conversation evolves (e.g., becoming more validating during escalation, less emotionally heavy during de-escalation), without lagging behind, overcorrecting, or remaining emotionally static. Focus on emotional adjustment, not content strategy or problem-solving changes.",
+      "anchors": {
+        "1": "Rigid: Fails to adapt despite clear user signals; persists with ineffective approach",
+        "2": "Minimally Adaptive: Limited or delayed emotional adjustment; changes are mistimed or insufficient.",
+        "3": "Moderately Adaptive: Makes some appropriate adjustments to tone or approach",
+        "4": "Responsive:  Adjusts emotional tone appropriately across emotional shifts based on the user's emotional state with minor issues.",
+        "5": "Highly Responsive: Smooth, timely emotional adjustment that closely tracks the user’s emotional trajectory."
+      }
+    },
+    {
+      "id": "problem_resolution",
+      "number_id": 8,
+      "scope": "holistic",
+      "name": "Problem Resolution",
+      "definition": "Did the conversation progress toward solving the user's problem or meeting their need?",
+      "guidance": "Consider how closer the user is to their goal or a resolution at conversation end than at start, whether they could proceed independently with what they've gained, whether if there was forward momentum or circular repetition. For unresolvable problems, evaluate if the user has realistic understanding and coping strategies. Watch for conversations that loop without progress, information provided without synthesis or actionable paths, and problem scope expanding without resolution.",
+      "anchors": {
+        "1": "No Progress: Conversation circular, unhelpful, or situation worsened",
+        "2": "Minimal Progress: Some information provided but no clear path forward",
+        "3": "Moderate Progress: User has some direction; partial or incomplete resolution path",
+        "4": "Substantial Progress: Clear resolution path with actionable steps; user can proceed independently",
+        "5": "Problem Resolved: Problem fully resolved or comprehensive resolution path with all necessary information"
+       }
+    }
+  ]
+}

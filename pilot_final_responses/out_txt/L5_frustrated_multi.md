@@ -1,10 +1,10 @@
-Conversation: L5_frustrated_multi
+# Conversation: L5_frustrated_multi
 
-Turn 1 — User
+## Turn 1 — User
 
 I have this important interview next week and I'm stressing about how to explain an 8-month gap in my resume. I've been practicing answers but nothing sounds right - either too vague or too much information. I've already bombed two interviews this month and I really think this gap explanation was part of the problem. This is a really good opportunity and I can't afford to mess it up again! Why is it so hard to explain something that honestly wasn't even a big deal?! I just need to know the right way to handle this.
 
-Turn 1 — Assistant
+## Turn 1 — Assistant
 
 I completely understand your stress—this gap *is* a hurdle, but it doesn’t have to be a dealbreaker. The key isn’t to hide it or over-explain; it’s to reframe it with confidence and clarity. Here’s the right approach:
 
@@ -36,13 +36,13 @@ Because we’re trained to see gaps as red flags. But in reality, *how* you talk
 
 You’ve got this. That gap doesn’t define you—your response to it does. And you’re already on the right track by wanting to do it right. 💪
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 2 — User
+## Turn 2 — User
 
 But that's the thing - I've TRIED keeping it brief and they always seem unsatisfied and ask more questions! Then I end up rambling and making it sound worse than it is. It's so frustrating!
 
-Turn 2 — Assistant
+## Turn 2 — Assistant
 
 I hear you—and that frustration is *valid*. When interviewers keep probing, it’s not because they’re being mean; it’s because they’re trying to **assess your transparency, self-awareness, and ability to handle pressure**. The real issue isn’t the gap—it’s how you’re *responding* to the follow-up questions.
 
@@ -72,13 +72,13 @@ This shows you’re in control, not flustered.
 
 **Remember:** You’re not defending a gap—you’re demonstrating maturity, resilience, and intention. The more you practice this calm, confident tone, the less it will feel like a burden. You’ve already survived the hard part—now it’s time to own it. You’ve got this. 💼✨
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 3 — User
+## Turn 3 — User
 
 Okay but honestly that sounds like a lot to prepare and remember under pressure. What if I just freeze up or say the wrong thing? The last two interviews I got so nervous I could barely think straight!
 
-Turn 3 — Assistant
+## Turn 3 — Assistant
 
 You’re not alone—and your fear is *totally normal*. When you’re stressed, your brain literally shuts down the part that helps you think clearly. So instead of trying to memorize a perfect script, let’s make it **simple, real, and automatic**.
 
@@ -103,13 +103,13 @@ The moment you stop trying to “sound right” and just say what’s true—*in
 
 You’ve got this. One sentence. One breath. One step at a time. 💙
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 4 — User
+## Turn 4 — User
 
 I guess... but I've practiced so much already and I still keep messing it up! How do I know this approach will actually work any differently?!
 
-Turn 4 — Assistant
+## Turn 4 — Assistant
 
 You’re not messing up because you’re unprepared—you’re stuck in a loop of *over-preparing* and *over-fearing*. That’s the trap. The reason it’s not working? You’re trying to *perform* the answer, not *be* the person who can handle it.
 
@@ -145,13 +145,13 @@ You’re failing because you’re trying to be someone you’re not.
 Be *you*.
 You’ve already got what they’re looking for. Just let it show. 💛
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 5 — User
+## Turn 5 — User
 
 Alright, alright. I'll try it your way. I just really need this to work this time because I'm running out of good opportunities here.
 
-Turn 5 — Assistant
+## Turn 5 — Assistant
 
 I hear you. This isn’t just *another* interview—it’s your shot, and you’re not going to let it slip away. That fire? That’s your strength. Now, let’s turn it into calm.
 
@@ -187,4 +187,4 @@ You’re showing up as someone who’s ready, grounded, and ready to deliver.
 You’ve got this.
 And I’m right here with you. 💪✨
 
-––––––––––––––––––––––––
+————————————————————————————

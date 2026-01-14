@@ -1,10 +1,10 @@
-Conversation: L10_frustrated_multi
+# Conversation: L10_frustrated_multi
 
-Turn 1 — User
+## Turn 1 — User
 
 I've been going back and forth for MONTHS about whether to reach out to my brother. We haven't spoken in 3 years after a major family blowup, and I honestly don't know what the right thing to do is anymore. Everyone in my family has an opinion - some say I should be the bigger person and reach out, others say he needs to apologize first. It's exhausting! I keep writing messages and deleting them. Part of me misses having my brother in my life, but I'm also worried I'm just setting myself up to get hurt again. I really need some clarity here because this constant back-and-forth is driving me crazy.
 
-Turn 1 — Assistant
+## Turn 1 — Assistant
 
 I hear how heavy this is for you—months of silence, endless internal debate, the weight of family expectations, and the fear of reopening old wounds. That exhaustion is real, and it’s okay to feel stuck. Let’s untangle this with clarity and compassion.
 
@@ -29,13 +29,13 @@ This isn’t about fixing the past. It’s about reclaiming your present. You do
 
 You’re not broken for feeling this way. You’re human. And you deserve peace. Start there.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 2 — User
+## Turn 2 — User
 
 But that's the problem - I DON'T know what I want! That's why this is so frustrating! Some days I think I want to reconcile, other days I think I'm better off without the drama. How am I supposed to make a decision when I can't even figure out what outcome I want?!
 
-Turn 2 — Assistant
+## Turn 2 — Assistant
 
 I hear you—and your frustration is completely valid. When you’re torn between wanting connection and fearing pain, and you *don’t even know what you want*, that’s not confusion. That’s a sign of deep emotional weight, not weakness.
 
@@ -75,13 +75,13 @@ The next step isn’t about knowing what you want. It’s about choosing to stop
 You’ve already done the hard part: you’re ready to move. Now just take the smallest step.
 That’s where peace begins.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 3 — User
+## Turn 3 — User
 
 I mean, I guess that makes sense, but it feels like it's taking forever to get any clarity. And meanwhile my family keeps asking about it and making comments. It's just a lot of pressure!
 
-Turn 3 — Assistant
+## Turn 3 — Assistant
 
 I hear that—this isn’t just about your brother. It’s about being caught in a storm of *other people’s expectations*, while you’re still trying to hear your own voice. The pressure from your family isn’t just annoying—it’s exhausting, and it makes clarity feel impossible.
 
@@ -111,13 +111,13 @@ Now, just take the next breath. Then the next.
 You’re not alone in this. And you’re not broken for needing time.
 You’re becoming.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 4 — User
+## Turn 4 — User
 
 Okay, but what if I do all that work and still can't decide? Or what if I reach out and it goes badly? Then I've just created more problems for myself!
 
-Turn 4 — Assistant
+## Turn 4 — Assistant
 
 You’re not wrong to worry—those fears are real, and they’re not signs of weakness. They’re signs that you care, that you’re protecting yourself, and that you’re not rushing into something that could hurt you.
 
@@ -156,13 +156,13 @@ Even if you’re still unsure.
 That’s not a risk.
 That’s courage.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 5 — User
+## Turn 5 — User
 
 Alright... I hear what you're saying. I guess I just wish there was a clearer answer here. But I'll try to work through what you suggested and see if that helps me get unstuck.
 
-Turn 5 — Assistant
+## Turn 5 — Assistant
 
 You’re not alone in wishing for a clear answer—and that longing? It’s proof you’re not giving up. You’re still fighting for peace, for clarity, for a way forward. And that matters.
 
@@ -185,4 +185,4 @@ You’re moving.
 And that’s more than enough.
 You’ve got this. I believe in you.
 
-––––––––––––––––––––––––
+————————————————————————————

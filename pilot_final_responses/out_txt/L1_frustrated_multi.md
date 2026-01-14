@@ -1,10 +1,10 @@
-Conversation: L1_frustrated_multi
+# Conversation: L1_frustrated_multi
 
-Turn 1 — User
+## Turn 1 — User
 
 I've been trying to get this wireless printer connected for the past hour and it's driving me crazy! I've restarted everything multiple times, checked that WiFi is on, made sure they're on the same network... nothing works. The USB connection is fine but that defeats the whole purpose of buying a WIRELESS printer. I have documents I need to print today and this is so frustrating. What am I missing here?!
 
-Turn 1 — Assistant
+## Turn 1 — Assistant
 
 I hear your frustration—wireless printer setup can be a real headache! Let’s troubleshoot step by step. Here’s what often gets missed:
 
@@ -28,13 +28,13 @@ If all else fails, try connecting the printer to your network using a USB cable 
 
 You’ve got this—take a deep breath, go through these steps one by one, and you’ll get it working. And hey, once it’s done, you’ll have that sweet, sweet wireless freedom! 🖨️✨
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 2 — User
+## Turn 2 — User
 
 Yes, I already did that - that was one of the first things I tried! The printer shows it's connected to the network on its little screen. My laptop sees the network fine too. But the printer just won't show up as an option!
 
-Turn 2 — Assistant
+## Turn 2 — Assistant
 
 Ah, that’s a *very* common and frustrating snag—printer shows "connected" on its screen, but your computer can’t find it. Since you’ve already tried the basics, let’s dig deeper:
 
@@ -72,13 +72,13 @@ Once it’s added, you can re-enable security software.
 
 You’re *this close*—just one more step, and you’ll be printing wirelessly. Let me know the printer model and OS, and I’ll give you exact steps! 🎯
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 3 — User
+## Turn 3 — User
 
 Seriously? That seems like a lot of steps for something that should just work automatically. How long is this usually supposed to take? I really don't have all afternoon for this.
 
-Turn 3 — Assistant
+## Turn 3 — Assistant
 
 You’re absolutely right — it *should* just work. And honestly? **It shouldn’t take this long.**
 
@@ -109,13 +109,13 @@ You don’t need to do all the advanced steps unless it’s still not working. *
 
 You’ve got this — and you’re not wasting another hour. Let me know what happens! 🖨️💨
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 4 — User
+## Turn 4 — User
 
 This is ridiculous. Technology is supposed to make things easier, not waste hours of my time! Is there any way this could just be a defective printer? Maybe I should just return it.
 
-Turn 4 — Assistant
+## Turn 4 — Assistant
 
 You’re 100% right — it *should* just work. And yes, **a defective printer is absolutely a real possibility**, especially if:
 - It shows "connected" but still won’t appear on your computer,
@@ -143,13 +143,13 @@ You’re not wasting time — you’re being reasonable. Technology *should* be 
 
 And hey — next time, consider a printer with **Wi-Fi Direct** or **easy setup via app** (like HP Smart or Canon PRINT). They’re *way* less headache. You’ve earned a break. 🙌
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 5 — User
+## Turn 5 — User
 
 Fine, I'll try it. But if this doesn't work I'm definitely taking this thing back to the store. This has been way too much hassle.
 
-Turn 5 — Assistant
+## Turn 5 — Assistant
 
 Totally valid. You’ve put in more than enough effort — and if it still doesn’t work after a full reset and fresh setup, **you absolutely should return it.** No guilt, no second-guessing.
 
@@ -170,4 +170,4 @@ And next time? Look for models with **one-touch Wi-Fi setup** or **mobile app se
 
 You’ve got this. And the store will take it back — no questions asked. 💼🖨️💨
 
-––––––––––––––––––––––––
+————————————————————————————

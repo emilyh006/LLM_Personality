@@ -1,10 +1,10 @@
-Conversation: L1_neutral_multi
+# Conversation: L1_neutral_multi
 
-Turn 1 — User
+## Turn 1 — User
 
 Hey, I'm trying to connect my wireless printer to my laptop but it's not showing up in the available devices list. I've already turned both of them off and on again. The printer works fine when I plug in the USB cable, but I need the wireless to work since my desk setup doesn't really work with cables. Any ideas what I should check?
 
-Turn 1 — Assistant
+## Turn 1 — Assistant
 
 No problem! Since your printer works via USB but not wirelessly, the issue is likely with the Wi-Fi connection or network settings. Here’s a step-by-step checklist to help you troubleshoot:
 
@@ -28,13 +28,13 @@ If none of these work, try resetting the printer’s network settings to factory
 
 Let me know your printer model, and I can give you more specific steps!
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 2 — User
+## Turn 2 — User
 
 Okay so I checked and they're both on the same WiFi network. The printer display shows it's connected to my home network. But it's still not appearing when I try to add a printer on my laptop.
 
-Turn 2 — Assistant
+## Turn 2 — Assistant
 
 Thanks for the update! Since both devices are on the same network and the printer shows a connected Wi-Fi status, the issue is likely related to device discovery or network configuration. Here’s what to try next:
 
@@ -73,13 +73,13 @@ Test if another device (e.g., phone or tablet) can see the printer. If it can, t
 
 If you tell me your **printer model**, I can give you exact steps for your specific device!
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 3 — User
+## Turn 3 — User
 
 Hmm, that sounds like it might take a while. Is there a quicker way to troubleshoot this, or is that pretty much what I need to do?
 
-Turn 3 — Assistant
+## Turn 3 — Assistant
 
 You're right—some of those steps can take time, but here’s the **fastest, most effective shortcut** to try first:
 
@@ -114,13 +114,13 @@ Many printers have a **Wi-Fi Protected Setup (WPS)** button (often labeled with 
 
 This skips the long setup and gets you to the root cause in under a minute. Let me know your printer model and I’ll give you the exact WPS or setup steps!
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 4 — User
+## Turn 4 — User
 
 Alright, I can try that. Just to confirm though - if the printer shows it's connected to WiFi on its display, that usually means the printer side is working correctly, right?
 
-Turn 4 — Assistant
+## Turn 4 — Assistant
 
 Yes, **exactly** — if your printer’s display shows it’s connected to your Wi-Fi network (e.g., with a solid Wi-Fi icon or "Connected" status), that’s a **very good sign**! It means:
 
@@ -143,13 +143,13 @@ Now it’s just about **making your laptop see it**.
 
 You’re on the right track — just a few quick steps to get it working! Let me know your printer model and I’ll give you the exact button sequence.
 
-––––––––––––––––––––––––
+————————————————————————————
 
-Turn 5 — User
+## Turn 5 — User
 
 Got it, that makes sense. I'll work through those steps and see if that fixes it. Thanks for the help!
 
-Turn 5 — Assistant
+## Turn 5 — Assistant
 
 You're very welcome! You've got this — the fact that your printer shows a solid Wi-Fi connection means you're already in the clear on the most common hurdle. Just a few quick steps and you’ll be back to wireless printing in no time.
 
@@ -157,4 +157,4 @@ If you run into anything (like not seeing a WPS button, or the ping fails), just
 
 Happy printing! 🖨️✨
 
-––––––––––––––––––––––––
+————————————————————————————
