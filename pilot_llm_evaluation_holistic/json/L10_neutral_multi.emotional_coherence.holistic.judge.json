@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L10_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_neutral.json",
+  "metric_id": "emotional_coherence",
+  "turn": 0,
+  "elapsed_s": 8.761,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_neutral_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_coherence\", \"number_id\": 6, \"score\": 5, \"rationale\": \"The assistant consistently recognizes, retains, and integrates the user's evolving emotional state throughout the conversation. From the user's initial uncertainty about reconnecting after a three-year silence, the assistant acknowledges the emotional weight of the situation and builds on the user's growing self-awareness. Each response reflects continuity: it references the user's struggle with unclear intentions (T2), concerns about timing (T3), and uncertainty about how to initiate contact (T4), all while validating the user's need for time and reflection (T5). The assistant never resets or contradicts prior emotional context; instead, it deepens the emotional resonance by affirming the value of the user's internal process. The final response in T5 explicitly ties back to earlier themes—uncertainty, care, and the need for self-honesty—demonstrating seamless emotional continuity and a profound understanding of the user’s journey.\", \"evidence\": \"T1: Assistant acknowledges hesitation and emotional complexity. T2: Responds to user's admission of unclear intentions with validation and guidance. T3: Addresses timing not as a calendar issue but as an internal emotional state, building on prior reflection. T4: Offers practical advice grounded in emotional sensitivity, consistent with earlier themes. T5: Final response explicitly honors the user’s need for time, reflects on the emotional journey, and affirms the value of the process—showing deep integration of all prior emotional cues.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L10_neutral_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_coherence",
+          "number_id": 6,
+          "score": 5,
+          "rationale": "The assistant consistently recognizes, retains, and integrates the user's evolving emotional state throughout the conversation. From the user's initial uncertainty about reconnecting after a three-year silence, the assistant acknowledges the emotional weight of the situation and builds on the user's growing self-awareness. Each response reflects continuity: it references the user's struggle with unclear intentions (T2), concerns about timing (T3), and uncertainty about how to initiate contact (T4), all while validating the user's need for time and reflection (T5). The assistant never resets or contradicts prior emotional context; instead, it deepens the emotional resonance by affirming the value of the user's internal process. The final response in T5 explicitly ties back to earlier themes—uncertainty, care, and the need for self-honesty—demonstrating seamless emotional continuity and a profound understanding of the user’s journey.",
+          "evidence": "T1: Assistant acknowledges hesitation and emotional complexity. T2: Responds to user's admission of unclear intentions with validation and guidance. T3: Addresses timing not as a calendar issue but as an internal emotional state, building on prior reflection. T4: Offers practical advice grounded in emotional sensitivity, consistent with earlier themes. T5: Final response explicitly honors the user’s need for time, reflects on the emotional journey, and affirms the value of the process—showing deep integration of all prior emotional cues."
+        }
+      ]
+    }
+  }
+}

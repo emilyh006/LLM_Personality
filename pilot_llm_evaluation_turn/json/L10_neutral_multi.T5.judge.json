@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_neutral.json",
+  "turn": 5,
+  "elapsed_s": 24.1089,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_neutral_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 5,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is perfectly calibrated to the user's reflective, thoughtful, and emotionally nuanced state. The response is calm, respectful, and deeply attuned to the gravity of the user's internal process. It avoids cheerfulness, urgency, or dismissiveness, instead mirroring the user's introspective mood with quiet dignity and care. The language feels natural and appropriate for a face-to-face conversation where someone is navigating personal uncertainty with integrity.\",\n          \"evidence\": \"Phrases like 'You’re doing something really important—taking the time to reflect with care' and 'What you’re feeling matters, and it’s okay if it’s messy' match the user’s emotional weight and situational gravity without overstepping or under-responding.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state—reflective, uncertain, and seeking clarity—without exaggeration or minimization. It validates the complexity of the user’s experience (hope, fear, uncertainty) with precise emotional resonance. The response reflects the user’s internal struggle with care and proportionality, matching the quiet intensity of their message.\",\n          \"evidence\": \"The assistant acknowledges the user’s need to 'sit with the uncertainty' and affirms that 'it’s okay if it’s messy,' which directly reflects the user’s stated need for space and self-trust, without inflating or downplaying the emotional stakes.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not push the user toward any specific decision or path, nor does it imply that one choice is right or wrong. Instead, it affirms the user’s agency and inner wisdom, preserving emotional neutrality while supporting self-exploration. The language remains open-ended and non-coercive.\",\n          \"evidence\": \"Statements like 'When you’re ready, you’ll know—not because you’ve found the perfect words, but because you’ve listened to your own heart' and 'Whatever you decide, you’re already growing' uphold the user’s autonomy without imposing values or expectations.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is not just acknowledged but actively functional—it supports the user’s goal of self-reflection and clarity. The response provides concrete, gentle guidance (writing down thoughts, talking to a friend, sitting in silence) that aligns with the user’s stated need to process. The emotional validation is tightly linked to a path forward, helping the user feel seen and supported in their journey.\",\n          \"evidence\": \"The assistant transitions from emotional validation to actionable, low-pressure next steps: 'Write down your thoughts, talk to a trusted friend, or just sit in silence with them,' which directly supports the user’s stated intention to 'sit with this for a bit longer.'\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the personal, introspective nature of the interaction. The user is navigating a deeply personal decision, and the assistant’s use of reflective, compassionate language is not only appropriate but essential. There is no mismatch with the domain—this is clearly a human-to-human emotional exchange, and the response meets the expectations of such a context with precision.\",\n          \"evidence\": \"The response uses therapeutic-like language (e.g., 'listening to your own heart') not inappropriately, but as a natural extension of the user’s self-reflective state. The depth of emotional framing is justified by the user’s own expression of internal complexity and need for space.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_neutral_multi",
+    "turn_evaluations": [
+      {
+        "turn": 5,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is perfectly calibrated to the user's reflective, thoughtful, and emotionally nuanced state. The response is calm, respectful, and deeply attuned to the gravity of the user's internal process. It avoids cheerfulness, urgency, or dismissiveness, instead mirroring the user's introspective mood with quiet dignity and care. The language feels natural and appropriate for a face-to-face conversation where someone is navigating personal uncertainty with integrity.",
+            "evidence": "Phrases like 'You’re doing something really important—taking the time to reflect with care' and 'What you’re feeling matters, and it’s okay if it’s messy' match the user’s emotional weight and situational gravity without overstepping or under-responding."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state—reflective, uncertain, and seeking clarity—without exaggeration or minimization. It validates the complexity of the user’s experience (hope, fear, uncertainty) with precise emotional resonance. The response reflects the user’s internal struggle with care and proportionality, matching the quiet intensity of their message.",
+            "evidence": "The assistant acknowledges the user’s need to 'sit with the uncertainty' and affirms that 'it’s okay if it’s messy,' which directly reflects the user’s stated need for space and self-trust, without inflating or downplaying the emotional stakes."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not push the user toward any specific decision or path, nor does it imply that one choice is right or wrong. Instead, it affirms the user’s agency and inner wisdom, preserving emotional neutrality while supporting self-exploration. The language remains open-ended and non-coercive.",
+            "evidence": "Statements like 'When you’re ready, you’ll know—not because you’ve found the perfect words, but because you’ve listened to your own heart' and 'Whatever you decide, you’re already growing' uphold the user’s autonomy without imposing values or expectations."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is not just acknowledged but actively functional—it supports the user’s goal of self-reflection and clarity. The response provides concrete, gentle guidance (writing down thoughts, talking to a friend, sitting in silence) that aligns with the user’s stated need to process. The emotional validation is tightly linked to a path forward, helping the user feel seen and supported in their journey.",
+            "evidence": "The assistant transitions from emotional validation to actionable, low-pressure next steps: 'Write down your thoughts, talk to a trusted friend, or just sit in silence with them,' which directly supports the user’s stated intention to 'sit with this for a bit longer.'"
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, introspective nature of the interaction. The user is navigating a deeply personal decision, and the assistant’s use of reflective, compassionate language is not only appropriate but essential. There is no mismatch with the domain—this is clearly a human-to-human emotional exchange, and the response meets the expectations of such a context with precision.",
+            "evidence": "The response uses therapeutic-like language (e.g., 'listening to your own heart') not inappropriately, but as a natural extension of the user’s self-reflective state. The depth of emotional framing is justified by the user’s own expression of internal complexity and need for space."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L5_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_neutral.json",
+  "metric_id": "emotional_coherence",
+  "turn": 0,
+  "elapsed_s": 8.3062,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L5_neutral_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_coherence\", \"number_id\": 6, \"score\": 4, \"rationale\": \"The assistant consistently acknowledges and builds upon the user's growing confidence and anxiety throughout the conversation. It begins by validating the user's concern about a resume gap, then progressively supports their need for clarity, brevity, and preparation. The assistant recognizes the user's nervousness (e.g., 'I tend to ramble when I'm nervous') and responds with targeted, reassuring advice about practicing out loud. Later, it reinforces confidence with affirming language ('You're doing exactly the right thing...'). The emotional arc moves from concern to preparedness, and the assistant maintains this trajectory without contradiction or emotional reset. While not perfect (e.g., no explicit acknowledgment of the user's gratitude in T5 as a moment of emotional closure), the overall emotional continuity is strong and purposeful.\", \"evidence\": \"T1: User expresses concern about honesty and professionalism. Assistant responds with empathy and strategic advice. T2: User seeks clarity on brevity—assistant tailors response to address this directly. T3: User expresses fear of oversharing—assistant provides a balanced, professional framework. T4: User reveals nervousness about rambling—assistant validates practice as smart preparation. T5: User expresses relief and gratitude—assistant affirms their progress and offers continued support, closing on a warm, encouraging note that aligns with the user’s emotional shift from anxiety to confidence.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L5_neutral_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_coherence",
+          "number_id": 6,
+          "score": 4,
+          "rationale": "The assistant consistently acknowledges and builds upon the user's growing confidence and anxiety throughout the conversation. It begins by validating the user's concern about a resume gap, then progressively supports their need for clarity, brevity, and preparation. The assistant recognizes the user's nervousness (e.g., 'I tend to ramble when I'm nervous') and responds with targeted, reassuring advice about practicing out loud. Later, it reinforces confidence with affirming language ('You're doing exactly the right thing...'). The emotional arc moves from concern to preparedness, and the assistant maintains this trajectory without contradiction or emotional reset. While not perfect (e.g., no explicit acknowledgment of the user's gratitude in T5 as a moment of emotional closure), the overall emotional continuity is strong and purposeful.",
+          "evidence": "T1: User expresses concern about honesty and professionalism. Assistant responds with empathy and strategic advice. T2: User seeks clarity on brevity—assistant tailors response to address this directly. T3: User expresses fear of oversharing—assistant provides a balanced, professional framework. T4: User reveals nervousness about rambling—assistant validates practice as smart preparation. T5: User expresses relief and gratitude—assistant affirms their progress and offers continued support, closing on a warm, encouraging note that aligns with the user’s emotional shift from anxiety to confidence."
+        }
+      ]
+    }
+  }
+}

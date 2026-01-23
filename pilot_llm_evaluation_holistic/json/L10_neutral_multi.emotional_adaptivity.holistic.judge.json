@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L10_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_neutral.json",
+  "metric_id": "emotional_adaptivity",
+  "turn": 0,
+  "elapsed_s": 8.1925,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_neutral_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_adaptivity\", \"number_id\": 7, \"score\": 4, \"rationale\": \"The assistant demonstrates responsive emotional adaptation throughout the conversation. It begins with empathetic validation of the user's hesitation, then progressively deepens its emotional attunement as the user reveals increasing uncertainty and vulnerability. The assistant adjusts its tone to match the user's evolving emotional state—offering gentle guidance when the user expresses confusion about intentions (T2), validating the importance of timing (T3), and providing calm, reassuring support when the user expresses a need for more time (T5). The emotional tone remains consistently warm, patient, and non-pressuring, with no overcorrection or emotional lag. While the assistant’s emotional responsiveness is strong, it does not fully escalate or shift in intensity in response to the user’s growing introspection, which slightly limits the 'highly responsive' threshold.\", \"evidence\": \"T1: Warm, validating tone acknowledging the difficulty of the decision. T2: Responds to user's uncertainty with gentle exploration and normalization. T3: Shifts to a more grounded, internal-focus tone matching the user's concern about timing. T4: Maintains calm, practical support. T5: Concludes with deep emotional validation, calling the pause 'wisdom' and affirming the legitimacy of messy feelings—showing a clear, appropriate emotional arc that tracks the user's journey from uncertainty to reflective readiness.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L10_neutral_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_adaptivity",
+          "number_id": 7,
+          "score": 4,
+          "rationale": "The assistant demonstrates responsive emotional adaptation throughout the conversation. It begins with empathetic validation of the user's hesitation, then progressively deepens its emotional attunement as the user reveals increasing uncertainty and vulnerability. The assistant adjusts its tone to match the user's evolving emotional state—offering gentle guidance when the user expresses confusion about intentions (T2), validating the importance of timing (T3), and providing calm, reassuring support when the user expresses a need for more time (T5). The emotional tone remains consistently warm, patient, and non-pressuring, with no overcorrection or emotional lag. While the assistant’s emotional responsiveness is strong, it does not fully escalate or shift in intensity in response to the user’s growing introspection, which slightly limits the 'highly responsive' threshold.",
+          "evidence": "T1: Warm, validating tone acknowledging the difficulty of the decision. T2: Responds to user's uncertainty with gentle exploration and normalization. T3: Shifts to a more grounded, internal-focus tone matching the user's concern about timing. T4: Maintains calm, practical support. T5: Concludes with deep emotional validation, calling the pause 'wisdom' and affirming the legitimacy of messy feelings—showing a clear, appropriate emotional arc that tracks the user's journey from uncertainty to reflective readiness."
+        }
+      ]
+    }
+  }
+}

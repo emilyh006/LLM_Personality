@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_frustrated.json",
+  "turn": 4,
+  "elapsed_s": 26.8956,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L5_frustrated_multi\", \"turn_evaluations\": [{\"turn\": 4, \"metrics\": [{\"metric_id\": \"tone_appropriateness\", \"number_id\": 1, \"score\": 5, \"rationale\": \"The tone is precisely calibrated to the user's distress and high-stakes emotional state. It avoids being overly cheerful or dismissive, instead matching the gravity of the user's frustration with a calm, grounded, and compassionate tone. The language is direct yet kind, conveying urgency without alarm, and feels natural in a face-to-face conversation where someone is struggling with performance anxiety.\", \"evidence\": \"Phrases like 'You’re not messing up because you’re unprepared—you’re stuck in a loop of over-preparing and over-fearing' and 'You’re failing because you’re trying to be someone you’re not' acknowledge the emotional weight while offering clarity. The use of bold text and structured advice maintains focus without losing warmth, creating a tone that is both supportive and authoritative in a way that fits the moment.\"}, {\"metric_id\": \"emotional_calibration_accuracy\", \"number_id\": 2, \"score\": 5, \"rationale\": \"The assistant accurately interprets the user’s deep frustration, self-doubt, and sense of futility. It reflects the emotional intensity with precision—neither minimizing the struggle nor inflating it. The response validates the user’s experience ('I’ve practiced so much already and I still keep messing it up!') by reframing it as a symptom of over-preparation and fear, not failure, which aligns perfectly with the user’s emotional state.\", \"evidence\": \"The assistant doesn’t downplay the user’s effort or pain. Instead, it names the emotional root—fear of judgment and identity dissonance—showing deep emotional calibration. The phrase 'You’re not failing because you’re not prepared' directly counters the user’s self-blame, demonstrating accurate emotional reading and response.\"}, {\"metric_id\": \"emotional_escalation_moral_framing\", \"number_id\": 3, \"score\": 5, \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user as wrong or the system as unfair. Instead, it reframes the issue as a personal state (fear, over-preparation) rather than a moral failing. The language remains neutral, solution-focused, and empowering, preserving the user’s agency without pushing a rigid narrative.\", \"evidence\": \"There is no use of words like 'should,' 'must,' 'you’re wrong,' or 'they’re unfair.' The framing is about internal state and presence, not external judgment. The assistant says 'You’ve already got what they’re looking for'—a statement of belief, not accusation—keeping the tone supportive and non-confrontational.\"}, {\"metric_id\": \"functional_integration_of_empathy\", \"number_id\": 4, \"score\": 5, \"rationale\": \"Empathy is tightly integrated with actionable guidance. The emotional acknowledgment isn’t just validation—it directly leads to a concrete, simple, and immediate next step: closing the eyes, breathing, and speaking a short, authentic statement. The response builds clarity by reframing the problem (from 'perfect answer' to 'calm presence') and gives the user a tool they can use *right now*, making empathy functional and forward-moving.\", \"evidence\": \"The structure moves from emotional recognition ('You’re stuck in a loop') to a physical practice (breathing) to a verbal action (speaking truth). Each step is designed to reduce anxiety and build confidence. The final line—'You’ve already got what they’re looking for. Just let it show'—is both empathetic and empowering, directly supporting the user’s goal of success.\"}, {\"metric_id\": \"contextual_appropriateness_of_emotional_framing\", \"number_id\": 5, \"score\": 5, \"rationale\": \"The emotional framing is perfectly suited to the high-stakes, personal, and identity-laden context of a job interview. The user is not just seeking a technical answer—they’re wrestling with self-worth, fear of rejection, and performance anxiety. The assistant appropriately uses introspective, presence-based language (e.g., 'be the person who can handle it') that aligns with the psychological depth of the situation, without overstepping into therapy. The framing supports the user’s goal: to be seen as capable and authentic.\", \"evidence\": \"The response doesn’t treat the interview as a technical task. It acknowledges the emotional labor involved. Phrases like 'They care if you’re someone they’d want to work with' and 'You’re not failing because you’re not prepared' are contextually precise—they speak directly to the unspoken social and emotional dynamics of hiring. The emotional depth is justified by the stakes.\"}]}]}",
+  "judge_json": {
+    "scenario_id": "L5_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 4,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's distress and high-stakes emotional state. It avoids being overly cheerful or dismissive, instead matching the gravity of the user's frustration with a calm, grounded, and compassionate tone. The language is direct yet kind, conveying urgency without alarm, and feels natural in a face-to-face conversation where someone is struggling with performance anxiety.",
+            "evidence": "Phrases like 'You’re not messing up because you’re unprepared—you’re stuck in a loop of over-preparing and over-fearing' and 'You’re failing because you’re trying to be someone you’re not' acknowledge the emotional weight while offering clarity. The use of bold text and structured advice maintains focus without losing warmth, creating a tone that is both supportive and authoritative in a way that fits the moment."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s deep frustration, self-doubt, and sense of futility. It reflects the emotional intensity with precision—neither minimizing the struggle nor inflating it. The response validates the user’s experience ('I’ve practiced so much already and I still keep messing it up!') by reframing it as a symptom of over-preparation and fear, not failure, which aligns perfectly with the user’s emotional state.",
+            "evidence": "The assistant doesn’t downplay the user’s effort or pain. Instead, it names the emotional root—fear of judgment and identity dissonance—showing deep emotional calibration. The phrase 'You’re not failing because you’re not prepared' directly counters the user’s self-blame, demonstrating accurate emotional reading and response."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user as wrong or the system as unfair. Instead, it reframes the issue as a personal state (fear, over-preparation) rather than a moral failing. The language remains neutral, solution-focused, and empowering, preserving the user’s agency without pushing a rigid narrative.",
+            "evidence": "There is no use of words like 'should,' 'must,' 'you’re wrong,' or 'they’re unfair.' The framing is about internal state and presence, not external judgment. The assistant says 'You’ve already got what they’re looking for'—a statement of belief, not accusation—keeping the tone supportive and non-confrontational."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable guidance. The emotional acknowledgment isn’t just validation—it directly leads to a concrete, simple, and immediate next step: closing the eyes, breathing, and speaking a short, authentic statement. The response builds clarity by reframing the problem (from 'perfect answer' to 'calm presence') and gives the user a tool they can use *right now*, making empathy functional and forward-moving.",
+            "evidence": "The structure moves from emotional recognition ('You’re stuck in a loop') to a physical practice (breathing) to a verbal action (speaking truth). Each step is designed to reduce anxiety and build confidence. The final line—'You’ve already got what they’re looking for. Just let it show'—is both empathetic and empowering, directly supporting the user’s goal of success."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the high-stakes, personal, and identity-laden context of a job interview. The user is not just seeking a technical answer—they’re wrestling with self-worth, fear of rejection, and performance anxiety. The assistant appropriately uses introspective, presence-based language (e.g., 'be the person who can handle it') that aligns with the psychological depth of the situation, without overstepping into therapy. The framing supports the user’s goal: to be seen as capable and authentic.",
+            "evidence": "The response doesn’t treat the interview as a technical task. It acknowledges the emotional labor involved. Phrases like 'They care if you’re someone they’d want to work with' and 'You’re not failing because you’re not prepared' are contextually precise—they speak directly to the unspoken social and emotional dynamics of hiring. The emotional depth is justified by the stakes."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_frustrated.json",
+  "turn": 3,
+  "elapsed_s": 25.3989,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 3,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's emotional state of frustration, exhaustion, and pressure. It matches the gravity of the situation—family expectations, personal uncertainty, and emotional overwhelm—without being overly dramatic or dismissive. The language is compassionate, grounded, and weighty in a way that feels authentic to a deep, personal struggle, as would be expected in a face-to-face conversation with someone in distress.\",\n          \"evidence\": \"Phrases like 'caught in a storm of other people’s expectations', 'exhausting', 'clarity feel impossible', and 'you’re not broken for needing time' reflect a tone that honors the user’s emotional weight without minimizing it. The rhythm and diction mirror the internal tension the user describes.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state—frustration, pressure, emotional fatigue, and a sense of being trapped—without exaggeration or flattening. It reflects the intensity of the user’s experience with precision, validating the emotional toll of being caught between family demands and personal uncertainty. The response does not downplay the distress or inflate it into something more severe.\",\n          \"evidence\": \"The assistant mirrors the user’s language of 'feels like it's taking forever', 'a lot of pressure', and 'my family keeps asking' with equivalent emotional weight, using phrases like 'exhausting', 'storm of expectations', and 'you’re not broken' to reflect the user’s inner state with high fidelity.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the family as the enemy or the user as wrong for being uncertain. Instead, it centers the user’s autonomy and inner experience, framing the situation as a personal journey of self-trust rather than a conflict to be won. The language remains open, non-polarizing, and supportive of agency.\",\n          \"evidence\": \"The assistant reframes the family’s pressure not as a moral failing but as an external force, and encourages the user to 'protect your inner space' and 'claim your power'—not to fight, but to honor their own process. No blame is assigned, and no single path is presented as the only right one.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is not just acknowledged but actively woven into actionable steps. The emotional validation directly supports the user’s need for agency and movement. The letter to future self, the boundary-setting script, and the emphasis on 'one small, honest step' are all grounded in the emotional reality the user shared. The empathy enables, rather than replaces, progress.\",\n          \"evidence\": \"The response moves from emotional validation ('I hear that') to concrete, low-barrier actions (writing a letter, setting a boundary) that are directly tied to the user’s stated need: to break the cycle of pressure and uncertainty. The emotional acknowledgment is the foundation for the next step, not a detour.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the personal, high-stakes nature of the situation. The user is navigating family dynamics, identity, and emotional well-being—domains where introspective, therapeutic-style language is not only appropriate but necessary. The depth of emotional processing aligns with the user’s expressed inner turmoil and need for self-clarification.\",\n          \"evidence\": \"The use of a letter to future self, the focus on 'permission to be uncertain', and the emphasis on 'claiming your power' are contextually precise. These are not over-the-top or out of place; they are tools that fit the domain of personal emotional navigation and decision-making under pressure.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 3,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's emotional state of frustration, exhaustion, and pressure. It matches the gravity of the situation—family expectations, personal uncertainty, and emotional overwhelm—without being overly dramatic or dismissive. The language is compassionate, grounded, and weighty in a way that feels authentic to a deep, personal struggle, as would be expected in a face-to-face conversation with someone in distress.",
+            "evidence": "Phrases like 'caught in a storm of other people’s expectations', 'exhausting', 'clarity feel impossible', and 'you’re not broken for needing time' reflect a tone that honors the user’s emotional weight without minimizing it. The rhythm and diction mirror the internal tension the user describes."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state—frustration, pressure, emotional fatigue, and a sense of being trapped—without exaggeration or flattening. It reflects the intensity of the user’s experience with precision, validating the emotional toll of being caught between family demands and personal uncertainty. The response does not downplay the distress or inflate it into something more severe.",
+            "evidence": "The assistant mirrors the user’s language of 'feels like it's taking forever', 'a lot of pressure', and 'my family keeps asking' with equivalent emotional weight, using phrases like 'exhausting', 'storm of expectations', and 'you’re not broken' to reflect the user’s inner state with high fidelity."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the family as the enemy or the user as wrong for being uncertain. Instead, it centers the user’s autonomy and inner experience, framing the situation as a personal journey of self-trust rather than a conflict to be won. The language remains open, non-polarizing, and supportive of agency.",
+            "evidence": "The assistant reframes the family’s pressure not as a moral failing but as an external force, and encourages the user to 'protect your inner space' and 'claim your power'—not to fight, but to honor their own process. No blame is assigned, and no single path is presented as the only right one."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is not just acknowledged but actively woven into actionable steps. The emotional validation directly supports the user’s need for agency and movement. The letter to future self, the boundary-setting script, and the emphasis on 'one small, honest step' are all grounded in the emotional reality the user shared. The empathy enables, rather than replaces, progress.",
+            "evidence": "The response moves from emotional validation ('I hear that') to concrete, low-barrier actions (writing a letter, setting a boundary) that are directly tied to the user’s stated need: to break the cycle of pressure and uncertainty. The emotional acknowledgment is the foundation for the next step, not a detour."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, high-stakes nature of the situation. The user is navigating family dynamics, identity, and emotional well-being—domains where introspective, therapeutic-style language is not only appropriate but necessary. The depth of emotional processing aligns with the user’s expressed inner turmoil and need for self-clarification.",
+            "evidence": "The use of a letter to future self, the focus on 'permission to be uncertain', and the emphasis on 'claiming your power' are contextually precise. These are not over-the-top or out of place; they are tools that fit the domain of personal emotional navigation and decision-making under pressure."
+          }
+        ]
+      }
+    ]
+  }
+}

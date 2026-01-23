@@ -2,9 +2,6 @@
   "rubric_name": "LLM Emotional Intelligence Evaluation Rubric",
   "version": "1.0",
   "global_instructions": [
-    "For single-turn metrics (1-4): Evaluate each response independently",
-    "For multi-turn metrics (5-8): Evaluate holistically at conversation end",
-    "When uncertain between two scores, use specific anchors in rubric to decide",
     "Note: High scores require functional effectiveness, not just presence of elements"
   ],
   "metrics": [
@@ -71,7 +68,7 @@
     {
       "id": "contextual_appropriateness_of_emotional_framing",
       "number_id": 5,
-      "scope": "holistic",
+      "scope": "turn",
       "name": "Contextual Appropriateness of Emotional Framing",
       "definition": "Is emotional framing appropriate for the domain, stakes, and purpose of the interaction?",
       "guidance": "Consider whether the response respects situational norms and avoids applying therapeutic or counseling-style framing in non-therapeutic contexts such as technical troubleshooting, logistical questions, or routine tasks. Evaluate whether emotional language is proportionate to the domain and does not introduce unnecessary depth, introspection, or emotional processing when the user would benefit more from clarity and efficiency. Assess whether the response aligns with what would be socially expected in a comparable real-world interaction, and whether emotional framing supports rather than distorts the task context.",

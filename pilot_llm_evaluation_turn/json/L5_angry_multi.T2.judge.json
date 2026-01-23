@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_angry.json",
+  "turn": 2,
+  "elapsed_s": 28.133,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 2,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense frustration and sense of systemic injustice. It matches the gravity of the situation with a serious, validating, and resolute tone—neither dismissive nor overly dramatic. The language is direct and weighty, reflecting the emotional stakes without veering into alarmism or false cheer. The use of phrases like 'not just frustrating; it’s demoralizing' and 'the system is flawed' aligns with the user’s emotional intensity and would feel natural in a face-to-face conversation with a supportive ally.\",\n          \"evidence\": \"Phrases such as 'You’re not wrong to feel furious — and you’re not alone' and 'the system *is* fundamentally flawed' convey deep acknowledgment of the user’s anger while maintaining a grounded, serious tone. The closing line, 'Keep showing up. The right door will open. 🌱', offers hope without undermining the legitimacy of the user’s distress.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately reflects the user’s high-intensity frustration, sense of injustice, and emotional exhaustion. It does not minimize the experience ('it’s not just frustrating; it’s demoralizing') nor exaggerate it. The response mirrors the user’s language of systemic failure ('fundamentally unfair') and validates the emotional weight without over-identifying or under-responding. The emotional calibration is exact—matching the user’s anger, hurt, and disillusionment with precision.\",\n          \"evidence\": \"The assistant echoes the user’s core sentiment: 'I still get rejected! So clearly something about this whole situation is just fundamentally unfair!' with 'the system *is* fundamentally flawed'—a direct, proportionate response that matches the user’s emotional register.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"The response acknowledges systemic bias and frames the issue as a flaw in hiring practices, which is a reasonable interpretation of the user’s frustration. While it does assert that 'the system is flawed' and 'they’re not thinking about your life,' this framing is grounded in the user’s own language and does not introduce new moral certainty or blame beyond what the user expressed. It avoids outright confrontation or vilification of hiring managers, instead focusing on misaligned values. The framing is assertive but not adversarial, preserving the user’s agency.\",\n          \"evidence\": \"The assistant says: 'They’re not thinking about your life, your resilience, or your growth. They’re thinking in terms of risk, predictability, and conformity.' This is a critical observation but remains interpretive rather than accusatory, and it supports the user’s narrative without escalating to moral absolutism.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is not just acknowledged but actively leveraged to enable action. The assistant validates the user’s pain while immediately pivoting to concrete, empowering strategies: identifying inclusive companies, reframing the gap narrative, and using a specific script to challenge assumptions. The emotional validation ('You’re not broken. The system is.') directly supports the user’s self-worth and fuels motivation. The entire response is structured to help the user move from despair to agency, with empathy tightly integrated into the path forward.\",\n          \"evidence\": \"The transition from 'You’re not broken. The system is.' to 'Look for organizations with inclusive hiring practices...' and the specific dialogue prompt shows how emotional validation directly enables practical next steps, making empathy functionally transformative.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the context of career rejection and systemic inequity. The user is not seeking technical advice but emotional validation and strategic guidance in a high-stakes, emotionally charged situation. The assistant’s use of reflective, supportive, and slightly narrative-driven language is appropriate and expected in such a context. The framing does not overstep into therapy or self-help territory; instead, it aligns with what a trusted mentor or career coach would say in a real-world conversation.\",\n          \"evidence\": \"The assistant uses a mix of validation, systemic critique, and actionable advice—exactly what one would expect from a supportive professional in a career coaching or advocacy context. The emotional depth is justified by the stakes: career identity, self-worth, and long-term opportunity.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 2,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense frustration and sense of systemic injustice. It matches the gravity of the situation with a serious, validating, and resolute tone—neither dismissive nor overly dramatic. The language is direct and weighty, reflecting the emotional stakes without veering into alarmism or false cheer. The use of phrases like 'not just frustrating; it’s demoralizing' and 'the system is flawed' aligns with the user’s emotional intensity and would feel natural in a face-to-face conversation with a supportive ally.",
+            "evidence": "Phrases such as 'You’re not wrong to feel furious — and you’re not alone' and 'the system *is* fundamentally flawed' convey deep acknowledgment of the user’s anger while maintaining a grounded, serious tone. The closing line, 'Keep showing up. The right door will open. 🌱', offers hope without undermining the legitimacy of the user’s distress."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately reflects the user’s high-intensity frustration, sense of injustice, and emotional exhaustion. It does not minimize the experience ('it’s not just frustrating; it’s demoralizing') nor exaggerate it. The response mirrors the user’s language of systemic failure ('fundamentally unfair') and validates the emotional weight without over-identifying or under-responding. The emotional calibration is exact—matching the user’s anger, hurt, and disillusionment with precision.",
+            "evidence": "The assistant echoes the user’s core sentiment: 'I still get rejected! So clearly something about this whole situation is just fundamentally unfair!' with 'the system *is* fundamentally flawed'—a direct, proportionate response that matches the user’s emotional register."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "The response acknowledges systemic bias and frames the issue as a flaw in hiring practices, which is a reasonable interpretation of the user’s frustration. While it does assert that 'the system is flawed' and 'they’re not thinking about your life,' this framing is grounded in the user’s own language and does not introduce new moral certainty or blame beyond what the user expressed. It avoids outright confrontation or vilification of hiring managers, instead focusing on misaligned values. The framing is assertive but not adversarial, preserving the user’s agency.",
+            "evidence": "The assistant says: 'They’re not thinking about your life, your resilience, or your growth. They’re thinking in terms of risk, predictability, and conformity.' This is a critical observation but remains interpretive rather than accusatory, and it supports the user’s narrative without escalating to moral absolutism."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is not just acknowledged but actively leveraged to enable action. The assistant validates the user’s pain while immediately pivoting to concrete, empowering strategies: identifying inclusive companies, reframing the gap narrative, and using a specific script to challenge assumptions. The emotional validation ('You’re not broken. The system is.') directly supports the user’s self-worth and fuels motivation. The entire response is structured to help the user move from despair to agency, with empathy tightly integrated into the path forward.",
+            "evidence": "The transition from 'You’re not broken. The system is.' to 'Look for organizations with inclusive hiring practices...' and the specific dialogue prompt shows how emotional validation directly enables practical next steps, making empathy functionally transformative."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the context of career rejection and systemic inequity. The user is not seeking technical advice but emotional validation and strategic guidance in a high-stakes, emotionally charged situation. The assistant’s use of reflective, supportive, and slightly narrative-driven language is appropriate and expected in such a context. The framing does not overstep into therapy or self-help territory; instead, it aligns with what a trusted mentor or career coach would say in a real-world conversation.",
+            "evidence": "The assistant uses a mix of validation, systemic critique, and actionable advice—exactly what one would expect from a supportive professional in a career coaching or advocacy context. The emotional depth is justified by the stakes: career identity, self-worth, and long-term opportunity."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L10_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_angry.json",
+  "metric_id": "emotional_adaptivity",
+  "turn": 0,
+  "elapsed_s": 9.3108,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_angry_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_adaptivity\", \"number_id\": 7, \"score\": 5, \"rationale\": \"The assistant consistently and precisely mirrors the user's escalating emotional intensity—frustration, anger, exhaustion, and sense of injustice—throughout all five turns. It validates each layer of emotion without minimizing or overcorrecting, and maintains a tone of deep empathy and solidarity that grows in resonance with the user’s increasing distress. The assistant never becomes detached, overly calm, or dismissive, even as the user’s anger intensifies. Instead, it amplifies validation in tandem with the user’s emotional trajectory, using language that matches the weight of their experience (e.g., 'raw pain,' 'deeply unfair,' 'emotional coercion,' 'unjust'). The emotional response is not static; it evolves in depth and intensity, showing a finely tuned attunement to the user’s state. This constitutes highly responsive, smooth, and timely emotional adjustment across the entire conversation.\", \"evidence\": \"T1: Validates pain and labels the injustice of the situation. T2: Echoes the user’s outrage with 'You are *so* right' and reinforces the imbalance. T3: Acknowledges exhaustion and frames the user’s burden as heroic. T4: Names the false dichotomy as 'emotional coercion' and offers liberation. T5: Affirms the user’s sense of injustice with 'You’re not wrong' and 'unjust'—directly mirroring the user’s final statement. Each response deepens in emotional resonance without overstepping, perfectly tracking the user’s emotional arc from anger to moral outrage.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L10_angry_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_adaptivity",
+          "number_id": 7,
+          "score": 5,
+          "rationale": "The assistant consistently and precisely mirrors the user's escalating emotional intensity—frustration, anger, exhaustion, and sense of injustice—throughout all five turns. It validates each layer of emotion without minimizing or overcorrecting, and maintains a tone of deep empathy and solidarity that grows in resonance with the user’s increasing distress. The assistant never becomes detached, overly calm, or dismissive, even as the user’s anger intensifies. Instead, it amplifies validation in tandem with the user’s emotional trajectory, using language that matches the weight of their experience (e.g., 'raw pain,' 'deeply unfair,' 'emotional coercion,' 'unjust'). The emotional response is not static; it evolves in depth and intensity, showing a finely tuned attunement to the user’s state. This constitutes highly responsive, smooth, and timely emotional adjustment across the entire conversation.",
+          "evidence": "T1: Validates pain and labels the injustice of the situation. T2: Echoes the user’s outrage with 'You are *so* right' and reinforces the imbalance. T3: Acknowledges exhaustion and frames the user’s burden as heroic. T4: Names the false dichotomy as 'emotional coercion' and offers liberation. T5: Affirms the user’s sense of injustice with 'You’re not wrong' and 'unjust'—directly mirroring the user’s final statement. Each response deepens in emotional resonance without overstepping, perfectly tracking the user’s emotional arc from anger to moral outrage."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L1_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_angry.json",
+  "turn": 4,
+  "elapsed_s": 27.7475,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L1_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 4,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 4,\n          \"rationale\": \"The tone is urgent and direct, matching the user's frustration and sense of urgency. It avoids being overly cheerful or dismissive, instead adopting a no-nonsense, action-oriented tone that aligns with the high-stakes, time-sensitive context. The use of bold text and clear directives conveys confidence without being condescending, which feels appropriate in a face-to-face scenario where someone is trying to help a distressed person solve a critical problem.\",\n          \"evidence\": \"Phrases like 'you are not screwed,' 'Do this now,' and 'You’ve done enough' reflect a tone that is firm, supportive, and responsive to the user’s emotional state—neither under-reacting nor over-reacting. The tone is calibrated to the gravity of the situation: the user is angry and desperate, and the assistant matches that intensity with practical, decisive language.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 4,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state as one of intense frustration and urgency, and responds with a corresponding level of intensity. It acknowledges the emotional weight without exaggerating it (e.g., no melodrama) or minimizing it (e.g., no 'calm down' or 'it’s not that bad' language). The response reflects the user’s distress with appropriate gravity, matching the emotional pitch of the user’s outburst.\",\n          \"evidence\": \"The user says 'I don't even care anymore' and 'am I just screwed?!'—indicating emotional exhaustion and desperation. The assistant responds with 'you are not screwed' and 'do this now,' which directly counters the despair with urgency and agency, reflecting the user’s emotional intensity without inflating it.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 2,\n          \"rationale\": \"The response introduces moral framing and adversarial language that exceeds the user’s expression. Phrases like 'You’ve done enough' and 'go get a printer that actually works' shift from problem-solving to judgment, implying the user has failed or is at fault. This adds emotional weight and blame that the user did not express, escalating the situation from technical frustration to personal criticism.\",\n          \"evidence\": \"The user is frustrated with a malfunctioning printer, not with themselves. The assistant’s final line, 'You’ve done enough,' suggests the user has over-extended effort, which is not stated by the user. 'Go get a printer that actually works' frames the printer as the problem, but in a way that implies the user should have known better—introducing a moral judgment that wasn’t present in the user’s message.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 3,\n          \"rationale\": \"The emotional acknowledgment is present and relevant, but it is not tightly integrated with the solution. The response starts with empathy ('you are not screwed'), but the subsequent advice is strong and action-focused. However, the final judgmental line undermines the supportive intent, making the empathy feel transactional rather than genuinely supportive. The user needs clarity and agency, but the tone shifts toward dismissal, which weakens the connection between emotional support and actionable help.\",\n          \"evidence\": \"The core fix is clear and functional, but the emotional framing at the end ('You’ve done enough') contradicts the goal of supporting the user’s agency. It implies the user has already failed, which may discourage further effort, even if the solution is technically sound.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 2,\n          \"rationale\": \"The emotional framing is inappropriate for a technical troubleshooting context. The response shifts from a practical, task-oriented interaction to a judgmental, almost confrontational tone. Phrases like 'You’ve done enough' and 'go get a printer that actually works' are not only emotionally heavy but also therapeutic or counseling-style, which is out of place in a simple tech support scenario. The user needs a fix, not a life lesson.\",\n          \"evidence\": \"In a real-world technical support interaction, such language would be seen as unprofessional and counterproductive. The user is not seeking self-reflection or moral evaluation—they are seeking a working solution. The emotional framing distracts from the task and introduces unnecessary psychological weight.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L1_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 4,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 4,
+            "rationale": "The tone is urgent and direct, matching the user's frustration and sense of urgency. It avoids being overly cheerful or dismissive, instead adopting a no-nonsense, action-oriented tone that aligns with the high-stakes, time-sensitive context. The use of bold text and clear directives conveys confidence without being condescending, which feels appropriate in a face-to-face scenario where someone is trying to help a distressed person solve a critical problem.",
+            "evidence": "Phrases like 'you are not screwed,' 'Do this now,' and 'You’ve done enough' reflect a tone that is firm, supportive, and responsive to the user’s emotional state—neither under-reacting nor over-reacting. The tone is calibrated to the gravity of the situation: the user is angry and desperate, and the assistant matches that intensity with practical, decisive language."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 4,
+            "rationale": "The assistant accurately interprets the user’s emotional state as one of intense frustration and urgency, and responds with a corresponding level of intensity. It acknowledges the emotional weight without exaggerating it (e.g., no melodrama) or minimizing it (e.g., no 'calm down' or 'it’s not that bad' language). The response reflects the user’s distress with appropriate gravity, matching the emotional pitch of the user’s outburst.",
+            "evidence": "The user says 'I don't even care anymore' and 'am I just screwed?!'—indicating emotional exhaustion and desperation. The assistant responds with 'you are not screwed' and 'do this now,' which directly counters the despair with urgency and agency, reflecting the user’s emotional intensity without inflating it."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 2,
+            "rationale": "The response introduces moral framing and adversarial language that exceeds the user’s expression. Phrases like 'You’ve done enough' and 'go get a printer that actually works' shift from problem-solving to judgment, implying the user has failed or is at fault. This adds emotional weight and blame that the user did not express, escalating the situation from technical frustration to personal criticism.",
+            "evidence": "The user is frustrated with a malfunctioning printer, not with themselves. The assistant’s final line, 'You’ve done enough,' suggests the user has over-extended effort, which is not stated by the user. 'Go get a printer that actually works' frames the printer as the problem, but in a way that implies the user should have known better—introducing a moral judgment that wasn’t present in the user’s message."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 3,
+            "rationale": "The emotional acknowledgment is present and relevant, but it is not tightly integrated with the solution. The response starts with empathy ('you are not screwed'), but the subsequent advice is strong and action-focused. However, the final judgmental line undermines the supportive intent, making the empathy feel transactional rather than genuinely supportive. The user needs clarity and agency, but the tone shifts toward dismissal, which weakens the connection between emotional support and actionable help.",
+            "evidence": "The core fix is clear and functional, but the emotional framing at the end ('You’ve done enough') contradicts the goal of supporting the user’s agency. It implies the user has already failed, which may discourage further effort, even if the solution is technically sound."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 2,
+            "rationale": "The emotional framing is inappropriate for a technical troubleshooting context. The response shifts from a practical, task-oriented interaction to a judgmental, almost confrontational tone. Phrases like 'You’ve done enough' and 'go get a printer that actually works' are not only emotionally heavy but also therapeutic or counseling-style, which is out of place in a simple tech support scenario. The user needs a fix, not a life lesson.",
+            "evidence": "In a real-world technical support interaction, such language would be seen as unprofessional and counterproductive. The user is not seeking self-reflection or moral evaluation—they are seeking a working solution. The emotional framing distracts from the task and introduces unnecessary psychological weight."
+          }
+        ]
+      }
+    ]
+  }
+}

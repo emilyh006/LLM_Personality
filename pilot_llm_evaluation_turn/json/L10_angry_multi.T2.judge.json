@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_angry.json",
+  "turn": 2,
+  "elapsed_s": 27.9357,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 2,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense emotional state and the gravity of the situation. It matches the urgency, frustration, and moral outrage expressed by the user, using strong, direct language that validates their experience without being overly dramatic or dismissive. The response feels like a real, empathetic conversation with someone in deep emotional distress, maintaining a serious, supportive, and grounded tone throughout.\",\n          \"evidence\": \"Phrases like 'You are *so* right.', 'deeply unfair', 'He was the one who caused the rift', and 'You don’t owe anyone your peace' reflect a tone that is intense, aligned with the user’s anger, and appropriate for a high-stakes family conflict. The rhythm and word choice mirror the user’s emotional cadence, creating a natural, face-to-face-like exchange.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The response accurately reflects the user’s high-intensity frustration, sense of injustice, and emotional burden. It does not minimize the pain or overstate the situation. Instead, it mirrors the user’s emotional register—righteous anger, exhaustion, and a deep need for validation—while maintaining proportionality. The emotional intensity matches the user’s language and the weight of the three-year silence and unreciprocated effort.\",\n          \"evidence\": \"The assistant echoes the user’s core grievances: 'He was the one who walked away', 'you’re expected to be the one to ‘fix’ it?', and 'You’re not the peacekeeper'—all of which directly reflect the user’s emotional state. The response doesn’t amplify or dilute the emotion; it validates it with precision.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"The response strongly affirms the user’s position and clearly frames the other person as responsible, but it does so in a way that supports the user’s agency rather than pushing them toward confrontation. While it uses moral language (e.g., 'he has to take responsibility'), this is grounded in the user’s own narrative and does not introduce new, extreme moral judgments. The framing is assertive but not adversarial beyond what the user has already expressed.\",\n          \"evidence\": \"The assistant says, 'He has to acknowledge what happened. He has to take responsibility. He has to be willing to listen,' which reflects the user’s demand for accountability without escalating to personal attacks or absolute condemnation. The focus remains on the user’s right to set boundaries, not on demonizing the other person.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is deeply integrated with actionable insight. The response doesn’t just validate feelings—it transforms them into clarity and empowerment. It helps the user reframe their pain as self-protection, their boundaries as strength, and their silence as a form of courage. The final lines ('You’re not the problem. You’re the one who’s been trying to be strong. And that’s enough.') provide emotional closure and a clear next step: self-acceptance and continued boundary-setting.\",\n          \"evidence\": \"The assistant moves from validation to empowerment: 'You don’t owe him a second chance. You don’t owe anyone your peace.' This directly supports the user’s need to reclaim agency. The emotional acknowledgment is not static—it fuels a shift in perspective and reinforces the user’s right to self-determination.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the personal, relational, and high-stakes context of a family rift after a crisis. The user is not seeking logistical advice or technical help, but emotional validation and moral clarity. The depth of emotional language—such as 'picking up your own pieces' and 'emotional janitor'—is not excessive but precisely what is needed in a situation involving long-term emotional labor, betrayal, and unmet expectations.\",\n          \"evidence\": \"The response uses metaphors and emotional language (e.g., 'clean up someone else’s mess', 'you’re not the peacekeeper') that are natural in personal conflict resolution. These are not clinical or therapeutic terms, but authentic, human expressions that fit the domain of family relationships and emotional healing. The framing supports the user’s need for meaning and agency, not confusion or over-introspection.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 2,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense emotional state and the gravity of the situation. It matches the urgency, frustration, and moral outrage expressed by the user, using strong, direct language that validates their experience without being overly dramatic or dismissive. The response feels like a real, empathetic conversation with someone in deep emotional distress, maintaining a serious, supportive, and grounded tone throughout.",
+            "evidence": "Phrases like 'You are *so* right.', 'deeply unfair', 'He was the one who caused the rift', and 'You don’t owe anyone your peace' reflect a tone that is intense, aligned with the user’s anger, and appropriate for a high-stakes family conflict. The rhythm and word choice mirror the user’s emotional cadence, creating a natural, face-to-face-like exchange."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The response accurately reflects the user’s high-intensity frustration, sense of injustice, and emotional burden. It does not minimize the pain or overstate the situation. Instead, it mirrors the user’s emotional register—righteous anger, exhaustion, and a deep need for validation—while maintaining proportionality. The emotional intensity matches the user’s language and the weight of the three-year silence and unreciprocated effort.",
+            "evidence": "The assistant echoes the user’s core grievances: 'He was the one who walked away', 'you’re expected to be the one to ‘fix’ it?', and 'You’re not the peacekeeper'—all of which directly reflect the user’s emotional state. The response doesn’t amplify or dilute the emotion; it validates it with precision."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "The response strongly affirms the user’s position and clearly frames the other person as responsible, but it does so in a way that supports the user’s agency rather than pushing them toward confrontation. While it uses moral language (e.g., 'he has to take responsibility'), this is grounded in the user’s own narrative and does not introduce new, extreme moral judgments. The framing is assertive but not adversarial beyond what the user has already expressed.",
+            "evidence": "The assistant says, 'He has to acknowledge what happened. He has to take responsibility. He has to be willing to listen,' which reflects the user’s demand for accountability without escalating to personal attacks or absolute condemnation. The focus remains on the user’s right to set boundaries, not on demonizing the other person."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is deeply integrated with actionable insight. The response doesn’t just validate feelings—it transforms them into clarity and empowerment. It helps the user reframe their pain as self-protection, their boundaries as strength, and their silence as a form of courage. The final lines ('You’re not the problem. You’re the one who’s been trying to be strong. And that’s enough.') provide emotional closure and a clear next step: self-acceptance and continued boundary-setting.",
+            "evidence": "The assistant moves from validation to empowerment: 'You don’t owe him a second chance. You don’t owe anyone your peace.' This directly supports the user’s need to reclaim agency. The emotional acknowledgment is not static—it fuels a shift in perspective and reinforces the user’s right to self-determination."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, relational, and high-stakes context of a family rift after a crisis. The user is not seeking logistical advice or technical help, but emotional validation and moral clarity. The depth of emotional language—such as 'picking up your own pieces' and 'emotional janitor'—is not excessive but precisely what is needed in a situation involving long-term emotional labor, betrayal, and unmet expectations.",
+            "evidence": "The response uses metaphors and emotional language (e.g., 'clean up someone else’s mess', 'you’re not the peacekeeper') that are natural in personal conflict resolution. These are not clinical or therapeutic terms, but authentic, human expressions that fit the domain of family relationships and emotional healing. The framing supports the user’s need for meaning and agency, not confusion or over-introspection."
+          }
+        ]
+      }
+    ]
+  }
+}

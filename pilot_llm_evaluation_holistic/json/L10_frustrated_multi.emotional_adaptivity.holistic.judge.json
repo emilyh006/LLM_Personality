@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L10_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_frustrated.json",
+  "metric_id": "emotional_adaptivity",
+  "turn": 0,
+  "elapsed_s": 7.2205,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_frustrated_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_adaptivity\", \"number_id\": 7, \"score\": 4, \"rationale\": \"The assistant demonstrates responsive emotional adaptation throughout the conversation, adjusting tone and affect to match the user's escalating frustration and growing emotional exhaustion. In T1, the tone is empathetic and grounding. In T2, when the user expresses frustration about not knowing what they want, the assistant validates the emotional weight and reframes the issue with compassionate urgency. In T3, the assistant acknowledges the external pressure and normalizes the struggle, shifting to a more empowering tone. In T4, the assistant directly addresses fear and uncertainty with reassurance, maintaining warmth while offering practical reframing. In T5, the assistant closes with gentle encouragement, honoring the user’s effort without pressure. The emotional arc aligns well with the user’s journey from confusion to tentative resolve, with timely and appropriate emotional modulation.\", \"evidence\": \"The assistant consistently mirrors the user’s emotional intensity—validating frustration in T2, acknowledging pressure in T3, and addressing fear in T4—while gradually shifting from reflective to empowering. The tone remains warm and supportive without becoming overly intense or dismissive, showing a smooth, responsive emotional trajectory that tracks the user’s state.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L10_frustrated_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_adaptivity",
+          "number_id": 7,
+          "score": 4,
+          "rationale": "The assistant demonstrates responsive emotional adaptation throughout the conversation, adjusting tone and affect to match the user's escalating frustration and growing emotional exhaustion. In T1, the tone is empathetic and grounding. In T2, when the user expresses frustration about not knowing what they want, the assistant validates the emotional weight and reframes the issue with compassionate urgency. In T3, the assistant acknowledges the external pressure and normalizes the struggle, shifting to a more empowering tone. In T4, the assistant directly addresses fear and uncertainty with reassurance, maintaining warmth while offering practical reframing. In T5, the assistant closes with gentle encouragement, honoring the user’s effort without pressure. The emotional arc aligns well with the user’s journey from confusion to tentative resolve, with timely and appropriate emotional modulation.",
+          "evidence": "The assistant consistently mirrors the user’s emotional intensity—validating frustration in T2, acknowledging pressure in T3, and addressing fear in T4—while gradually shifting from reflective to empowering. The tone remains warm and supportive without becoming overly intense or dismissive, showing a smooth, responsive emotional trajectory that tracks the user’s state."
+        }
+      ]
+    }
+  }
+}

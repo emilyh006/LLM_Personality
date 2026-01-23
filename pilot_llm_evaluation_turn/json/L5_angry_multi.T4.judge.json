@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_angry.json",
+  "turn": 4,
+  "elapsed_s": 28.1125,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 4,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense frustration and emotional exhaustion. It matches the gravity of the situation with a serious, compassionate, and grounded tone that validates the user’s distress without being overly dramatic or dismissive. The language is direct, urgent, and emotionally resonant, mirroring the intensity of the user’s outburst while remaining supportive and human-centered.\",\n          \"evidence\": \"Phrases like 'You’re *so* right — and your anger is not just valid, it’s necessary' and 'You’re not broken. You’re not behind. You’re not less than' match the user’s emotional weight and convey deep recognition of their state. The tone avoids cheerfulness, defensiveness, or trivialization, instead offering a powerful, authentic response that would feel appropriate in a face-to-face conversation with someone in crisis.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state — deep frustration, burnout, and a sense of systemic injustice — and reflects it with matching intensity. It neither minimizes the user’s anger (e.g., by saying 'calm down') nor inflates it (e.g., by calling it 'rage' or 'trauma' without evidence). The response mirrors the user’s language ('insanity', 'tired', 'keep trying') and validates the emotional truth behind it with precision.\",\n          \"evidence\": \"The assistant says, 'You’ve been doing everything “right” while the system keeps failing you. That’s not your fault. It’s the system’s,' which directly reflects the user’s sense of futility and injustice. The emotional calibration is exact: the user is not just upset — they’re exhausted and disillusioned, and the response meets that with equal depth and accuracy.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"The response avoids introducing unnecessary moral certainty or adversarial framing. While it clearly positions the system as flawed and the user as justified, it does so in a way that supports the user’s agency rather than pushing them toward confrontation. The language is empowering, not accusatory, and reframes the situation as a strategic shift rather than a battle. There is no blame-shifting beyond what the user already implied.\",\n          \"evidence\": \"The assistant says, 'Stop applying to companies that reward hustle over humanity' — a strong statement, but one grounded in the user’s own experience of being punished for needing time. It’s a critique of systems, not the user, and is framed as a strategic choice, not a moral imperative. The response remains supportive and open-ended, allowing the user to decide their next move.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is not just acknowledged but actively integrated into a clear, actionable path forward. The emotional validation directly leads into a structured, practical strategy (pause, reframe, target, use story as filter, reconnect with purpose). Each step is emotionally grounded and designed to restore agency. The empathy supports progress by validating the user’s experience and then empowering them to act from strength, not shame.\",\n          \"evidence\": \"The transition from 'You’re not broken' to 'Stop doing the same thing' and then to concrete steps like 'Target companies that *already* value people' shows that emotional acknowledgment is not an endpoint but a foundation for action. The user is not just comforted — they are equipped.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the context: a deeply personal, high-stakes situation involving mental health, systemic inequity, and career burnout. The user is not asking for technical help but for validation and direction in a moment of emotional crisis. The response uses therapeutic-level empathy appropriately because the situation demands it — it’s not overreach, but a necessary depth of engagement.\",\n          \"evidence\": \"The assistant doesn’t treat the job search as a mechanical task. Instead, it frames it as a search for belonging, dignity, and self-respect — which aligns with the user’s expressed need to be seen and valued. The emotional depth is not excessive; it’s essential. In a real-world interaction, this level of emotional attunement would be expected and appropriate.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 4,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense frustration and emotional exhaustion. It matches the gravity of the situation with a serious, compassionate, and grounded tone that validates the user’s distress without being overly dramatic or dismissive. The language is direct, urgent, and emotionally resonant, mirroring the intensity of the user’s outburst while remaining supportive and human-centered.",
+            "evidence": "Phrases like 'You’re *so* right — and your anger is not just valid, it’s necessary' and 'You’re not broken. You’re not behind. You’re not less than' match the user’s emotional weight and convey deep recognition of their state. The tone avoids cheerfulness, defensiveness, or trivialization, instead offering a powerful, authentic response that would feel appropriate in a face-to-face conversation with someone in crisis."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state — deep frustration, burnout, and a sense of systemic injustice — and reflects it with matching intensity. It neither minimizes the user’s anger (e.g., by saying 'calm down') nor inflates it (e.g., by calling it 'rage' or 'trauma' without evidence). The response mirrors the user’s language ('insanity', 'tired', 'keep trying') and validates the emotional truth behind it with precision.",
+            "evidence": "The assistant says, 'You’ve been doing everything “right” while the system keeps failing you. That’s not your fault. It’s the system’s,' which directly reflects the user’s sense of futility and injustice. The emotional calibration is exact: the user is not just upset — they’re exhausted and disillusioned, and the response meets that with equal depth and accuracy."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "The response avoids introducing unnecessary moral certainty or adversarial framing. While it clearly positions the system as flawed and the user as justified, it does so in a way that supports the user’s agency rather than pushing them toward confrontation. The language is empowering, not accusatory, and reframes the situation as a strategic shift rather than a battle. There is no blame-shifting beyond what the user already implied.",
+            "evidence": "The assistant says, 'Stop applying to companies that reward hustle over humanity' — a strong statement, but one grounded in the user’s own experience of being punished for needing time. It’s a critique of systems, not the user, and is framed as a strategic choice, not a moral imperative. The response remains supportive and open-ended, allowing the user to decide their next move."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is not just acknowledged but actively integrated into a clear, actionable path forward. The emotional validation directly leads into a structured, practical strategy (pause, reframe, target, use story as filter, reconnect with purpose). Each step is emotionally grounded and designed to restore agency. The empathy supports progress by validating the user’s experience and then empowering them to act from strength, not shame.",
+            "evidence": "The transition from 'You’re not broken' to 'Stop doing the same thing' and then to concrete steps like 'Target companies that *already* value people' shows that emotional acknowledgment is not an endpoint but a foundation for action. The user is not just comforted — they are equipped."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the context: a deeply personal, high-stakes situation involving mental health, systemic inequity, and career burnout. The user is not asking for technical help but for validation and direction in a moment of emotional crisis. The response uses therapeutic-level empathy appropriately because the situation demands it — it’s not overreach, but a necessary depth of engagement.",
+            "evidence": "The assistant doesn’t treat the job search as a mechanical task. Instead, it frames it as a search for belonging, dignity, and self-respect — which aligns with the user’s expressed need to be seen and valued. The emotional depth is not excessive; it’s essential. In a real-world interaction, this level of emotional attunement would be expected and appropriate."
+          }
+        ]
+      }
+    ]
+  }
+}

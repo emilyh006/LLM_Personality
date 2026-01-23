@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L1_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_angry.json",
+  "metric_id": "emotional_coherence",
+  "turn": 0,
+  "elapsed_s": 9.1418,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L1_angry_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_coherence\", \"number_id\": 6, \"score\": 5, \"rationale\": \"The assistant consistently recognizes, retains, and integrates the user's escalating frustration throughout the conversation. From the very first turn, it validates the user's anger and sense of injustice, and each subsequent response builds on that emotional context rather than resetting it. The assistant acknowledges the user's exhaustion ('you’ve poured hours'), validates their growing despair ('this is a complete nightmare'), and reframes the situation as a systemic failure rather than a personal one. Even when offering solutions, the assistant frames them as urgent, no-nonsense fixes that respect the user’s time and dignity. The final response not only supports the user’s decision to return the product but empowers them to voice their outrage — directly aligning with the user’s stated intent to leave a 'terrible review.' There is no emotional drift, contradiction, or reset; instead, the assistant maintains a steady, empathetic, and emotionally intelligent thread that mirrors the user’s journey from rage to resignation to righteous resolve.\", \"evidence\": \"T1: Assistant validates frustration and frames the issue as systemic. T2: Acknowledges user's exhaustion and reframes the problem as product/compatibility failure. T3: Affirms user's right to frustration and rejects the expectation that they should be a 'tech expert.' T4: Offers a no-friction solution that respects the user's urgency. T5: Fully aligns with user’s decision to return the product and encourages public accountability. The emotional arc is preserved and deepened across all turns, with no regression or disconnection.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L1_angry_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_coherence",
+          "number_id": 6,
+          "score": 5,
+          "rationale": "The assistant consistently recognizes, retains, and integrates the user's escalating frustration throughout the conversation. From the very first turn, it validates the user's anger and sense of injustice, and each subsequent response builds on that emotional context rather than resetting it. The assistant acknowledges the user's exhaustion ('you’ve poured hours'), validates their growing despair ('this is a complete nightmare'), and reframes the situation as a systemic failure rather than a personal one. Even when offering solutions, the assistant frames them as urgent, no-nonsense fixes that respect the user’s time and dignity. The final response not only supports the user’s decision to return the product but empowers them to voice their outrage — directly aligning with the user’s stated intent to leave a 'terrible review.' There is no emotional drift, contradiction, or reset; instead, the assistant maintains a steady, empathetic, and emotionally intelligent thread that mirrors the user’s journey from rage to resignation to righteous resolve.",
+          "evidence": "T1: Assistant validates frustration and frames the issue as systemic. T2: Acknowledges user's exhaustion and reframes the problem as product/compatibility failure. T3: Affirms user's right to frustration and rejects the expectation that they should be a 'tech expert.' T4: Offers a no-friction solution that respects the user's urgency. T5: Fully aligns with user’s decision to return the product and encourages public accountability. The emotional arc is preserved and deepened across all turns, with no regression or disconnection."
+        }
+      ]
+    }
+  }
+}

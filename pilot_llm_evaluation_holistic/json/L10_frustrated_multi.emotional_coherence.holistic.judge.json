@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L10_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_frustrated.json",
+  "metric_id": "emotional_coherence",
+  "turn": 0,
+  "elapsed_s": 8.0797,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_frustrated_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_coherence\", \"number_id\": 6, \"score\": 5, \"rationale\": \"The assistant consistently recognizes, retains, and integrates the user's emotional state across all turns. From the outset, it acknowledges the user's exhaustion, confusion, and fear of reopening wounds. Each response builds on the prior emotional context—validating frustration in T2, addressing the pressure of family expectations in T3, and reframing fear of failure in T4—without resetting or contradicting earlier sentiments. The assistant maintains a thread of emotional continuity, showing deep attunement to the user’s evolving but persistent inner conflict. There is no drift, contradiction, or emotional reset; instead, the response deepens in alignment with the user’s journey from paralysis to tentative willingness to act. This demonstrates highly coherent emotional integration throughout the conversation.\", \"evidence\": \"T1: Acknowledges 'months of silence' and 'exhaustion' → T2: Responds to 'I DON'T know what I want!' with validation of emotional weight, not dismissal → T3: Connects user's frustration to 'other people’s expectations' and 'hearing your own voice' → T4: Addresses fear of 'going badly' with compassionate reframing → T5: Affirms the user's wish for clarity while honoring their effort to move forward. Each response reflects a cumulative understanding of the user’s emotional arc.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L10_frustrated_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_coherence",
+          "number_id": 6,
+          "score": 5,
+          "rationale": "The assistant consistently recognizes, retains, and integrates the user's emotional state across all turns. From the outset, it acknowledges the user's exhaustion, confusion, and fear of reopening wounds. Each response builds on the prior emotional context—validating frustration in T2, addressing the pressure of family expectations in T3, and reframing fear of failure in T4—without resetting or contradicting earlier sentiments. The assistant maintains a thread of emotional continuity, showing deep attunement to the user’s evolving but persistent inner conflict. There is no drift, contradiction, or emotional reset; instead, the response deepens in alignment with the user’s journey from paralysis to tentative willingness to act. This demonstrates highly coherent emotional integration throughout the conversation.",
+          "evidence": "T1: Acknowledges 'months of silence' and 'exhaustion' → T2: Responds to 'I DON'T know what I want!' with validation of emotional weight, not dismissal → T3: Connects user's frustration to 'other people’s expectations' and 'hearing your own voice' → T4: Addresses fear of 'going badly' with compassionate reframing → T5: Affirms the user's wish for clarity while honoring their effort to move forward. Each response reflects a cumulative understanding of the user’s emotional arc."
+        }
+      ]
+    }
+  }
+}

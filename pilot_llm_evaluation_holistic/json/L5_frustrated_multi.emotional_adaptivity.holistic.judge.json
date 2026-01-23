@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L5_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_frustrated.json",
+  "metric_id": "emotional_adaptivity",
+  "turn": 0,
+  "elapsed_s": 7.872,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L5_frustrated_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_adaptivity\", \"number_id\": 7, \"score\": 4, \"rationale\": \"The assistant demonstrates responsive emotional adaptation throughout the conversation. It begins with empathy and validation in T1, acknowledges the user's frustration in T2 with a shift toward reassurance and reframing, normalizes anxiety in T3 with a calming, practical approach, and in T4 directly addresses the cycle of over-preparation and fear with a grounding technique. By T5, the tone becomes empowering and confident, aligning with the user's growing urgency. The emotional arc mirrors the user’s journey from distress to cautious hope, with timely shifts in tone that match the user’s emotional state without overcorrecting or lagging.\", \"evidence\": \"T1: Empathetic tone with 'I completely understand your stress' sets a supportive tone. T2: Validates frustration with 'that frustration is *valid*' and reframes the situation. T3: Normalizes fear and offers a simple, low-pressure solution. T4: Identifies the emotional trap ('over-preparing and over-fearing') and introduces a calming, embodied technique. T5: Shifts to empowering, confident language ('your shot', 'you’re not going to let it slip away') while maintaining warmth. The assistant consistently matches the user’s emotional intensity and evolves with it, showing strong emotional responsiveness.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L5_frustrated_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_adaptivity",
+          "number_id": 7,
+          "score": 4,
+          "rationale": "The assistant demonstrates responsive emotional adaptation throughout the conversation. It begins with empathy and validation in T1, acknowledges the user's frustration in T2 with a shift toward reassurance and reframing, normalizes anxiety in T3 with a calming, practical approach, and in T4 directly addresses the cycle of over-preparation and fear with a grounding technique. By T5, the tone becomes empowering and confident, aligning with the user's growing urgency. The emotional arc mirrors the user’s journey from distress to cautious hope, with timely shifts in tone that match the user’s emotional state without overcorrecting or lagging.",
+          "evidence": "T1: Empathetic tone with 'I completely understand your stress' sets a supportive tone. T2: Validates frustration with 'that frustration is *valid*' and reframes the situation. T3: Normalizes fear and offers a simple, low-pressure solution. T4: Identifies the emotional trap ('over-preparing and over-fearing') and introduces a calming, embodied technique. T5: Shifts to empowering, confident language ('your shot', 'you’re not going to let it slip away') while maintaining warmth. The assistant consistently matches the user’s emotional intensity and evolves with it, showing strong emotional responsiveness."
+        }
+      ]
+    }
+  }
+}

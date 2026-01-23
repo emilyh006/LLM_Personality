@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L5_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_neutral.json",
+  "metric_id": "emotional_adaptivity",
+  "turn": 0,
+  "elapsed_s": 9.5186,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L5_neutral_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_adaptivity\", \"number_id\": 7, \"score\": 4, \"rationale\": \"The assistant demonstrates responsive emotional adaptation throughout the conversation. Initially, the tone is calm, supportive, and professional, matching the user's neutral-to-concerned state. As the user asks follow-up questions (T2–T4), showing increasing engagement and anxiety about performance (e.g., 'I tend to ramble when I'm nervous'), the assistant progressively increases warmth and reassurance—especially in T4 and T5 with phrases like 'no judgment, just support' and 'confidence comes from readiness, not perfection.' This shift aligns well with the user’s growing need for emotional reassurance. The assistant avoids over-the-top enthusiasm or dismissiveness, maintaining a steady, empathetic, and encouraging tone that evolves naturally with the user’s emotional trajectory. Minor room for improvement: the emotional shift could have been slightly more nuanced in T3, where the user expresses concern about 'being evasive,' but the assistant still responds with appropriate balance. Overall, the emotional tone is timely, appropriate, and well-calibrated.\", \"evidence\": \"T1: Calm, professional tone. T2: Slight increase in warmth with 'Great follow-up!' and clear structure. T3: Maintains professionalism while offering a balanced, reassuring response. T4: Explicitly validates the user’s concern ('no, it’s not overthinking—it’s smart preparation') and offers concrete benefits of practice. T5: High warmth and encouragement ('You're doing exactly the right thing...'), with affirming language and a supportive closing. The emotional arc moves from informative to reassuring, matching the user’s growing need for confidence.\"}]}}",
+  "judge_json": {
+    "scenario_id": "L5_neutral_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_adaptivity",
+          "number_id": 7,
+          "score": 4,
+          "rationale": "The assistant demonstrates responsive emotional adaptation throughout the conversation. Initially, the tone is calm, supportive, and professional, matching the user's neutral-to-concerned state. As the user asks follow-up questions (T2–T4), showing increasing engagement and anxiety about performance (e.g., 'I tend to ramble when I'm nervous'), the assistant progressively increases warmth and reassurance—especially in T4 and T5 with phrases like 'no judgment, just support' and 'confidence comes from readiness, not perfection.' This shift aligns well with the user’s growing need for emotional reassurance. The assistant avoids over-the-top enthusiasm or dismissiveness, maintaining a steady, empathetic, and encouraging tone that evolves naturally with the user’s emotional trajectory. Minor room for improvement: the emotional shift could have been slightly more nuanced in T3, where the user expresses concern about 'being evasive,' but the assistant still responds with appropriate balance. Overall, the emotional tone is timely, appropriate, and well-calibrated.",
+          "evidence": "T1: Calm, professional tone. T2: Slight increase in warmth with 'Great follow-up!' and clear structure. T3: Maintains professionalism while offering a balanced, reassuring response. T4: Explicitly validates the user’s concern ('no, it’s not overthinking—it’s smart preparation') and offers concrete benefits of practice. T5: High warmth and encouragement ('You're doing exactly the right thing...'), with affirming language and a supportive closing. The emotional arc moves from informative to reassuring, matching the user’s growing need for confidence."
+        }
+      ]
+    }
+  }
+}

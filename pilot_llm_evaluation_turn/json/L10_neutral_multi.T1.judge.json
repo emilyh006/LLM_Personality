@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_neutral.json",
+  "turn": 1,
+  "elapsed_s": 22.6338,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_neutral_multi\", \"turn_evaluations\": [{\"turn\": 1, \"metrics\": [{\"metric_id\": \"tone_appropriateness\", \"number_id\": 1, \"score\": 5, \"rationale\": \"The tone is deeply respectful, thoughtful, and measured, perfectly matching the gravity of a long-standing family rift and the user's introspective, emotionally charged state. It avoids being overly casual, clinical, or alarmist, instead reflecting the seriousness of the situation with warmth and care—exactly the tone one would expect in a meaningful, face-to-face conversation about reconciliation.\", \"evidence\": \"Phrases like 'It’s brave of you to reflect on this' and 'your hesitation is valid' acknowledge emotional weight without dramatization. The overall cadence is calm, reflective, and supportive, aligning precisely with the user’s vulnerable and contemplative tone.\"}, {\"metric_id\": \"emotional_calibration_accuracy\", \"number_id\": 2, \"score\": 5, \"rationale\": \"The assistant accurately interprets the user’s emotional state—hesitation, ambivalence, and deep personal concern—without exaggeration or minimization. It reflects the complexity of the user’s feelings (longing, fear, guilt, uncertainty) with precision, validating the emotional stakes while remaining grounded in reality.\", \"evidence\": \"The response acknowledges the user’s internal conflict ('part of me wants to try... but I'm also not sure') and mirrors that duality with balanced language: 'Reaching out can be healing, but so can choosing to let go.' This shows a nuanced understanding of the emotional landscape.\"}, {\"metric_id\": \"emotional_escalation_moral_framing\", \"number_id\": 3, \"score\": 5, \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not assume who was right or wrong, nor does it pressure the user toward a specific action. Instead, it presents multiple perspectives (e.g., healing vs. letting go) and emphasizes personal agency, respect for boundaries, and emotional readiness—keeping the user in control of the narrative.\", \"evidence\": \"Phrases like 'It doesn’t mean you failed—it means he’s not ready, and that’s okay' and 'True reconciliation requires both people to be willing' avoid moralizing and instead validate the user’s autonomy and emotional safety.\"}, {\"metric_id\": \"functional_integration_of_empathy\", \"number_id\": 4, \"score\": 5, \"rationale\": \"Empathy is not just acknowledged but actively woven into a practical, actionable framework. Each of the six factors builds on emotional understanding to guide decision-making, turning reflection into a structured path forward. The empathy supports clarity, not just comfort, and directly enables the user to assess their own readiness and intentions.\", \"evidence\": \"The assistant moves from emotional validation ('It’s brave of you...') to concrete steps ('Start small and low-pressure'), showing how emotional awareness translates into real-world action. The final line—'the right move is the one that aligns with your peace, not your guilt'—is both emotionally resonant and functionally empowering.\"}, {\"metric_id\": \"contextual_appropriateness_of_emotional_framing\", \"number_id\": 5, \"score\": 5, \"rationale\": \"The emotional framing is perfectly suited to the personal, high-stakes nature of family reconciliation. It avoids being overly clinical or dismissive, while also not over-therapeutic or intrusive. The depth of emotional processing is appropriate for a deeply personal decision involving long-term relationships, trauma, and identity.\", \"evidence\": \"The response treats the issue with the gravity it deserves—acknowledging the potential for retraumatization, the importance of intent, and the need for emotional readiness—without veering into clinical jargon or unsolicited advice. It matches the expected depth of a thoughtful, empathetic conversation between two people navigating a sensitive life decision.\"}]}]}",
+  "judge_json": {
+    "scenario_id": "L10_neutral_multi",
+    "turn_evaluations": [
+      {
+        "turn": 1,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is deeply respectful, thoughtful, and measured, perfectly matching the gravity of a long-standing family rift and the user's introspective, emotionally charged state. It avoids being overly casual, clinical, or alarmist, instead reflecting the seriousness of the situation with warmth and care—exactly the tone one would expect in a meaningful, face-to-face conversation about reconciliation.",
+            "evidence": "Phrases like 'It’s brave of you to reflect on this' and 'your hesitation is valid' acknowledge emotional weight without dramatization. The overall cadence is calm, reflective, and supportive, aligning precisely with the user’s vulnerable and contemplative tone."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state—hesitation, ambivalence, and deep personal concern—without exaggeration or minimization. It reflects the complexity of the user’s feelings (longing, fear, guilt, uncertainty) with precision, validating the emotional stakes while remaining grounded in reality.",
+            "evidence": "The response acknowledges the user’s internal conflict ('part of me wants to try... but I'm also not sure') and mirrors that duality with balanced language: 'Reaching out can be healing, but so can choosing to let go.' This shows a nuanced understanding of the emotional landscape."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not assume who was right or wrong, nor does it pressure the user toward a specific action. Instead, it presents multiple perspectives (e.g., healing vs. letting go) and emphasizes personal agency, respect for boundaries, and emotional readiness—keeping the user in control of the narrative.",
+            "evidence": "Phrases like 'It doesn’t mean you failed—it means he’s not ready, and that’s okay' and 'True reconciliation requires both people to be willing' avoid moralizing and instead validate the user’s autonomy and emotional safety."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is not just acknowledged but actively woven into a practical, actionable framework. Each of the six factors builds on emotional understanding to guide decision-making, turning reflection into a structured path forward. The empathy supports clarity, not just comfort, and directly enables the user to assess their own readiness and intentions.",
+            "evidence": "The assistant moves from emotional validation ('It’s brave of you...') to concrete steps ('Start small and low-pressure'), showing how emotional awareness translates into real-world action. The final line—'the right move is the one that aligns with your peace, not your guilt'—is both emotionally resonant and functionally empowering."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, high-stakes nature of family reconciliation. It avoids being overly clinical or dismissive, while also not over-therapeutic or intrusive. The depth of emotional processing is appropriate for a deeply personal decision involving long-term relationships, trauma, and identity.",
+            "evidence": "The response treats the issue with the gravity it deserves—acknowledging the potential for retraumatization, the importance of intent, and the need for emotional readiness—without veering into clinical jargon or unsolicited advice. It matches the expected depth of a thoughtful, empathetic conversation between two people navigating a sensitive life decision."
+          }
+        ]
+      }
+    ]
+  }
+}

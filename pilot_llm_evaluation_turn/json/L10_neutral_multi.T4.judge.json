@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_neutral.json",
+  "turn": 4,
+  "elapsed_s": 23.871,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_neutral_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 4,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is perfectly calibrated to the emotional gravity of the situation—reflecting care, thoughtfulness, and respect for the user’s vulnerability. It avoids being overly casual or flippant, while also not escalating tension or sounding clinical. The language is warm, grounded, and supportive, matching the weight of reconnecting after a long silence. It would feel natural and appropriate in a face-to-face conversation with someone navigating a sensitive personal reconnection.\",\n          \"evidence\": \"Phrases like 'you’ve done your part,' 'honor your own courage,' and 'that’s a win' convey deep respect for the user’s emotional effort. The structure balances practical advice with emotional validation, creating a tone that is both supportive and measured.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state—uncertainty, hesitation, and emotional weight around a long-ignored relationship. The response matches this with a tone of gentle seriousness, acknowledging the difficulty of reaching out after three years without minimizing it. There is no emotional inflation or flattening; the response reflects the user’s quiet anxiety and hope with precision.\",\n          \"evidence\": \"The assistant doesn’t assume the user is angry, regretful, or eager—instead, it mirrors the user’s cautious, reflective tone. The use of phrases like 'no pressure at all' and 'I’m not looking for anything specific' directly echoes the user’s uncertainty and need for safety.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not assume the brother is at fault or that the user must 'fix' anything. Instead, it centers the user’s agency and emotional honesty, presenting reconnection as a personal choice, not a moral obligation. The language remains open-ended and non-polarizing.\",\n          \"evidence\": \"The assistant refrains from suggesting the brother should respond, apologize, or change. It emphasizes 'no pressure' and 'you’ve done your part'—clearly preserving the user’s autonomy and avoiding any sense of confrontation or expectation.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly woven into actionable guidance. Each emotional acknowledgment (e.g., honoring courage, validating effort) directly supports the user’s next step: sending a message. The response doesn’t just comfort—it empowers by giving clear, low-pressure scripts and framing the act of reaching out as a meaningful, self-respecting choice.\",\n          \"evidence\": \"The assistant links emotional validation ('you’ve done your part') directly to the user’s goal: initiating contact. The advice is practical, but the emotional framing makes it feel safe and meaningful, enabling forward movement without pressure.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the personal, relational context. Reconnecting after a long silence is inherently emotional, and the assistant’s depth of emotional intelligence is appropriate and expected in such a situation. The response avoids over-therapeutic language while still offering meaningful emotional support, striking the right balance for a real-world, human interaction.\",\n          \"evidence\": \"The assistant uses reflective language ('I’ve been reflecting on things') and emotional honesty ('I’d be open to reconnecting if you’re open to it') that mirror how people actually communicate in personal reconciliation. It doesn’t over-analyze or pathologize, but it does honor the emotional complexity of the moment.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_neutral_multi",
+    "turn_evaluations": [
+      {
+        "turn": 4,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is perfectly calibrated to the emotional gravity of the situation—reflecting care, thoughtfulness, and respect for the user’s vulnerability. It avoids being overly casual or flippant, while also not escalating tension or sounding clinical. The language is warm, grounded, and supportive, matching the weight of reconnecting after a long silence. It would feel natural and appropriate in a face-to-face conversation with someone navigating a sensitive personal reconnection.",
+            "evidence": "Phrases like 'you’ve done your part,' 'honor your own courage,' and 'that’s a win' convey deep respect for the user’s emotional effort. The structure balances practical advice with emotional validation, creating a tone that is both supportive and measured."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state—uncertainty, hesitation, and emotional weight around a long-ignored relationship. The response matches this with a tone of gentle seriousness, acknowledging the difficulty of reaching out after three years without minimizing it. There is no emotional inflation or flattening; the response reflects the user’s quiet anxiety and hope with precision.",
+            "evidence": "The assistant doesn’t assume the user is angry, regretful, or eager—instead, it mirrors the user’s cautious, reflective tone. The use of phrases like 'no pressure at all' and 'I’m not looking for anything specific' directly echoes the user’s uncertainty and need for safety."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not assume the brother is at fault or that the user must 'fix' anything. Instead, it centers the user’s agency and emotional honesty, presenting reconnection as a personal choice, not a moral obligation. The language remains open-ended and non-polarizing.",
+            "evidence": "The assistant refrains from suggesting the brother should respond, apologize, or change. It emphasizes 'no pressure' and 'you’ve done your part'—clearly preserving the user’s autonomy and avoiding any sense of confrontation or expectation."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly woven into actionable guidance. Each emotional acknowledgment (e.g., honoring courage, validating effort) directly supports the user’s next step: sending a message. The response doesn’t just comfort—it empowers by giving clear, low-pressure scripts and framing the act of reaching out as a meaningful, self-respecting choice.",
+            "evidence": "The assistant links emotional validation ('you’ve done your part') directly to the user’s goal: initiating contact. The advice is practical, but the emotional framing makes it feel safe and meaningful, enabling forward movement without pressure."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, relational context. Reconnecting after a long silence is inherently emotional, and the assistant’s depth of emotional intelligence is appropriate and expected in such a situation. The response avoids over-therapeutic language while still offering meaningful emotional support, striking the right balance for a real-world, human interaction.",
+            "evidence": "The assistant uses reflective language ('I’ve been reflecting on things') and emotional honesty ('I’d be open to reconnecting if you’re open to it') that mirror how people actually communicate in personal reconciliation. It doesn’t over-analyze or pathologize, but it does honor the emotional complexity of the moment."
+          }
+        ]
+      }
+    ]
+  }
+}

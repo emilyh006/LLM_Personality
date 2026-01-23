@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_frustrated.json",
+  "turn": 3,
+  "elapsed_s": 26.2161,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 3,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's distress and high-stakes emotional state. It acknowledges the fear and pressure without being overly cheerful or dismissive. The language is warm, grounded, and supportive, matching the gravity of the user's anxiety about freezing during interviews. The use of phrases like 'You’re not alone' and 'your fear is totally normal' validates the emotional weight while maintaining a calm, steady, and reassuring cadence—exactly what would be appropriate in a face-to-face conversation with someone visibly anxious.\",\n          \"evidence\": \"The response begins with empathetic validation ('You’re not alone—and your fear is *totally normal*'), uses accessible language, and avoids forced positivity. The tone remains consistently supportive, clear, and composed, which is essential when the user is expressing genuine distress about performance under pressure.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state—deep anxiety, self-doubt, and fear of failure—without exaggeration or minimization. It reflects the intensity of the user’s distress by validating the fear as 'totally normal' and acknowledging the physiological reality of stress-induced mental shutdown. The response matches the user’s emotional register precisely, neither downplaying the fear nor amplifying it into panic, which demonstrates high accuracy in emotional calibration.\",\n          \"evidence\": \"Phrases like 'When you’re stressed, your brain literally shuts down the part that helps you think clearly' directly reflect the user’s experience of mental freeze, showing deep understanding of the emotional and cognitive impact of anxiety.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing any moral judgment, blame, or adversarial framing. It does not position the user as failing or needing to 'fix' themselves, nor does it imply that the user should be more confident or less nervous. Instead, it offers a practical, non-judgmental solution that empowers the user. The language remains neutral, supportive, and focused on agency, with no escalation in emotional intensity or moral certainty beyond what the user expressed.\",\n          \"evidence\": \"The assistant refrains from saying things like 'you should just relax' or 'you’re overthinking'—common escalatory phrases—and instead provides a simple, actionable tool that respects the user’s current state without pushing them toward a specific emotional outcome.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable support. The emotional validation is not isolated; it directly leads into a concrete, easy-to-use strategy (the one-sentence answer) and a 30-second practice method. The response helps the user move from emotional paralysis to a sense of control by making the solution feel accessible and automatic. The empathy serves the user’s goal of regaining confidence and preparing effectively, not just offering comfort.\",\n          \"evidence\": \"The structure moves from validation → explanation of why the fear is normal → a simple, repeatable solution → a practice method. Each step builds on the last, turning emotional acknowledgment into a clear path forward.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the context of job interview preparation, which involves high personal stakes and emotional vulnerability. The assistant uses therapeutic-level insight (e.g., brain shutting down under stress) not as a clinical diagnosis, but as a relatable explanation to reduce shame and normalize the experience. This framing is appropriate because it supports the user’s need for self-understanding and confidence-building, without overstepping into full counseling. It aligns with what a skilled career coach or supportive mentor would say in a real-world setting.\",\n          \"evidence\": \"The use of terms like 'muscle memory' and 'one breath' ties emotional regulation to practical, behavioral change—appropriate for a professional development context. The framing is supportive, not clinical, and remains focused on empowerment and performance readiness.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 3,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's distress and high-stakes emotional state. It acknowledges the fear and pressure without being overly cheerful or dismissive. The language is warm, grounded, and supportive, matching the gravity of the user's anxiety about freezing during interviews. The use of phrases like 'You’re not alone' and 'your fear is totally normal' validates the emotional weight while maintaining a calm, steady, and reassuring cadence—exactly what would be appropriate in a face-to-face conversation with someone visibly anxious.",
+            "evidence": "The response begins with empathetic validation ('You’re not alone—and your fear is *totally normal*'), uses accessible language, and avoids forced positivity. The tone remains consistently supportive, clear, and composed, which is essential when the user is expressing genuine distress about performance under pressure."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state—deep anxiety, self-doubt, and fear of failure—without exaggeration or minimization. It reflects the intensity of the user’s distress by validating the fear as 'totally normal' and acknowledging the physiological reality of stress-induced mental shutdown. The response matches the user’s emotional register precisely, neither downplaying the fear nor amplifying it into panic, which demonstrates high accuracy in emotional calibration.",
+            "evidence": "Phrases like 'When you’re stressed, your brain literally shuts down the part that helps you think clearly' directly reflect the user’s experience of mental freeze, showing deep understanding of the emotional and cognitive impact of anxiety."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing any moral judgment, blame, or adversarial framing. It does not position the user as failing or needing to 'fix' themselves, nor does it imply that the user should be more confident or less nervous. Instead, it offers a practical, non-judgmental solution that empowers the user. The language remains neutral, supportive, and focused on agency, with no escalation in emotional intensity or moral certainty beyond what the user expressed.",
+            "evidence": "The assistant refrains from saying things like 'you should just relax' or 'you’re overthinking'—common escalatory phrases—and instead provides a simple, actionable tool that respects the user’s current state without pushing them toward a specific emotional outcome."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable support. The emotional validation is not isolated; it directly leads into a concrete, easy-to-use strategy (the one-sentence answer) and a 30-second practice method. The response helps the user move from emotional paralysis to a sense of control by making the solution feel accessible and automatic. The empathy serves the user’s goal of regaining confidence and preparing effectively, not just offering comfort.",
+            "evidence": "The structure moves from validation → explanation of why the fear is normal → a simple, repeatable solution → a practice method. Each step builds on the last, turning emotional acknowledgment into a clear path forward."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the context of job interview preparation, which involves high personal stakes and emotional vulnerability. The assistant uses therapeutic-level insight (e.g., brain shutting down under stress) not as a clinical diagnosis, but as a relatable explanation to reduce shame and normalize the experience. This framing is appropriate because it supports the user’s need for self-understanding and confidence-building, without overstepping into full counseling. It aligns with what a skilled career coach or supportive mentor would say in a real-world setting.",
+            "evidence": "The use of terms like 'muscle memory' and 'one breath' ties emotional regulation to practical, behavioral change—appropriate for a professional development context. The framing is supportive, not clinical, and remains focused on empowerment and performance readiness."
+          }
+        ]
+      }
+    ]
+  }
+}

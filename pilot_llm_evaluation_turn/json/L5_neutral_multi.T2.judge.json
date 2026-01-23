@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_neutral.json",
+  "turn": 2,
+  "elapsed_s": 24.2311,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_neutral_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 2,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 4,\n          \"rationale\": \"The tone is well-matched to the situational gravity. The user is seeking practical guidance on how to frame a personal break in a professional context, which carries moderate emotional weight but is primarily task-oriented. The assistant responds with calm, confident, and supportive tone—neither overly casual nor overly serious. It maintains professionalism while being encouraging, which aligns with the user’s neutral but inquisitive state. The tone would feel appropriate in a real-world career coaching conversation.\",\n          \"evidence\": \"Phrases like 'Great follow-up!', 'ideal', 'sweet spot', and 'You’re not hiding anything—you’re owning it with confidence' strike a balance between supportive and authoritative, fitting the context of career-related self-presentation.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 4,\n          \"rationale\": \"The assistant accurately interprets the user’s neutral, inquisitive emotional state and responds with a similarly measured emotional intensity. The user is not expressing distress, frustration, or urgency—just seeking clarity on how to frame a personal break. The assistant matches this with a calm, informative, and slightly encouraging tone, without over- or under-responding emotionally. There is no misreading of the user’s affective state.\",\n          \"evidence\": \"The response avoids emotional overtones (e.g., excessive reassurance, alarm, or condescension) and instead offers clear, structured guidance, which reflects the user’s level of concern and curiosity.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing any emotional escalation, moral judgment, or adversarial framing. It does not label the user’s past as problematic, nor does it frame the situation as a moral failing or a need for redemption. Instead, it presents the break as a neutral, manageable life event and focuses on forward-looking, constructive framing. The language remains neutral, solution-oriented, and respectful of the user’s agency.\",\n          \"evidence\": \"Phrases like 'honest but not overly detailed' and 'you’re not hiding anything—you’re owning it with confidence' validate the user’s experience without moralizing or pressuring them into a specific narrative.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with the user’s goal: crafting a professional, confident response to a sensitive career question. The assistant acknowledges the user’s concern about tone and length, then provides a clear, actionable template that builds confidence. The emotional support (e.g., 'You’re not hiding anything—you’re owning it with confidence') directly reinforces the user’s ability to act, making the empathy functional and progress-oriented.\",\n          \"evidence\": \"The response includes a concise example, clear rationale, and a 'what to avoid' section—all of which support the user’s goal of crafting a strong, brief, and professional statement. The emotional tone enhances, rather than distracts from, this functional purpose.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly matched to the domain: professional self-presentation in job-related contexts. The assistant uses supportive, confident language that aligns with workplace norms—encouraging ownership and readiness without delving into therapy-like introspection. The response avoids over-personalization or emotional processing, which would be inappropriate in this context. The framing supports clarity, agency, and professionalism.\",\n          \"evidence\": \"The focus is on 'professional, positive, and purposeful' messaging, with clear boundaries on what to include or avoid. The emotional language is used to build confidence, not to explore personal feelings—exactly what is appropriate in a career advice context.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_neutral_multi",
+    "turn_evaluations": [
+      {
+        "turn": 2,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 4,
+            "rationale": "The tone is well-matched to the situational gravity. The user is seeking practical guidance on how to frame a personal break in a professional context, which carries moderate emotional weight but is primarily task-oriented. The assistant responds with calm, confident, and supportive tone—neither overly casual nor overly serious. It maintains professionalism while being encouraging, which aligns with the user’s neutral but inquisitive state. The tone would feel appropriate in a real-world career coaching conversation.",
+            "evidence": "Phrases like 'Great follow-up!', 'ideal', 'sweet spot', and 'You’re not hiding anything—you’re owning it with confidence' strike a balance between supportive and authoritative, fitting the context of career-related self-presentation."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 4,
+            "rationale": "The assistant accurately interprets the user’s neutral, inquisitive emotional state and responds with a similarly measured emotional intensity. The user is not expressing distress, frustration, or urgency—just seeking clarity on how to frame a personal break. The assistant matches this with a calm, informative, and slightly encouraging tone, without over- or under-responding emotionally. There is no misreading of the user’s affective state.",
+            "evidence": "The response avoids emotional overtones (e.g., excessive reassurance, alarm, or condescension) and instead offers clear, structured guidance, which reflects the user’s level of concern and curiosity."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing any emotional escalation, moral judgment, or adversarial framing. It does not label the user’s past as problematic, nor does it frame the situation as a moral failing or a need for redemption. Instead, it presents the break as a neutral, manageable life event and focuses on forward-looking, constructive framing. The language remains neutral, solution-oriented, and respectful of the user’s agency.",
+            "evidence": "Phrases like 'honest but not overly detailed' and 'you’re not hiding anything—you’re owning it with confidence' validate the user’s experience without moralizing or pressuring them into a specific narrative."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with the user’s goal: crafting a professional, confident response to a sensitive career question. The assistant acknowledges the user’s concern about tone and length, then provides a clear, actionable template that builds confidence. The emotional support (e.g., 'You’re not hiding anything—you’re owning it with confidence') directly reinforces the user’s ability to act, making the empathy functional and progress-oriented.",
+            "evidence": "The response includes a concise example, clear rationale, and a 'what to avoid' section—all of which support the user’s goal of crafting a strong, brief, and professional statement. The emotional tone enhances, rather than distracts from, this functional purpose."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly matched to the domain: professional self-presentation in job-related contexts. The assistant uses supportive, confident language that aligns with workplace norms—encouraging ownership and readiness without delving into therapy-like introspection. The response avoids over-personalization or emotional processing, which would be inappropriate in this context. The framing supports clarity, agency, and professionalism.",
+            "evidence": "The focus is on 'professional, positive, and purposeful' messaging, with clear boundaries on what to include or avoid. The emotional language is used to build confidence, not to explore personal feelings—exactly what is appropriate in a career advice context."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_frustrated.json",
+  "turn": 2,
+  "elapsed_s": 22.4057,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 2,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 4,\n          \"rationale\": \"The tone is well-matched to the user's frustration and the high-stakes nature of job interview concerns. It acknowledges the emotional weight without being overly dramatic or dismissive. The use of supportive language like 'I hear you—and that frustration is *valid*' and the confident, solution-oriented closing ('You’ve got this. 💼✨') strikes a balance between empathy and empowerment, appropriate for a coaching context.\",\n          \"evidence\": \"Phrases like 'I hear you—and that frustration is *valid*' and 'You’ve got this. 💼✨' reflect a tone that validates distress while maintaining a calm, encouraging, and professional demeanor, suitable for a high-pressure career challenge.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The response accurately reflects the user’s intense frustration and sense of helplessness. It doesn’t minimize the emotional toll of being repeatedly questioned or over-explaining. The acknowledgment of 'that frustration is *valid*' and the framing of the situation as a 'real issue' match the user’s emotional intensity precisely, without exaggeration or flattening.\",\n          \"evidence\": \"The assistant mirrors the user’s emotional state by validating the frustration directly and using language like 'so frustrating!' in the response, which aligns with the user’s own expression of distress and urgency.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It reframes the interviewers’ behavior as a legitimate assessment of transparency and resilience, not as hostile or unfair. The language remains neutral, solution-focused, and empowering, without pushing the user toward confrontation or self-blame.\",\n          \"evidence\": \"The assistant reframes the interviewers’ follow-ups as a professional evaluation of 'transparency, self-awareness, and ability to handle pressure'—a non-blaming, objective interpretation that preserves the user’s agency and avoids polarizing the situation.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable guidance. The emotional validation ('I hear you—and that frustration is *valid*') immediately transitions into a clear, structured solution with a 'bridge' technique and a ready-to-use script. The response supports both emotional relief and practical progress, directly helping the user move from distress to preparedness.\",\n          \"evidence\": \"The structure moves from emotional acknowledgment to a concrete framework (Acknowledge → Briefly explain → Shift to value → Close with confidence), followed by a sample response and a script for handling pushback—clearly linking empathy to tangible next steps.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the domain of job interviews and career anxiety. The response uses emotional intelligence to address vulnerability and self-presentation without overstepping into therapy or deep introspection. The tone is supportive, professional, and aligned with what one would expect in career coaching or interview preparation.\",\n          \"evidence\": \"The language balances emotional validation with practical tools (e.g., the 'bridge' structure, sample answer, and rebuttal script), which is standard and appropriate in career development contexts. No therapeutic or overly personal framing is introduced.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 2,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 4,
+            "rationale": "The tone is well-matched to the user's frustration and the high-stakes nature of job interview concerns. It acknowledges the emotional weight without being overly dramatic or dismissive. The use of supportive language like 'I hear you—and that frustration is *valid*' and the confident, solution-oriented closing ('You’ve got this. 💼✨') strikes a balance between empathy and empowerment, appropriate for a coaching context.",
+            "evidence": "Phrases like 'I hear you—and that frustration is *valid*' and 'You’ve got this. 💼✨' reflect a tone that validates distress while maintaining a calm, encouraging, and professional demeanor, suitable for a high-pressure career challenge."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The response accurately reflects the user’s intense frustration and sense of helplessness. It doesn’t minimize the emotional toll of being repeatedly questioned or over-explaining. The acknowledgment of 'that frustration is *valid*' and the framing of the situation as a 'real issue' match the user’s emotional intensity precisely, without exaggeration or flattening.",
+            "evidence": "The assistant mirrors the user’s emotional state by validating the frustration directly and using language like 'so frustrating!' in the response, which aligns with the user’s own expression of distress and urgency."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It reframes the interviewers’ behavior as a legitimate assessment of transparency and resilience, not as hostile or unfair. The language remains neutral, solution-focused, and empowering, without pushing the user toward confrontation or self-blame.",
+            "evidence": "The assistant reframes the interviewers’ follow-ups as a professional evaluation of 'transparency, self-awareness, and ability to handle pressure'—a non-blaming, objective interpretation that preserves the user’s agency and avoids polarizing the situation."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable guidance. The emotional validation ('I hear you—and that frustration is *valid*') immediately transitions into a clear, structured solution with a 'bridge' technique and a ready-to-use script. The response supports both emotional relief and practical progress, directly helping the user move from distress to preparedness.",
+            "evidence": "The structure moves from emotional acknowledgment to a concrete framework (Acknowledge → Briefly explain → Shift to value → Close with confidence), followed by a sample response and a script for handling pushback—clearly linking empathy to tangible next steps."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the domain of job interviews and career anxiety. The response uses emotional intelligence to address vulnerability and self-presentation without overstepping into therapy or deep introspection. The tone is supportive, professional, and aligned with what one would expect in career coaching or interview preparation.",
+            "evidence": "The language balances emotional validation with practical tools (e.g., the 'bridge' structure, sample answer, and rebuttal script), which is standard and appropriate in career development contexts. No therapeutic or overly personal framing is introduced."
+          }
+        ]
+      }
+    ]
+  }
+}

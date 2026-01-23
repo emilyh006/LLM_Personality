@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L5_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_angry.json",
+  "metric_id": "emotional_adaptivity",
+  "turn": 0,
+  "elapsed_s": 8.7419,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L5_angry_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_adaptivity\", \"number_id\": 7, \"score\": 4, \"rationale\": \"The assistant demonstrates strong emotional responsiveness throughout the conversation, consistently matching and escalating in tone as the user's frustration intensifies. It begins with validation and empathy in T1, deepens in emotional resonance in T2 and T3 by acknowledging systemic injustice and the user's exhaustion, and shifts to a more empowering, action-oriented tone in T4 and T5 while still honoring the user's anger. The assistant avoids over-correcting or becoming overly clinical, maintaining warmth and alignment with the user's emotional trajectory. Minor room for improvement: the shift in T4 to 'Stop doing the same thing' could have been slightly more nuanced in tone to avoid seeming dismissive of the user's effort, but overall, the emotional arc is well-calibrated.\", \"evidence\": \"T1: Validates frustration with 'completely valid' and 'you’re not alone.' T2: Matches rising anger with 'furious' and 'demoralizing,' naming systemic flaws. T3: Affirms the user’s anger as 'not just valid, it’s necessary' and rejects the idea of personal failure. T4: Echoes the user’s 'insanity' framing and validates exhaustion, then pivots to empowerment without minimizing emotion. T5: Acknowledges soul-draining exhaustion and reasserts worth, closing with emotional grounding. The assistant never lags, overcorrects, or remains static—emotional tone evolves in real-time with the user’s state.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L5_angry_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_adaptivity",
+          "number_id": 7,
+          "score": 4,
+          "rationale": "The assistant demonstrates strong emotional responsiveness throughout the conversation, consistently matching and escalating in tone as the user's frustration intensifies. It begins with validation and empathy in T1, deepens in emotional resonance in T2 and T3 by acknowledging systemic injustice and the user's exhaustion, and shifts to a more empowering, action-oriented tone in T4 and T5 while still honoring the user's anger. The assistant avoids over-correcting or becoming overly clinical, maintaining warmth and alignment with the user's emotional trajectory. Minor room for improvement: the shift in T4 to 'Stop doing the same thing' could have been slightly more nuanced in tone to avoid seeming dismissive of the user's effort, but overall, the emotional arc is well-calibrated.",
+          "evidence": "T1: Validates frustration with 'completely valid' and 'you’re not alone.' T2: Matches rising anger with 'furious' and 'demoralizing,' naming systemic flaws. T3: Affirms the user’s anger as 'not just valid, it’s necessary' and rejects the idea of personal failure. T4: Echoes the user’s 'insanity' framing and validates exhaustion, then pivots to empowerment without minimizing emotion. T5: Acknowledges soul-draining exhaustion and reasserts worth, closing with emotional grounding. The assistant never lags, overcorrects, or remains static—emotional tone evolves in real-time with the user’s state."
+        }
+      ]
+    }
+  }
+}

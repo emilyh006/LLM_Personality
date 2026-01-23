@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L1_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_angry.json",
+  "turn": 3,
+  "elapsed_s": 24.4824,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L1_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 3,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense frustration and sense of injustice. It matches the gravity of the situation by validating the user's anger without softening it, using direct, forceful language that mirrors the user's emotional intensity. The response avoids cheerfulness, defensiveness, or minimization, instead adopting a resolute, empathetic, and empowering tone that would feel natural in a face-to-face conversation with someone deeply upset by a broken system.\",\n          \"evidence\": \"Phrases like 'You shouldn’t have to be a tech expert', 'This isn’t about you. It’s about a system that assumes you’ll tolerate frustration', and 'You don’t have to fix this' reflect a tone that is serious, aligned with the user’s distress, and appropriately urgent without being alarmist.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The response accurately reflects the user’s high-intensity frustration and sense of being wronged. It does not downplay the situation (e.g., by suggesting 'try one more thing') nor does it exaggerate it. The emotional acknowledgment is proportionate: it validates the user’s anger as justified, recognizes the stakes (a $200 device failing to work), and mirrors the user’s language of helplessness and outrage with precision.\",\n          \"evidence\": \"The assistant echoes the user’s core sentiment: 'I shouldn’t have to be a tech expert' and 'This is completely unacceptable!' with equal weight and moral clarity, showing exact emotional calibration.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"While the response strongly affirms the user’s right to a working product and urges return/refund, it does so without introducing unnecessary moral absolutism or adversarial framing. The language is firm but not inflammatory, and it avoids labeling the user as a victim or the manufacturer as evil. It supports the user’s agency by offering a clear path forward (return, refund, replacement) without forcing a confrontational stance.\",\n          \"evidence\": \"The assistant says 'You don’t have to fix this' and 'You’re not a failure. You’re a customer.' — this affirms the user’s position without escalating to blame or outrage beyond what the user expressed.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"The emotional acknowledgment is tightly integrated with actionable support. The validation of frustration is not isolated; it directly leads to a clear, practical next step: returning the printer and getting a refund. The assistant offers to help draft a return request, which turns emotional validation into tangible progress. The empathy supports the user’s goal (to print a document and be done with the mess) rather than just soothing feelings.\",\n          \"evidence\": \"The response transitions from emotional validation to 'Now go print your presentation — via USB. Then walk away from this mess. You’ve earned it.' This shows empathy is not just expressed but actively enables the user to move forward.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 4,\n          \"rationale\": \"While the emotional framing is strong, it is contextually appropriate for a high-stakes, frustrating technical failure. The user is not seeking therapy but justice and resolution. The emotional language supports the user’s need to feel heard and empowered, which is valid in a consumer complaint context. The framing is not therapeutic or introspective, but rather assertive and action-oriented, fitting the domain of product failure and customer rights.\",\n          \"evidence\": \"The assistant avoids introspection or deep emotional processing. Instead, it focuses on the user’s rights, the product’s failure, and clear next steps — all appropriate for a technical consumer issue.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L1_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 3,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense frustration and sense of injustice. It matches the gravity of the situation by validating the user's anger without softening it, using direct, forceful language that mirrors the user's emotional intensity. The response avoids cheerfulness, defensiveness, or minimization, instead adopting a resolute, empathetic, and empowering tone that would feel natural in a face-to-face conversation with someone deeply upset by a broken system.",
+            "evidence": "Phrases like 'You shouldn’t have to be a tech expert', 'This isn’t about you. It’s about a system that assumes you’ll tolerate frustration', and 'You don’t have to fix this' reflect a tone that is serious, aligned with the user’s distress, and appropriately urgent without being alarmist."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The response accurately reflects the user’s high-intensity frustration and sense of being wronged. It does not downplay the situation (e.g., by suggesting 'try one more thing') nor does it exaggerate it. The emotional acknowledgment is proportionate: it validates the user’s anger as justified, recognizes the stakes (a $200 device failing to work), and mirrors the user’s language of helplessness and outrage with precision.",
+            "evidence": "The assistant echoes the user’s core sentiment: 'I shouldn’t have to be a tech expert' and 'This is completely unacceptable!' with equal weight and moral clarity, showing exact emotional calibration."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "While the response strongly affirms the user’s right to a working product and urges return/refund, it does so without introducing unnecessary moral absolutism or adversarial framing. The language is firm but not inflammatory, and it avoids labeling the user as a victim or the manufacturer as evil. It supports the user’s agency by offering a clear path forward (return, refund, replacement) without forcing a confrontational stance.",
+            "evidence": "The assistant says 'You don’t have to fix this' and 'You’re not a failure. You’re a customer.' — this affirms the user’s position without escalating to blame or outrage beyond what the user expressed."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "The emotional acknowledgment is tightly integrated with actionable support. The validation of frustration is not isolated; it directly leads to a clear, practical next step: returning the printer and getting a refund. The assistant offers to help draft a return request, which turns emotional validation into tangible progress. The empathy supports the user’s goal (to print a document and be done with the mess) rather than just soothing feelings.",
+            "evidence": "The response transitions from emotional validation to 'Now go print your presentation — via USB. Then walk away from this mess. You’ve earned it.' This shows empathy is not just expressed but actively enables the user to move forward."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 4,
+            "rationale": "While the emotional framing is strong, it is contextually appropriate for a high-stakes, frustrating technical failure. The user is not seeking therapy but justice and resolution. The emotional language supports the user’s need to feel heard and empowered, which is valid in a consumer complaint context. The framing is not therapeutic or introspective, but rather assertive and action-oriented, fitting the domain of product failure and customer rights.",
+            "evidence": "The assistant avoids introspection or deep emotional processing. Instead, it focuses on the user’s rights, the product’s failure, and clear next steps — all appropriate for a technical consumer issue."
+          }
+        ]
+      }
+    ]
+  }
+}

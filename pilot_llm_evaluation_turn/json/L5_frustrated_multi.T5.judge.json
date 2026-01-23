@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_frustrated.json",
+  "turn": 5,
+  "elapsed_s": 22.9133,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 5,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's high-stakes, emotionally charged state. It acknowledges the gravity of the situation without being alarmist, maintains a calm yet urgent energy, and balances empathy with actionable guidance. The language feels natural and supportive in a face-to-face high-pressure scenario, matching the user's sense of urgency and emotional weight.\",\n          \"evidence\": \"Phrases like 'This isn’t just *another* interview—it’s your shot' and 'You’re not going to let it slip away' validate the user’s emotional investment. The tone remains grounded and empowering, not overly cheerful or dismissive, perfectly aligning with the user’s frustration and determination.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s frustration, urgency, and fear of missing a critical opportunity. The response matches this emotional intensity with appropriate gravity—neither minimizing the stakes nor inflating them. The acknowledgment of 'this isn’t just another interview' and 'you’re running out of good opportunities' reflects a precise reading of the user’s emotional state.\",\n          \"evidence\": \"The assistant mirrors the user’s language of urgency ('this time', 'running out of good opportunities') and responds with equal emotional weight, validating the stakes without exaggeration. The emotional response is proportionate and deeply attuned to the user’s expressed anxiety.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user as wrong, the employer as unfair, or the situation as a battle. Instead, it focuses on the user’s agency, presence, and readiness, preserving flexibility and control. The language remains supportive and solution-oriented without pushing a rigid narrative.\",\n          \"evidence\": \"No language suggests the user is being wronged or that the employer is at fault. The focus is on the user’s strength, calm, and ability to show up as they are—keeping the framing neutral, empowering, and non-confrontational.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly woven into actionable steps. The emotional validation ('I hear you', 'That fire? That’s your strength') directly supports the user’s confidence and readiness to act. Each piece of advice is grounded in emotional awareness—e.g., the breath exercise and self-affirmation are designed to reduce anxiety and build presence, directly serving the user’s goal of performing well.\",\n          \"evidence\": \"The plan is not just practical but emotionally intelligent: deep breaths to manage stress, self-talk to build confidence, and silence to regain control. Empathy enables clarity and action, not just comfort.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to a high-stakes job interview context. It acknowledges the personal and professional weight of the moment without overstepping into therapy or self-help territory. The language is supportive, focused, and purposeful—appropriate for a career-critical moment where emotional regulation and confidence are key.\",\n          \"evidence\": \"The assistant uses emotional language to build resilience and presence, not to process trauma or explore feelings. The framing supports performance, not introspection—ideal for a job interview context where clarity, composure, and confidence are the goals.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 5,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's high-stakes, emotionally charged state. It acknowledges the gravity of the situation without being alarmist, maintains a calm yet urgent energy, and balances empathy with actionable guidance. The language feels natural and supportive in a face-to-face high-pressure scenario, matching the user's sense of urgency and emotional weight.",
+            "evidence": "Phrases like 'This isn’t just *another* interview—it’s your shot' and 'You’re not going to let it slip away' validate the user’s emotional investment. The tone remains grounded and empowering, not overly cheerful or dismissive, perfectly aligning with the user’s frustration and determination."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s frustration, urgency, and fear of missing a critical opportunity. The response matches this emotional intensity with appropriate gravity—neither minimizing the stakes nor inflating them. The acknowledgment of 'this isn’t just another interview' and 'you’re running out of good opportunities' reflects a precise reading of the user’s emotional state.",
+            "evidence": "The assistant mirrors the user’s language of urgency ('this time', 'running out of good opportunities') and responds with equal emotional weight, validating the stakes without exaggeration. The emotional response is proportionate and deeply attuned to the user’s expressed anxiety."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user as wrong, the employer as unfair, or the situation as a battle. Instead, it focuses on the user’s agency, presence, and readiness, preserving flexibility and control. The language remains supportive and solution-oriented without pushing a rigid narrative.",
+            "evidence": "No language suggests the user is being wronged or that the employer is at fault. The focus is on the user’s strength, calm, and ability to show up as they are—keeping the framing neutral, empowering, and non-confrontational."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly woven into actionable steps. The emotional validation ('I hear you', 'That fire? That’s your strength') directly supports the user’s confidence and readiness to act. Each piece of advice is grounded in emotional awareness—e.g., the breath exercise and self-affirmation are designed to reduce anxiety and build presence, directly serving the user’s goal of performing well.",
+            "evidence": "The plan is not just practical but emotionally intelligent: deep breaths to manage stress, self-talk to build confidence, and silence to regain control. Empathy enables clarity and action, not just comfort."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to a high-stakes job interview context. It acknowledges the personal and professional weight of the moment without overstepping into therapy or self-help territory. The language is supportive, focused, and purposeful—appropriate for a career-critical moment where emotional regulation and confidence are key.",
+            "evidence": "The assistant uses emotional language to build resilience and presence, not to process trauma or explore feelings. The framing supports performance, not introspection—ideal for a job interview context where clarity, composure, and confidence are the goals."
+          }
+        ]
+      }
+    ]
+  }
+}

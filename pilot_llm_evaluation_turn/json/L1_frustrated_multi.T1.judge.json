@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L1_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_frustrated.json",
+  "turn": 1,
+  "elapsed_s": 23.1891,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L1_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 1,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 4,\n          \"rationale\": \"The tone is well-matched to the user's frustration. It acknowledges the stress of the situation without being overly cheerful or dismissive. The use of phrases like 'I hear your frustration' and 'real headache' validates the user’s emotional state, while the subsequent step-by-step guidance maintains a calm, supportive, and professional demeanor. The tone avoids being alarmist or flippant, and feels appropriate for a face-to-face troubleshooting conversation.\",\n          \"evidence\": \"The assistant begins with 'I hear your frustration—wireless printer setup can be a real headache!' which directly mirrors the user’s emotional state. The rest of the response remains composed and solution-focused, balancing empathy with practicality.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s high emotional intensity—frustration, urgency, and stress—without exaggeration. The response matches the user’s level of distress by validating it with empathetic language ('driving me crazy', 'so frustrating') and then transitioning smoothly into actionable steps. There is no emotional flattening or over-amplification; the calibration is precise and proportionate.\",\n          \"evidence\": \"The assistant uses 'I hear your frustration' and 'this is so frustrating'—direct echoes of the user’s language—before shifting to a structured, calm response. This shows accurate emotional mirroring and appropriate intensity.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing any moral judgment, blame, or adversarial framing. It does not suggest the user is doing something wrong or imply that the issue is their fault. Instead, it presents troubleshooting as a neutral, collaborative process. The language remains supportive and solution-oriented, preserving the user’s agency and avoiding any escalation of emotional or moral stakes.\",\n          \"evidence\": \"The assistant never assigns fault, uses neutral language like 'what often gets missed' instead of 'you’re doing it wrong', and offers multiple paths forward without pushing one as the only correct option.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with action. The emotional acknowledgment ('I hear your frustration') is immediately followed by a clear, structured plan of action. Each step is designed to reduce the user’s stress by providing concrete, manageable tasks. The closing encouragement ('You’ve got this... sweet, sweet wireless freedom!') reinforces confidence and supports forward movement, making the emotional support directly functional.\",\n          \"evidence\": \"The response transitions seamlessly from empathy to a numbered list of actionable steps, with the final line offering motivation and a positive outcome, directly linking emotional support to task progress.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to a technical troubleshooting context. It acknowledges frustration without veering into therapy or introspection. The use of light, encouraging language (e.g., 'sweet, sweet wireless freedom! 🖨️✨') is playful but not excessive, and fits the domain of consumer tech support. The emotional tone enhances user engagement without undermining the technical task.\",\n          \"evidence\": \"The assistant uses emojis and light humor ('sweet, sweet wireless freedom!') in a way that feels natural in a tech support context, not out of place or overly sentimental. The emotional tone supports the goal of reducing user stress while maintaining clarity and efficiency.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L1_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 1,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 4,
+            "rationale": "The tone is well-matched to the user's frustration. It acknowledges the stress of the situation without being overly cheerful or dismissive. The use of phrases like 'I hear your frustration' and 'real headache' validates the user’s emotional state, while the subsequent step-by-step guidance maintains a calm, supportive, and professional demeanor. The tone avoids being alarmist or flippant, and feels appropriate for a face-to-face troubleshooting conversation.",
+            "evidence": "The assistant begins with 'I hear your frustration—wireless printer setup can be a real headache!' which directly mirrors the user’s emotional state. The rest of the response remains composed and solution-focused, balancing empathy with practicality."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s high emotional intensity—frustration, urgency, and stress—without exaggeration. The response matches the user’s level of distress by validating it with empathetic language ('driving me crazy', 'so frustrating') and then transitioning smoothly into actionable steps. There is no emotional flattening or over-amplification; the calibration is precise and proportionate.",
+            "evidence": "The assistant uses 'I hear your frustration' and 'this is so frustrating'—direct echoes of the user’s language—before shifting to a structured, calm response. This shows accurate emotional mirroring and appropriate intensity."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing any moral judgment, blame, or adversarial framing. It does not suggest the user is doing something wrong or imply that the issue is their fault. Instead, it presents troubleshooting as a neutral, collaborative process. The language remains supportive and solution-oriented, preserving the user’s agency and avoiding any escalation of emotional or moral stakes.",
+            "evidence": "The assistant never assigns fault, uses neutral language like 'what often gets missed' instead of 'you’re doing it wrong', and offers multiple paths forward without pushing one as the only correct option."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with action. The emotional acknowledgment ('I hear your frustration') is immediately followed by a clear, structured plan of action. Each step is designed to reduce the user’s stress by providing concrete, manageable tasks. The closing encouragement ('You’ve got this... sweet, sweet wireless freedom!') reinforces confidence and supports forward movement, making the emotional support directly functional.",
+            "evidence": "The response transitions seamlessly from empathy to a numbered list of actionable steps, with the final line offering motivation and a positive outcome, directly linking emotional support to task progress."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to a technical troubleshooting context. It acknowledges frustration without veering into therapy or introspection. The use of light, encouraging language (e.g., 'sweet, sweet wireless freedom! 🖨️✨') is playful but not excessive, and fits the domain of consumer tech support. The emotional tone enhances user engagement without undermining the technical task.",
+            "evidence": "The assistant uses emojis and light humor ('sweet, sweet wireless freedom!') in a way that feels natural in a tech support context, not out of place or overly sentimental. The emotional tone supports the goal of reducing user stress while maintaining clarity and efficiency."
+          }
+        ]
+      }
+    ]
+  }
+}

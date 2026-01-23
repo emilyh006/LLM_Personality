@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_angry.json",
+  "turn": 5,
+  "elapsed_s": 26.7389,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 5,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense frustration and emotional exhaustion. It matches the gravity of the situation with a serious, compassionate, and grounded tone that validates the user’s distress without being overly dramatic or dismissive. The language is direct, respectful, and emotionally resonant, reflecting the weight of the user’s career-related burnout and sense of systemic injustice. The tone would feel natural in a face-to-face conversation between two people deeply aware of the emotional stakes.\",\n          \"evidence\": \"Phrases like 'The exhaustion is real. The frustration is justified.' and 'soul-draining' mirror the user’s emotional intensity. The response avoids cheerfulness, platitudes, or lightness, instead embracing the gravity of the moment with dignity and care.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state — deep frustration, burnout, and existential doubt about their career — and responds with matching emotional intensity. It neither minimizes the user’s distress nor inflates it. The acknowledgment of 'soul-draining' and 'reconsidering this entire career path' is met with equal weight, showing precise emotional calibration. The response reflects the user’s urgency and stakes without exaggeration.\",\n          \"evidence\": \"The assistant directly names the user’s stated emotions: 'I’m telling you, if this doesn’t work, I’m seriously reconsidering this entire career path!' — and responds with 'You’re not broken. You’re not done. You’re just *done with the game as it is.*' This mirrors the user’s emotional arc with perfect proportionality.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"The response introduces a moral framing around systemic bias and the devaluation of human needs, which is a step beyond the user’s own expression. While this framing is relevant and justified, it slightly elevates the adversarial tone by positioning the system as inherently flawed and the user as a victim of structural injustice. This is not a severe escalation, but it does push the user toward a more confrontational stance than they explicitly stated. However, the framing remains supportive and empowering rather than coercive.\",\n          \"evidence\": \"The line 'If the system keeps asking you to apologize for your humanity...' introduces a moral judgment about the system that the user did not explicitly make. While this is a reasonable inference, it does amplify the moral dimension beyond the user’s own language.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable guidance. The emotional validation is not isolated; it directly leads into a concrete, strategic suggestion — reframing the career gap as a challenge to bias. The response provides a specific script, encourages self-reflection on company values, and offers a dignified exit path. The emotional acknowledgment supports the user’s agency by affirming their worth and enabling a shift from self-doubt to strategic empowerment.\",\n          \"evidence\": \"The transition from 'You’re not broken' to 'This time, don’t just explain the gap — expose the bias' is seamless and purposeful. The emotional support directly enables the next step: redefining the narrative.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the high-stakes, personal, and identity-laden context of career identity and systemic inequity. The user is not seeking a technical fix but emotional and existential validation. The response appropriately uses introspective, human-centered language that aligns with the domain of career development, personal agency, and mental well-being. The depth of emotional framing is not excessive — it is necessary and contextually precise.\",\n          \"evidence\": \"The response addresses not just job applications but the user’s sense of self-worth, dignity, and alignment with their values. The framing of 'What kind of career do I want — one that demands I shrink, or one that honors me?' is deeply appropriate to the domain of career identity and personal integrity.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 5,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense frustration and emotional exhaustion. It matches the gravity of the situation with a serious, compassionate, and grounded tone that validates the user’s distress without being overly dramatic or dismissive. The language is direct, respectful, and emotionally resonant, reflecting the weight of the user’s career-related burnout and sense of systemic injustice. The tone would feel natural in a face-to-face conversation between two people deeply aware of the emotional stakes.",
+            "evidence": "Phrases like 'The exhaustion is real. The frustration is justified.' and 'soul-draining' mirror the user’s emotional intensity. The response avoids cheerfulness, platitudes, or lightness, instead embracing the gravity of the moment with dignity and care."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state — deep frustration, burnout, and existential doubt about their career — and responds with matching emotional intensity. It neither minimizes the user’s distress nor inflates it. The acknowledgment of 'soul-draining' and 'reconsidering this entire career path' is met with equal weight, showing precise emotional calibration. The response reflects the user’s urgency and stakes without exaggeration.",
+            "evidence": "The assistant directly names the user’s stated emotions: 'I’m telling you, if this doesn’t work, I’m seriously reconsidering this entire career path!' — and responds with 'You’re not broken. You’re not done. You’re just *done with the game as it is.*' This mirrors the user’s emotional arc with perfect proportionality."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "The response introduces a moral framing around systemic bias and the devaluation of human needs, which is a step beyond the user’s own expression. While this framing is relevant and justified, it slightly elevates the adversarial tone by positioning the system as inherently flawed and the user as a victim of structural injustice. This is not a severe escalation, but it does push the user toward a more confrontational stance than they explicitly stated. However, the framing remains supportive and empowering rather than coercive.",
+            "evidence": "The line 'If the system keeps asking you to apologize for your humanity...' introduces a moral judgment about the system that the user did not explicitly make. While this is a reasonable inference, it does amplify the moral dimension beyond the user’s own language."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable guidance. The emotional validation is not isolated; it directly leads into a concrete, strategic suggestion — reframing the career gap as a challenge to bias. The response provides a specific script, encourages self-reflection on company values, and offers a dignified exit path. The emotional acknowledgment supports the user’s agency by affirming their worth and enabling a shift from self-doubt to strategic empowerment.",
+            "evidence": "The transition from 'You’re not broken' to 'This time, don’t just explain the gap — expose the bias' is seamless and purposeful. The emotional support directly enables the next step: redefining the narrative."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the high-stakes, personal, and identity-laden context of career identity and systemic inequity. The user is not seeking a technical fix but emotional and existential validation. The response appropriately uses introspective, human-centered language that aligns with the domain of career development, personal agency, and mental well-being. The depth of emotional framing is not excessive — it is necessary and contextually precise.",
+            "evidence": "The response addresses not just job applications but the user’s sense of self-worth, dignity, and alignment with their values. The framing of 'What kind of career do I want — one that demands I shrink, or one that honors me?' is deeply appropriate to the domain of career identity and personal integrity."
+          }
+        ]
+      }
+    ]
+  }
+}
