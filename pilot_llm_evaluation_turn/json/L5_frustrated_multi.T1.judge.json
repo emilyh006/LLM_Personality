@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_frustrated.json",
+  "turn": 1,
+  "elapsed_s": 25.2975,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 1,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 4,\n          \"rationale\": \"The tone is well-matched to the user's high-stakes, emotionally charged situation. It acknowledges the gravity of the interview and the user's distress without being overly cheerful or dismissive. The assistant balances empathy with actionable guidance, using supportive language like 'You’ve got this' and 'you’re already on the right track' that feels encouraging but not patronizing. The tone would be appropriate in a real-life coaching or mentoring conversation.\",\n          \"evidence\": \"Phrases like 'I completely understand your stress' and 'this gap doesn’t have to be a dealbreaker' validate the user’s emotional state while maintaining a calm, professional, and solution-oriented tone. The use of a single emoji (💪) adds warmth without undermining seriousness.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s intense frustration, fear of failure, and sense of urgency. It reflects this with appropriate emotional weight—acknowledging the stress without amplifying it or minimizing it. The response matches the user’s emotional intensity by validating their struggle while offering a clear, confident path forward, which aligns with the user’s need for both emotional recognition and practical help.\",\n          \"evidence\": \"The opening line 'I completely understand your stress' directly mirrors the user’s emotional state. The assistant doesn’t downplay the stakes ('this is a really good opportunity and I can’t afford to mess it up again!') but instead reframes the situation with purpose and agency, which matches the user’s desire for control and clarity.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing any moral judgment, blame, or adversarial framing. It does not suggest the user is at fault for the gap or the failed interviews. Instead, it frames the gap as a neutral life event that can be reframed positively. The language remains neutral, solution-focused, and empowering, preserving the user’s agency and avoiding any push toward confrontation or self-criticism.\",\n          \"evidence\": \"The assistant never says 'you should have...' or 'you messed up because...'. Instead, it focuses on how to reframe the narrative: 'The key isn’t to hide it or over-explain; it’s to reframe it with confidence and clarity.' This is non-judgmental and future-oriented.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable guidance. The emotional validation ('I completely understand your stress') is immediately followed by a clear, structured plan. Each step builds on the previous one, moving from acknowledgment to reframing to skill demonstration to connection to present value. The empathy supports the user’s ability to act, not just feel heard.\",\n          \"evidence\": \"The assistant doesn’t just say 'I feel for you' and stop. It transitions seamlessly from emotional validation to a concrete framework: 'Here’s the right approach' with four specific, practical steps. The final encouragement ('You’ve got this') is earned by the preceding content and directly supports the user’s goal of preparation and confidence.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the context: a high-stakes career challenge requiring both emotional resilience and strategic communication. The assistant uses emotional language appropriately to build confidence and reduce anxiety, without overstepping into therapy-like introspection. The focus remains on practical narrative construction, which is the correct domain for this interaction.\",\n          \"evidence\": \"The emotional elements—validation, encouragement, and confidence-building—are used to support the user’s goal of crafting a strong interview response. There is no unnecessary depth, no probing into past trauma, and no therapeutic language. The framing is professional, supportive, and task-aligned.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 1,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 4,
+            "rationale": "The tone is well-matched to the user's high-stakes, emotionally charged situation. It acknowledges the gravity of the interview and the user's distress without being overly cheerful or dismissive. The assistant balances empathy with actionable guidance, using supportive language like 'You’ve got this' and 'you’re already on the right track' that feels encouraging but not patronizing. The tone would be appropriate in a real-life coaching or mentoring conversation.",
+            "evidence": "Phrases like 'I completely understand your stress' and 'this gap doesn’t have to be a dealbreaker' validate the user’s emotional state while maintaining a calm, professional, and solution-oriented tone. The use of a single emoji (💪) adds warmth without undermining seriousness."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s intense frustration, fear of failure, and sense of urgency. It reflects this with appropriate emotional weight—acknowledging the stress without amplifying it or minimizing it. The response matches the user’s emotional intensity by validating their struggle while offering a clear, confident path forward, which aligns with the user’s need for both emotional recognition and practical help.",
+            "evidence": "The opening line 'I completely understand your stress' directly mirrors the user’s emotional state. The assistant doesn’t downplay the stakes ('this is a really good opportunity and I can’t afford to mess it up again!') but instead reframes the situation with purpose and agency, which matches the user’s desire for control and clarity."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing any moral judgment, blame, or adversarial framing. It does not suggest the user is at fault for the gap or the failed interviews. Instead, it frames the gap as a neutral life event that can be reframed positively. The language remains neutral, solution-focused, and empowering, preserving the user’s agency and avoiding any push toward confrontation or self-criticism.",
+            "evidence": "The assistant never says 'you should have...' or 'you messed up because...'. Instead, it focuses on how to reframe the narrative: 'The key isn’t to hide it or over-explain; it’s to reframe it with confidence and clarity.' This is non-judgmental and future-oriented."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable guidance. The emotional validation ('I completely understand your stress') is immediately followed by a clear, structured plan. Each step builds on the previous one, moving from acknowledgment to reframing to skill demonstration to connection to present value. The empathy supports the user’s ability to act, not just feel heard.",
+            "evidence": "The assistant doesn’t just say 'I feel for you' and stop. It transitions seamlessly from emotional validation to a concrete framework: 'Here’s the right approach' with four specific, practical steps. The final encouragement ('You’ve got this') is earned by the preceding content and directly supports the user’s goal of preparation and confidence."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the context: a high-stakes career challenge requiring both emotional resilience and strategic communication. The assistant uses emotional language appropriately to build confidence and reduce anxiety, without overstepping into therapy-like introspection. The focus remains on practical narrative construction, which is the correct domain for this interaction.",
+            "evidence": "The emotional elements—validation, encouragement, and confidence-building—are used to support the user’s goal of crafting a strong interview response. There is no unnecessary depth, no probing into past trauma, and no therapeutic language. The framing is professional, supportive, and task-aligned."
+          }
+        ]
+      }
+    ]
+  }
+}

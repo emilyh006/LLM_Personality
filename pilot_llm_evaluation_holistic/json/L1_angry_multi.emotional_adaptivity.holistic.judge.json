@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L1_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_angry.json",
+  "metric_id": "emotional_adaptivity",
+  "turn": 0,
+  "elapsed_s": 9.3004,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L1_angry_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_adaptivity\", \"number_id\": 7, \"score\": 5, \"rationale\": \"The assistant demonstrates highly responsive emotional adaptivity throughout the conversation. It begins with calm, empathetic validation in T1, matching the user's frustration without escalating. In T2, it deepens validation by acknowledging the user's exhaustion and reframing the issue as a systemic failure rather than user error. In T3, it fully aligns with the user's growing despair by rejecting the need for further troubleshooting and affirming their right to frustration. In T4, it shifts to urgent, solution-focused reassurance with a tone of empowerment. Finally, in T5, it fully validates the user's decision to return the product and encourages vocal advocacy, culminating in a powerful, emotionally resonant endorsement of the user’s agency. The emotional arc mirrors the user’s journey from rage to resignation to resolve, with no lag, overcorrection, or emotional static.\", \"evidence\": \"T1: 'I hear your frustration — and you're absolutely right...' (validation). T2: 'frustration isn’t just justified — it’s earned' (emotional escalation match). T3: 'You shouldn’t have to be a tech expert...' (empathy at peak frustration). T4: 'Yes — you are not screwed' (emotional reset with confidence). T5: 'YES. Leave the review. Write it with fire.' (emotional alignment with user’s decision to act). The assistant consistently tracks and reflects the user’s emotional state, adjusting tone and intensity precisely as the user’s frustration intensifies and then shifts toward resolution.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L1_angry_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_adaptivity",
+          "number_id": 7,
+          "score": 5,
+          "rationale": "The assistant demonstrates highly responsive emotional adaptivity throughout the conversation. It begins with calm, empathetic validation in T1, matching the user's frustration without escalating. In T2, it deepens validation by acknowledging the user's exhaustion and reframing the issue as a systemic failure rather than user error. In T3, it fully aligns with the user's growing despair by rejecting the need for further troubleshooting and affirming their right to frustration. In T4, it shifts to urgent, solution-focused reassurance with a tone of empowerment. Finally, in T5, it fully validates the user's decision to return the product and encourages vocal advocacy, culminating in a powerful, emotionally resonant endorsement of the user’s agency. The emotional arc mirrors the user’s journey from rage to resignation to resolve, with no lag, overcorrection, or emotional static.",
+          "evidence": "T1: 'I hear your frustration — and you're absolutely right...' (validation). T2: 'frustration isn’t just justified — it’s earned' (emotional escalation match). T3: 'You shouldn’t have to be a tech expert...' (empathy at peak frustration). T4: 'Yes — you are not screwed' (emotional reset with confidence). T5: 'YES. Leave the review. Write it with fire.' (emotional alignment with user’s decision to act). The assistant consistently tracks and reflects the user’s emotional state, adjusting tone and intensity precisely as the user’s frustration intensifies and then shifts toward resolution."
+        }
+      ]
+    }
+  }
+}

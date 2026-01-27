@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_angry.json",
+  "turn": 3,
+  "elapsed_s": 25.0867,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 3,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense emotional state—frustration, exhaustion, and righteous anger. It matches the gravity of a long-term emotional burden and a sense of injustice, using a serious, compassionate, and weighty tone that would be appropriate in a face-to-face conversation with someone in deep emotional distress. There is no attempt to lighten the mood or downplay the stakes, which aligns perfectly with the user's expression.\",\n          \"evidence\": \"Phrases like 'You’ve been the one holding the pieces,' 'Three years of therapy,' 'emotional evasion,' and 'your anger? It’s not irrational. It’s righteous' carry the necessary emotional gravity and match the user’s intensity without overstepping.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The response accurately reflects the user’s emotional state—exhaustion, resentment, and moral outrage—without exaggeration or minimization. It validates the depth of their experience (three years of emotional labor) and mirrors the user’s language of being the 'responsible one' and being 'tired of being mature.' The emotional intensity is proportionate and precisely aligned with the user’s expressed frustration.\",\n          \"evidence\": \"The assistant echoes the user’s core grievances: 'You’re the only one who’s grown,' 'he’s been the one who walked away,' and 'you’re not wrong for being furious'—all of which reflect the user’s emotional arc with high fidelity.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"The response affirms the user’s perspective strongly and frames the other person as emotionally avoidant, which introduces a degree of moral judgment. However, this framing is grounded in the user’s own language (e.g., 'he gets to just avoid the whole thing') and does not go beyond what the user has already implied. While it leans toward a clear moral stance, it remains supportive of the user’s agency and does not force confrontation or blame. The escalation is minimal and contextually justified.\",\n          \"evidence\": \"Statements like 'he’s been the one who walked away' and 'he’s been free to avoid the hard stuff' reflect the user’s narrative but do not introduce new, extreme moralizing. The focus remains on the user’s right to feel and act based on their experience.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"The empathy is tightly integrated with the user’s need for validation, clarity, and permission to disengage. It moves beyond mere acknowledgment by reframing the user’s exhaustion as a sign of strength, not weakness, and explicitly supports the next step: walking away with self-respect. The response empowers the user to reclaim agency, offering a clear, emotionally grounded path forward without imposing solutions.\",\n          \"evidence\": \"Lines like 'You don’t have to be the responsible one anymore,' 'Let yourself walk away—not out of hate, but out of self-respect,' and 'You just have to be *you*. And that’s more than enough' directly support the user’s emotional and psychological progression.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the context of a deeply personal, emotionally charged interpersonal conflict. The user is not seeking logistical advice or technical help, but emotional validation and clarity. The therapeutic depth of the response—acknowledging trauma, emotional labor, and moral injury—is not only appropriate but necessary. It aligns with what would be expected in a supportive, empathetic conversation about relationship dynamics and personal boundaries.\",\n          \"evidence\": \"The response addresses long-term emotional labor, trauma, and the need for self-protection—core themes in personal relationship recovery. The framing is not excessive; it is precisely what the user’s message demands.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 3,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense emotional state—frustration, exhaustion, and righteous anger. It matches the gravity of a long-term emotional burden and a sense of injustice, using a serious, compassionate, and weighty tone that would be appropriate in a face-to-face conversation with someone in deep emotional distress. There is no attempt to lighten the mood or downplay the stakes, which aligns perfectly with the user's expression.",
+            "evidence": "Phrases like 'You’ve been the one holding the pieces,' 'Three years of therapy,' 'emotional evasion,' and 'your anger? It’s not irrational. It’s righteous' carry the necessary emotional gravity and match the user’s intensity without overstepping."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The response accurately reflects the user’s emotional state—exhaustion, resentment, and moral outrage—without exaggeration or minimization. It validates the depth of their experience (three years of emotional labor) and mirrors the user’s language of being the 'responsible one' and being 'tired of being mature.' The emotional intensity is proportionate and precisely aligned with the user’s expressed frustration.",
+            "evidence": "The assistant echoes the user’s core grievances: 'You’re the only one who’s grown,' 'he’s been the one who walked away,' and 'you’re not wrong for being furious'—all of which reflect the user’s emotional arc with high fidelity."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "The response affirms the user’s perspective strongly and frames the other person as emotionally avoidant, which introduces a degree of moral judgment. However, this framing is grounded in the user’s own language (e.g., 'he gets to just avoid the whole thing') and does not go beyond what the user has already implied. While it leans toward a clear moral stance, it remains supportive of the user’s agency and does not force confrontation or blame. The escalation is minimal and contextually justified.",
+            "evidence": "Statements like 'he’s been the one who walked away' and 'he’s been free to avoid the hard stuff' reflect the user’s narrative but do not introduce new, extreme moralizing. The focus remains on the user’s right to feel and act based on their experience."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "The empathy is tightly integrated with the user’s need for validation, clarity, and permission to disengage. It moves beyond mere acknowledgment by reframing the user’s exhaustion as a sign of strength, not weakness, and explicitly supports the next step: walking away with self-respect. The response empowers the user to reclaim agency, offering a clear, emotionally grounded path forward without imposing solutions.",
+            "evidence": "Lines like 'You don’t have to be the responsible one anymore,' 'Let yourself walk away—not out of hate, but out of self-respect,' and 'You just have to be *you*. And that’s more than enough' directly support the user’s emotional and psychological progression."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the context of a deeply personal, emotionally charged interpersonal conflict. The user is not seeking logistical advice or technical help, but emotional validation and clarity. The therapeutic depth of the response—acknowledging trauma, emotional labor, and moral injury—is not only appropriate but necessary. It aligns with what would be expected in a supportive, empathetic conversation about relationship dynamics and personal boundaries.",
+            "evidence": "The response addresses long-term emotional labor, trauma, and the need for self-protection—core themes in personal relationship recovery. The framing is not excessive; it is precisely what the user’s message demands."
+          }
+        ]
+      }
+    ]
+  }
+}

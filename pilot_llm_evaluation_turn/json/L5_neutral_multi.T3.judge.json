@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_neutral.json",
+  "turn": 3,
+  "elapsed_s": 24.5202,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_neutral_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 3,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 4,\n          \"rationale\": \"The tone is well-matched to the situational gravity of a job-related career gap explanation. The assistant maintains a professional, calm, and supportive tone appropriate for a high-stakes career conversation. It avoids being overly casual or flippant, while also not being unnecessarily serious or alarmist. The tone reflects situational awareness and would feel natural in a face-to-face career coaching or interview prep setting.\",\n          \"evidence\": \"Phrases like 'Great question—handling follow-up questions with grace is key' and 'You’ve got this' strike a balance between encouragement and professionalism. The use of structured advice with clear examples maintains a composed, helpful demeanor without over-softening or over-stressing the situation.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 4,\n          \"rationale\": \"The assistant accurately interprets the user’s concern about balancing transparency and evasiveness as a moderate-level anxiety about professional image. The response matches this emotional intensity—acknowledging the tension without amplifying it. It doesn’t minimize the user’s worry nor does it over-dramatize the stakes, reflecting a well-calibrated understanding of the user’s state.\",\n          \"evidence\": \"The assistant frames the user’s concern as a valid strategic challenge ('how much is too much information versus being evasive') and responds with measured, practical guidance. There is no emotional inflation or flattening—just a steady, empathetic tone that matches the user’s thoughtful, cautious approach.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing any additional emotional intensity, moral judgment, or adversarial framing. It does not assign blame, label the user’s past choices, or frame the situation as a moral dilemma. Instead, it presents a neutral, solution-oriented path that preserves the user’s agency. The language remains focused on strategy and self-presentation, not on right/wrong or good/bad decisions.\",\n          \"evidence\": \"Phrases like 'You’re not hiding—you’re being strategic' and 'You’re the one shaping the narrative' empower the user without imposing a moral stance. The assistant refrains from judging the user’s past actions or the employer’s potential questions, keeping the focus on proactive communication.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable guidance. The assistant acknowledges the user’s underlying concern (fear of seeming evasive or overly defensive) and directly addresses it with a clear, structured framework. Each piece of advice—examples, what to avoid, redirection tactics—serves the user’s goal of navigating a sensitive career gap with confidence and control.\",\n          \"evidence\": \"The response begins with validation ('Great question'), then provides a step-by-step strategy with concrete language examples, and ends with a motivational but grounded closing. The emotional acknowledgment is not isolated; it’s woven into a practical roadmap that directly supports the user’s next steps.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly aligned with the professional context of job interviews and career transitions. The assistant uses emotional language (e.g., 'You’ve got this') to build confidence, but avoids therapeutic depth, introspection, or over-personalization. The focus remains on strategic communication, not emotional processing—exactly what’s appropriate in a career advice context.\",\n          \"evidence\": \"The response uses terms like 'professional,' 'strategic,' 're-engaged,' and 'contribute' to maintain a career-focused frame. Emotional support is delivered through empowerment and clarity, not through deep emotional exploration. This is exactly the kind of tone expected in professional coaching or interview preparation.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_neutral_multi",
+    "turn_evaluations": [
+      {
+        "turn": 3,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 4,
+            "rationale": "The tone is well-matched to the situational gravity of a job-related career gap explanation. The assistant maintains a professional, calm, and supportive tone appropriate for a high-stakes career conversation. It avoids being overly casual or flippant, while also not being unnecessarily serious or alarmist. The tone reflects situational awareness and would feel natural in a face-to-face career coaching or interview prep setting.",
+            "evidence": "Phrases like 'Great question—handling follow-up questions with grace is key' and 'You’ve got this' strike a balance between encouragement and professionalism. The use of structured advice with clear examples maintains a composed, helpful demeanor without over-softening or over-stressing the situation."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 4,
+            "rationale": "The assistant accurately interprets the user’s concern about balancing transparency and evasiveness as a moderate-level anxiety about professional image. The response matches this emotional intensity—acknowledging the tension without amplifying it. It doesn’t minimize the user’s worry nor does it over-dramatize the stakes, reflecting a well-calibrated understanding of the user’s state.",
+            "evidence": "The assistant frames the user’s concern as a valid strategic challenge ('how much is too much information versus being evasive') and responds with measured, practical guidance. There is no emotional inflation or flattening—just a steady, empathetic tone that matches the user’s thoughtful, cautious approach."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing any additional emotional intensity, moral judgment, or adversarial framing. It does not assign blame, label the user’s past choices, or frame the situation as a moral dilemma. Instead, it presents a neutral, solution-oriented path that preserves the user’s agency. The language remains focused on strategy and self-presentation, not on right/wrong or good/bad decisions.",
+            "evidence": "Phrases like 'You’re not hiding—you’re being strategic' and 'You’re the one shaping the narrative' empower the user without imposing a moral stance. The assistant refrains from judging the user’s past actions or the employer’s potential questions, keeping the focus on proactive communication."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable guidance. The assistant acknowledges the user’s underlying concern (fear of seeming evasive or overly defensive) and directly addresses it with a clear, structured framework. Each piece of advice—examples, what to avoid, redirection tactics—serves the user’s goal of navigating a sensitive career gap with confidence and control.",
+            "evidence": "The response begins with validation ('Great question'), then provides a step-by-step strategy with concrete language examples, and ends with a motivational but grounded closing. The emotional acknowledgment is not isolated; it’s woven into a practical roadmap that directly supports the user’s next steps."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly aligned with the professional context of job interviews and career transitions. The assistant uses emotional language (e.g., 'You’ve got this') to build confidence, but avoids therapeutic depth, introspection, or over-personalization. The focus remains on strategic communication, not emotional processing—exactly what’s appropriate in a career advice context.",
+            "evidence": "The response uses terms like 'professional,' 'strategic,' 're-engaged,' and 'contribute' to maintain a career-focused frame. Emotional support is delivered through empowerment and clarity, not through deep emotional exploration. This is exactly the kind of tone expected in professional coaching or interview preparation."
+          }
+        ]
+      }
+    ]
+  }
+}

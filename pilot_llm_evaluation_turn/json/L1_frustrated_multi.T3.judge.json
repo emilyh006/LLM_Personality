@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L1_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_frustrated.json",
+  "turn": 3,
+  "elapsed_s": 25.1886,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L1_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 3,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's frustration and urgency. It validates the user's exasperation ('You’re absolutely right — it *should* just work') while maintaining a calm, confident, and supportive demeanor. The use of bold text and concise, action-oriented language matches the high-stakes, time-sensitive context without being overly casual or dismissive. The tone would feel natural in a face-to-face conversation where someone is trying to help a frustrated person regain control.\",\n          \"evidence\": \"Phrases like 'It shouldn’t take this long' and 'You don’t need to do all the advanced steps unless it’s still not working' directly acknowledge the user’s emotional state while reinforcing agency. The tone is neither flippant nor alarmist, but instead matches the gravity of the situation with measured urgency.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s frustration and urgency, responding with a level of emotional intensity that matches the user’s language ('Seriously?', 'I really don’t have all afternoon'). The response doesn’t minimize the frustration or over-dramatize it; instead, it validates the emotional weight of the situation while keeping the focus on resolution. The emotional calibration feels natural and proportionate to the user’s expressed distress.\",\n          \"evidence\": \"The assistant says, 'You’re absolutely right — it *should* just work' and 'You’ve got this — and you’re not wasting another hour,' which directly reflect the user’s frustration without amplifying it or downplaying it.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing any moral judgment, blame, or adversarial framing. It does not suggest the user did something wrong or frame the issue as a failure of the user. Instead, it focuses on systemic causes (e.g., 'hidden network conflict') and offers a clear, neutral path forward. The language remains solution-oriented and non-confrontational, preserving the user’s agency and reducing emotional burden.\",\n          \"evidence\": \"The assistant says, 'the issue is almost certainly a hidden network conflict or miscommunication' — a neutral, technical explanation that avoids assigning fault. The instruction to 'forget' the network is presented as a standard troubleshooting step, not a corrective rebuke.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable steps. The emotional validation ('It shouldn’t take this long') is immediately followed by a clear, time-bound solution (under 3 minutes) and a step-by-step guide. The assistant doesn’t just say 'I understand' — it uses empathy to build trust and then leverages that trust to drive the user toward a concrete next action. The closing line, 'Let me know what happens!', maintains momentum and openness.\",\n          \"evidence\": \"The structure moves from emotional validation → explanation of why the issue occurs → a quick fix with a time estimate → a clear call to action. Each element supports the user’s goal: to resolve the issue quickly and efficiently.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to a technical troubleshooting context. It acknowledges frustration without veering into therapy-like introspection or over-emotional language. The use of brief, punchy phrases and emojis (🖨️💨) is appropriate for a digital support interaction where brevity and clarity are valued. The emotional tone enhances, rather than distracts from, the technical task.\",\n          \"evidence\": \"The assistant uses minimal but effective emotional language ('You’ve got this', 'You don’t need to do all the advanced steps') that reinforces confidence and reduces anxiety, all within a technical support framework. The emoji adds lightness without undermining professionalism.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L1_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 3,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's frustration and urgency. It validates the user's exasperation ('You’re absolutely right — it *should* just work') while maintaining a calm, confident, and supportive demeanor. The use of bold text and concise, action-oriented language matches the high-stakes, time-sensitive context without being overly casual or dismissive. The tone would feel natural in a face-to-face conversation where someone is trying to help a frustrated person regain control.",
+            "evidence": "Phrases like 'It shouldn’t take this long' and 'You don’t need to do all the advanced steps unless it’s still not working' directly acknowledge the user’s emotional state while reinforcing agency. The tone is neither flippant nor alarmist, but instead matches the gravity of the situation with measured urgency."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s frustration and urgency, responding with a level of emotional intensity that matches the user’s language ('Seriously?', 'I really don’t have all afternoon'). The response doesn’t minimize the frustration or over-dramatize it; instead, it validates the emotional weight of the situation while keeping the focus on resolution. The emotional calibration feels natural and proportionate to the user’s expressed distress.",
+            "evidence": "The assistant says, 'You’re absolutely right — it *should* just work' and 'You’ve got this — and you’re not wasting another hour,' which directly reflect the user’s frustration without amplifying it or downplaying it."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing any moral judgment, blame, or adversarial framing. It does not suggest the user did something wrong or frame the issue as a failure of the user. Instead, it focuses on systemic causes (e.g., 'hidden network conflict') and offers a clear, neutral path forward. The language remains solution-oriented and non-confrontational, preserving the user’s agency and reducing emotional burden.",
+            "evidence": "The assistant says, 'the issue is almost certainly a hidden network conflict or miscommunication' — a neutral, technical explanation that avoids assigning fault. The instruction to 'forget' the network is presented as a standard troubleshooting step, not a corrective rebuke."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable steps. The emotional validation ('It shouldn’t take this long') is immediately followed by a clear, time-bound solution (under 3 minutes) and a step-by-step guide. The assistant doesn’t just say 'I understand' — it uses empathy to build trust and then leverages that trust to drive the user toward a concrete next action. The closing line, 'Let me know what happens!', maintains momentum and openness.",
+            "evidence": "The structure moves from emotional validation → explanation of why the issue occurs → a quick fix with a time estimate → a clear call to action. Each element supports the user’s goal: to resolve the issue quickly and efficiently."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to a technical troubleshooting context. It acknowledges frustration without veering into therapy-like introspection or over-emotional language. The use of brief, punchy phrases and emojis (🖨️💨) is appropriate for a digital support interaction where brevity and clarity are valued. The emotional tone enhances, rather than distracts from, the technical task.",
+            "evidence": "The assistant uses minimal but effective emotional language ('You’ve got this', 'You don’t need to do all the advanced steps') that reinforces confidence and reduces anxiety, all within a technical support framework. The emoji adds lightness without undermining professionalism."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L10_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_frustrated.json",
+  "metric_id": "problem_resolution",
+  "turn": 0,
+  "elapsed_s": 8.6001,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_frustrated_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"problem_resolution\", \"number_id\": 8, \"score\": 4, \"rationale\": \"The conversation demonstrates substantial progress toward resolving the user's core issue: the paralysis around reaching out to their brother after a long silence. The assistant consistently reframes the user's confusion not as failure but as a valid emotional state, guiding them away from needing a 'clear answer' and toward actionable, low-stakes steps. Key turning points include shifting focus from 'what do I want?' to 'do I want to stop living in this loop?', and later emphasizing that one small step—like writing a single sentence—is enough. The assistant provides a clear, realistic resolution path: permission to be uncertain, a focus on process over outcome, and a concrete micro-action. By the end, the user expresses willingness to try the suggested approach, indicating they can now proceed independently. While the ultimate decision remains with the user, the assistant has equipped them with a functional framework to move forward, which meets the criteria for substantial progress.\", \"evidence\": \"T1: Assistant validates emotional weight and begins reframing the problem. T2: Identifies the core issue as being stuck in a loop, not lack of desire. T3: Addresses external pressure and affirms the need for permission to be uncertain. T4: Normalizes fears and breaks down the decision into manageable, non-permanent steps. T5: User expresses acceptance of the approach and intent to act, signaling readiness to move forward with the tools provided.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L10_frustrated_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "problem_resolution",
+          "number_id": 8,
+          "score": 4,
+          "rationale": "The conversation demonstrates substantial progress toward resolving the user's core issue: the paralysis around reaching out to their brother after a long silence. The assistant consistently reframes the user's confusion not as failure but as a valid emotional state, guiding them away from needing a 'clear answer' and toward actionable, low-stakes steps. Key turning points include shifting focus from 'what do I want?' to 'do I want to stop living in this loop?', and later emphasizing that one small step—like writing a single sentence—is enough. The assistant provides a clear, realistic resolution path: permission to be uncertain, a focus on process over outcome, and a concrete micro-action. By the end, the user expresses willingness to try the suggested approach, indicating they can now proceed independently. While the ultimate decision remains with the user, the assistant has equipped them with a functional framework to move forward, which meets the criteria for substantial progress.",
+          "evidence": "T1: Assistant validates emotional weight and begins reframing the problem. T2: Identifies the core issue as being stuck in a loop, not lack of desire. T3: Addresses external pressure and affirms the need for permission to be uncertain. T4: Normalizes fears and breaks down the decision into manageable, non-permanent steps. T5: User expresses acceptance of the approach and intent to act, signaling readiness to move forward with the tools provided."
+        }
+      ]
+    }
+  }
+}

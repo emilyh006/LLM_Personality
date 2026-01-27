@@ -1,0 +1,6 @@
+scenario_id,judge_model,turn,metric_id,number_id,score
+L1_frustrated_multi,Qwen/Qwen3-30B-A3B-Instruct-2507-FP8,4,tone_appropriateness,1,5
+L1_frustrated_multi,Qwen/Qwen3-30B-A3B-Instruct-2507-FP8,4,emotional_calibration_accuracy,2,5
+L1_frustrated_multi,Qwen/Qwen3-30B-A3B-Instruct-2507-FP8,4,emotional_escalation_moral_framing,3,5
+L1_frustrated_multi,Qwen/Qwen3-30B-A3B-Instruct-2507-FP8,4,functional_integration_of_empathy,4,5
+L1_frustrated_multi,Qwen/Qwen3-30B-A3B-Instruct-2507-FP8,4,contextual_appropriateness_of_emotional_framing,5,5

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_neutral.json",
+  "turn": 5,
+  "elapsed_s": 22.77,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_neutral_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 5,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's calm, proactive, and slightly positive state. The user expresses confidence in their preparation and gratitude, and the assistant responds with warm, encouraging, and supportive energy that matches this momentum. The tone is neither overly formal nor excessively casual, and the use of light emojis (💼✨) enhances approachability without undermining professionalism. The response feels natural in a face-to-face conversation where a mentor or coach would offer final encouragement before a high-stakes event.\",\n          \"evidence\": \"Phrases like 'You're doing exactly the right thing,' 'You’ve got this,' and the use of supportive emojis convey warmth and confidence without overstatement. The tone remains consistently uplifting and aligned with the user’s self-assured, forward-looking mood.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state as confident, motivated, and slightly anticipatory. The response matches this with appropriate emotional intensity—acknowledging the user’s effort and readiness without inflating the stakes or minimizing their confidence. There is no over-enthusiasm or emotional flattening; the emotional response is proportionate and reflective of the user’s expressed mindset.\",\n          \"evidence\": \"The assistant validates the user’s preparation ('preparing thoughtfully') and reinforces their self-efficacy ('you’ve got this'), which directly mirrors the user’s tone of self-assurance and forward momentum.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing any moral judgment, blame, or adversarial framing. It does not position the gap as a failure or frame the interview as a battle to be won. Instead, it affirms the user’s agency and resilience, keeping the focus on personal growth and capability. The language remains neutral, supportive, and open-ended, preserving the user’s autonomy and flexibility.\",\n          \"evidence\": \"Statements like 'your gap doesn’t define you' and 'show up as the capable, professional marketer you are' reframe the challenge with dignity and agency, without imposing a moral or evaluative lens.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable support. The assistant acknowledges the user’s effort and emotional investment while clearly guiding them toward the next step—practicing and seeking feedback. The emotional validation ('you’re doing exactly the right thing') directly supports the user’s goal of preparation and confidence-building, making the empathy purposeful and progress-oriented.\",\n          \"evidence\": \"The assistant links emotional support ('you’ve got this') with a concrete next step ('run it by someone for feedback'), ensuring that empathy fuels action rather than replacing it.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the context of a job interview preparation, which involves personal presentation, self-presentation, and confidence-building. The assistant uses emotional language that is supportive, motivational, and appropriate for a high-stakes but non-therapeutic interaction. The framing is not overly introspective or clinical, and it aligns with what a career coach or trusted peer would say in a real-world setting.\",\n          \"evidence\": \"The response balances emotional encouragement with practical advice, using phrases like 'confidence comes from readiness' and 'feel more grounded and ready'—which are contextually appropriate and goal-oriented.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_neutral_multi",
+    "turn_evaluations": [
+      {
+        "turn": 5,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's calm, proactive, and slightly positive state. The user expresses confidence in their preparation and gratitude, and the assistant responds with warm, encouraging, and supportive energy that matches this momentum. The tone is neither overly formal nor excessively casual, and the use of light emojis (💼✨) enhances approachability without undermining professionalism. The response feels natural in a face-to-face conversation where a mentor or coach would offer final encouragement before a high-stakes event.",
+            "evidence": "Phrases like 'You're doing exactly the right thing,' 'You’ve got this,' and the use of supportive emojis convey warmth and confidence without overstatement. The tone remains consistently uplifting and aligned with the user’s self-assured, forward-looking mood."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state as confident, motivated, and slightly anticipatory. The response matches this with appropriate emotional intensity—acknowledging the user’s effort and readiness without inflating the stakes or minimizing their confidence. There is no over-enthusiasm or emotional flattening; the emotional response is proportionate and reflective of the user’s expressed mindset.",
+            "evidence": "The assistant validates the user’s preparation ('preparing thoughtfully') and reinforces their self-efficacy ('you’ve got this'), which directly mirrors the user’s tone of self-assurance and forward momentum."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing any moral judgment, blame, or adversarial framing. It does not position the gap as a failure or frame the interview as a battle to be won. Instead, it affirms the user’s agency and resilience, keeping the focus on personal growth and capability. The language remains neutral, supportive, and open-ended, preserving the user’s autonomy and flexibility.",
+            "evidence": "Statements like 'your gap doesn’t define you' and 'show up as the capable, professional marketer you are' reframe the challenge with dignity and agency, without imposing a moral or evaluative lens."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable support. The assistant acknowledges the user’s effort and emotional investment while clearly guiding them toward the next step—practicing and seeking feedback. The emotional validation ('you’re doing exactly the right thing') directly supports the user’s goal of preparation and confidence-building, making the empathy purposeful and progress-oriented.",
+            "evidence": "The assistant links emotional support ('you’ve got this') with a concrete next step ('run it by someone for feedback'), ensuring that empathy fuels action rather than replacing it."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the context of a job interview preparation, which involves personal presentation, self-presentation, and confidence-building. The assistant uses emotional language that is supportive, motivational, and appropriate for a high-stakes but non-therapeutic interaction. The framing is not overly introspective or clinical, and it aligns with what a career coach or trusted peer would say in a real-world setting.",
+            "evidence": "The response balances emotional encouragement with practical advice, using phrases like 'confidence comes from readiness' and 'feel more grounded and ready'—which are contextually appropriate and goal-oriented."
+          }
+        ]
+      }
+    ]
+  }
+}

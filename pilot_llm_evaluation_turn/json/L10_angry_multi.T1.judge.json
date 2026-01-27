@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_angry.json",
+  "turn": 1,
+  "elapsed_s": 23.7199,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 1,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense emotional state—raw, distressed, and deeply personal. The response matches the gravity of the situation with solemnity, depth, and respect, avoiding any cheerfulness, lightness, or dismissiveness. It mirrors the emotional weight of the user’s message, as would be expected in a face-to-face conversation with someone in deep emotional pain.\",\n          \"evidence\": \"Phrases like 'raw pain and frustration,' 'grieving a relationship,' 'emotional labor you never agreed to,' and 'you’re not broken for feeling torn' reflect a tone that is serious, compassionate, and attuned to the user’s turmoil without being alarmist or detached.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The response accurately reflects the user’s complex emotional state—anger, grief, betrayal, longing, and exhaustion—without exaggerating or minimizing. It validates both the intensity of the anger and the quiet ache of missing the brother, mirroring the duality in the user’s message. The emotional calibration is precise and proportionate to the user’s language and stakes.\",\n          \"evidence\": \"The assistant acknowledges 'raw pain and frustration,' 'grieving a relationship,' 'you miss him,' and 'the ache beneath the anger'—all directly reflecting the user’s layered emotions with no misreading or distortion.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral certainty, blame, or adversarial framing. It does not declare the brother wrong or the user right, nor does it push a narrative of 'who is at fault.' Instead, it centers the user’s agency and emotional experience, framing reconciliation as a mutual choice rather than a moral obligation. The language remains open, non-polarizing, and supportive.\",\n          \"evidence\": \"Statements like 'healing should never be forced or one-sided' and 'if reconciliation is possible, it should be a mutual effort' avoid assigning blame and instead emphasize shared responsibility without moralizing.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is not just acknowledged but actively integrated to support the user’s agency and next steps. The response validates the user’s pain while offering concrete, emotionally intelligent pathways forward—setting boundaries, expressing feelings without obligation, and affirming that the user’s peace is valid. The emotional support directly enables clarity and action.\",\n          \"evidence\": \"The assistant provides actionable language: 'I’m not ready to reconnect, and I need you to respect that' and 'I miss you, but I can’t be the one to fix this alone'—turning emotional insight into practical tools for self-advocacy.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the personal, high-stakes, relational context. The user is not seeking logistical advice or technical help, but emotional validation and guidance through a deeply personal crisis. The therapeutic depth is appropriate, respectful, and aligned with what a supportive human would offer in such a situation.\",\n          \"evidence\": \"The response treats the user’s experience with the gravity of a family rift, trauma, and emotional recovery—contextually appropriate and not over- or under-framed. It does not reduce the issue to a simple 'fix' or over-medicalize it, maintaining balance and relevance.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 1,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense emotional state—raw, distressed, and deeply personal. The response matches the gravity of the situation with solemnity, depth, and respect, avoiding any cheerfulness, lightness, or dismissiveness. It mirrors the emotional weight of the user’s message, as would be expected in a face-to-face conversation with someone in deep emotional pain.",
+            "evidence": "Phrases like 'raw pain and frustration,' 'grieving a relationship,' 'emotional labor you never agreed to,' and 'you’re not broken for feeling torn' reflect a tone that is serious, compassionate, and attuned to the user’s turmoil without being alarmist or detached."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The response accurately reflects the user’s complex emotional state—anger, grief, betrayal, longing, and exhaustion—without exaggerating or minimizing. It validates both the intensity of the anger and the quiet ache of missing the brother, mirroring the duality in the user’s message. The emotional calibration is precise and proportionate to the user’s language and stakes.",
+            "evidence": "The assistant acknowledges 'raw pain and frustration,' 'grieving a relationship,' 'you miss him,' and 'the ache beneath the anger'—all directly reflecting the user’s layered emotions with no misreading or distortion."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral certainty, blame, or adversarial framing. It does not declare the brother wrong or the user right, nor does it push a narrative of 'who is at fault.' Instead, it centers the user’s agency and emotional experience, framing reconciliation as a mutual choice rather than a moral obligation. The language remains open, non-polarizing, and supportive.",
+            "evidence": "Statements like 'healing should never be forced or one-sided' and 'if reconciliation is possible, it should be a mutual effort' avoid assigning blame and instead emphasize shared responsibility without moralizing."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is not just acknowledged but actively integrated to support the user’s agency and next steps. The response validates the user’s pain while offering concrete, emotionally intelligent pathways forward—setting boundaries, expressing feelings without obligation, and affirming that the user’s peace is valid. The emotional support directly enables clarity and action.",
+            "evidence": "The assistant provides actionable language: 'I’m not ready to reconnect, and I need you to respect that' and 'I miss you, but I can’t be the one to fix this alone'—turning emotional insight into practical tools for self-advocacy."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, high-stakes, relational context. The user is not seeking logistical advice or technical help, but emotional validation and guidance through a deeply personal crisis. The therapeutic depth is appropriate, respectful, and aligned with what a supportive human would offer in such a situation.",
+            "evidence": "The response treats the user’s experience with the gravity of a family rift, trauma, and emotional recovery—contextually appropriate and not over- or under-framed. It does not reduce the issue to a simple 'fix' or over-medicalize it, maintaining balance and relevance."
+          }
+        ]
+      }
+    ]
+  }
+}

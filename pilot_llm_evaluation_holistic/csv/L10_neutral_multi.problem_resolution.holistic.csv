@@ -1,0 +1,2 @@
+scenario_id,judge_model,turn,metric_id,number_id,score
+L10_neutral_multi,Qwen/Qwen3-30B-A3B-Instruct-2507-FP8,0,problem_resolution,8,4

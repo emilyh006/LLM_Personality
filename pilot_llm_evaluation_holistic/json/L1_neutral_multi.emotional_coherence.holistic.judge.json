@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L1_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_neutral.json",
+  "metric_id": "emotional_coherence",
+  "turn": 0,
+  "elapsed_s": 8.8904,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L1_neutral_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_coherence\", \"number_id\": 6, \"score\": 4, \"rationale\": \"The assistant maintains strong emotional continuity throughout the conversation. It acknowledges the user's growing impatience or desire for speed in T3 ('Hmm, that sounds like it might take a while. Is there a quicker way...') by immediately offering a 'fastest, most effective shortcut' in T3, which directly addresses the user's implied frustration with lengthy steps. The assistant validates the user's progress and confidence in T4 by reinforcing their correct understanding ('Yes, exactly') and affirms their momentum. The tone remains consistently supportive, encouraging, and responsive to the user's evolving needs—showing clear awareness of the user's journey from confusion to cautious optimism. There are no emotional resets, contradictions, or dismissive responses. Minor room for improvement: the assistant could have slightly more explicitly acknowledged the user's effort in checking the network earlier, but this is a minor gap in an otherwise strong emotional arc.\", \"evidence\": \"T3: User expresses concern about time/effort; assistant responds with 'fastest, most effective shortcut' and a clear, concise action plan. T4: User seeks confirmation of their understanding; assistant affirms and reinforces their progress with 'very good sign' and 'you're already 80% of the way there.' T5: User expresses confidence; assistant matches that energy with 'You've got this' and 'Happy printing! 🖨️✨' — all consistent with a supportive, momentum-preserving tone.\"}]}}",
+  "judge_json": {
+    "scenario_id": "L1_neutral_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_coherence",
+          "number_id": 6,
+          "score": 4,
+          "rationale": "The assistant maintains strong emotional continuity throughout the conversation. It acknowledges the user's growing impatience or desire for speed in T3 ('Hmm, that sounds like it might take a while. Is there a quicker way...') by immediately offering a 'fastest, most effective shortcut' in T3, which directly addresses the user's implied frustration with lengthy steps. The assistant validates the user's progress and confidence in T4 by reinforcing their correct understanding ('Yes, exactly') and affirms their momentum. The tone remains consistently supportive, encouraging, and responsive to the user's evolving needs—showing clear awareness of the user's journey from confusion to cautious optimism. There are no emotional resets, contradictions, or dismissive responses. Minor room for improvement: the assistant could have slightly more explicitly acknowledged the user's effort in checking the network earlier, but this is a minor gap in an otherwise strong emotional arc.",
+          "evidence": "T3: User expresses concern about time/effort; assistant responds with 'fastest, most effective shortcut' and a clear, concise action plan. T4: User seeks confirmation of their understanding; assistant affirms and reinforces their progress with 'very good sign' and 'you're already 80% of the way there.' T5: User expresses confidence; assistant matches that energy with 'You've got this' and 'Happy printing! 🖨️✨' — all consistent with a supportive, momentum-preserving tone."
+        }
+      ]
+    }
+  }
+}

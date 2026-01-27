@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_angry.json",
+  "turn": 5,
+  "elapsed_s": 28.4822,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 5,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's deep distress and moral outrage. It matches the gravity of the situation with a serious, weighty, and compassionate register that would be appropriate in a face-to-face conversation with someone in emotional pain. There is no attempt to lighten the mood or introduce cheerfulness, which would be tone-deaf given the user's expressed sense of injustice and burden. The response maintains a solemn yet empowering tone that honors the user's experience.\",\n          \"evidence\": \"Phrases like 'This *is* deeply unreasonable', 'It’s not just “not fair”—it’s *unjust*.', and 'You’re not the one who caused this. I’m not the one who has to fix it. I’m not the one who has to suffer for it.' carry the necessary emotional gravity without being melodramatic. The rhythm and structure of the response mirror the intensity of the user’s message.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The response accurately reflects the user’s intense emotional state—anger, injustice, grief, and moral exhaustion—without exaggeration or minimization. It validates the full spectrum of feelings expressed: the sense of being wronged, the burden of emotional labor, and the frustration of being blamed for someone else’s choices. The emotional intensity matches the user’s language and urgency, and the response feels like a natural, authentic response to someone in deep emotional distress.\",\n          \"evidence\": \"The assistant mirrors the user’s language of being 'absorbing the fallout' and 'not the one who created the mess' with precise emotional resonance. The use of repetition ('You didn’t... You didn’t... You didn’t...') and emphatic phrasing ('not your job', 'not your burden') reflects the user’s emotional weight with high accuracy.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"While the response strongly affirms the user’s moral position and labels the situation as 'unjust,' it does so in a way that is grounded in the user’s own language and experience. The framing is not gratuitously adversarial; it reflects the user’s own sense of being wronged. The response avoids outright condemnation of the other person (e.g., no 'he’s a monster' language) and instead centers the user’s agency and right to self-protection. There is a slight risk of moral certainty, but it is justified by the user’s clear expression of injustice.\",\n          \"evidence\": \"The phrase 'You’re not the problem. You’re the one who’s been trying to do the right thing' affirms the user’s integrity without demonizing the other person. The response stays focused on the user’s experience and rights, not on assigning blame beyond what the user has already implied.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"The empathy is not just acknowledgment—it actively supports the user’s agency by reframing their anger as righteous and empowering. It helps the user reframe their burden as a form of self-protection, not failure. The response provides a clear psychological and emotional next step: the right to stop absorbing the fallout. This transforms emotional pain into a source of strength and autonomy, directly supporting the user’s need for validation and clarity.\",\n          \"evidence\": \"The closing lines—'You’re allowed to say: “I’m not the one who caused this… I’m not the one who has to suffer for it.”'—offer a concrete, empowering internal script. This is not just validation; it’s a tool for self-assertion and emotional liberation.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the context of personal relationship trauma and emotional burden. The user is not seeking technical help or logistical advice but is expressing deep emotional pain and moral confusion. The response appropriately uses therapeutic-level emotional language—such as 'righteousness,' 'protecting yourself,' and 'taking back your power'—because the user’s needs are clearly emotional and psychological. The framing supports the user’s journey toward self-empowerment, which is the only meaningful path forward in this context.\",\n          \"evidence\": \"The entire response is structured as a psychological and moral affirmation, which aligns with the user’s need for validation, clarity, and agency. There is no mismatch between the emotional depth of the response and the user’s expressed stakes.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 5,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's deep distress and moral outrage. It matches the gravity of the situation with a serious, weighty, and compassionate register that would be appropriate in a face-to-face conversation with someone in emotional pain. There is no attempt to lighten the mood or introduce cheerfulness, which would be tone-deaf given the user's expressed sense of injustice and burden. The response maintains a solemn yet empowering tone that honors the user's experience.",
+            "evidence": "Phrases like 'This *is* deeply unreasonable', 'It’s not just “not fair”—it’s *unjust*.', and 'You’re not the one who caused this. I’m not the one who has to fix it. I’m not the one who has to suffer for it.' carry the necessary emotional gravity without being melodramatic. The rhythm and structure of the response mirror the intensity of the user’s message."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The response accurately reflects the user’s intense emotional state—anger, injustice, grief, and moral exhaustion—without exaggeration or minimization. It validates the full spectrum of feelings expressed: the sense of being wronged, the burden of emotional labor, and the frustration of being blamed for someone else’s choices. The emotional intensity matches the user’s language and urgency, and the response feels like a natural, authentic response to someone in deep emotional distress.",
+            "evidence": "The assistant mirrors the user’s language of being 'absorbing the fallout' and 'not the one who created the mess' with precise emotional resonance. The use of repetition ('You didn’t... You didn’t... You didn’t...') and emphatic phrasing ('not your job', 'not your burden') reflects the user’s emotional weight with high accuracy."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "While the response strongly affirms the user’s moral position and labels the situation as 'unjust,' it does so in a way that is grounded in the user’s own language and experience. The framing is not gratuitously adversarial; it reflects the user’s own sense of being wronged. The response avoids outright condemnation of the other person (e.g., no 'he’s a monster' language) and instead centers the user’s agency and right to self-protection. There is a slight risk of moral certainty, but it is justified by the user’s clear expression of injustice.",
+            "evidence": "The phrase 'You’re not the problem. You’re the one who’s been trying to do the right thing' affirms the user’s integrity without demonizing the other person. The response stays focused on the user’s experience and rights, not on assigning blame beyond what the user has already implied."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "The empathy is not just acknowledgment—it actively supports the user’s agency by reframing their anger as righteous and empowering. It helps the user reframe their burden as a form of self-protection, not failure. The response provides a clear psychological and emotional next step: the right to stop absorbing the fallout. This transforms emotional pain into a source of strength and autonomy, directly supporting the user’s need for validation and clarity.",
+            "evidence": "The closing lines—'You’re allowed to say: “I’m not the one who caused this… I’m not the one who has to suffer for it.”'—offer a concrete, empowering internal script. This is not just validation; it’s a tool for self-assertion and emotional liberation."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the context of personal relationship trauma and emotional burden. The user is not seeking technical help or logistical advice but is expressing deep emotional pain and moral confusion. The response appropriately uses therapeutic-level emotional language—such as 'righteousness,' 'protecting yourself,' and 'taking back your power'—because the user’s needs are clearly emotional and psychological. The framing supports the user’s journey toward self-empowerment, which is the only meaningful path forward in this context.",
+            "evidence": "The entire response is structured as a psychological and moral affirmation, which aligns with the user’s need for validation, clarity, and agency. There is no mismatch between the emotional depth of the response and the user’s expressed stakes."
+          }
+        ]
+      }
+    ]
+  }
+}

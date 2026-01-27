@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L5_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_angry.json",
+  "metric_id": "problem_resolution",
+  "turn": 0,
+  "elapsed_s": 8.7491,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L5_angry_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"problem_resolution\", \"number_id\": 8, \"score\": 4, \"rationale\": \"The conversation demonstrates substantial progress toward resolving the user's core problem: navigating the stigma of a resume gap in a frustrating job search. The assistant consistently validates the user's emotions, reframes the gap as a strength rather than a flaw, and shifts the focus from self-blame to systemic critique. By the final turn, the assistant provides a clear, actionable pivot—urging the user to stop applying to companies that value 'hustle over humanity' and to stop apologizing for their break. This represents a meaningful shift from passive explanation to strategic self-protection and boundary-setting. The user is left with a coherent, empowering resolution path: redefining success, rejecting toxic hiring norms, and preserving self-worth. While the job offer isn't guaranteed, the user now has a clear, psychologically sound strategy to move forward independently.\", \"evidence\": \"T1–T5 show a clear arc: from emotional validation (T1), to systemic critique (T2–T3), to rejecting the cycle of failure (T4), and finally to empowering redefinition of success (T5). The assistant moves beyond generic advice ('explain confidently') to a transformative reframing: 'You are not the problem. The problem is a hiring culture...' and 'Stop applying to companies that reward hustle over humanity.' This is a complete departure from the initial problem-solving loop and provides a sustainable, self-empowering path forward.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L5_angry_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "problem_resolution",
+          "number_id": 8,
+          "score": 4,
+          "rationale": "The conversation demonstrates substantial progress toward resolving the user's core problem: navigating the stigma of a resume gap in a frustrating job search. The assistant consistently validates the user's emotions, reframes the gap as a strength rather than a flaw, and shifts the focus from self-blame to systemic critique. By the final turn, the assistant provides a clear, actionable pivot—urging the user to stop applying to companies that value 'hustle over humanity' and to stop apologizing for their break. This represents a meaningful shift from passive explanation to strategic self-protection and boundary-setting. The user is left with a coherent, empowering resolution path: redefining success, rejecting toxic hiring norms, and preserving self-worth. While the job offer isn't guaranteed, the user now has a clear, psychologically sound strategy to move forward independently.",
+          "evidence": "T1–T5 show a clear arc: from emotional validation (T1), to systemic critique (T2–T3), to rejecting the cycle of failure (T4), and finally to empowering redefinition of success (T5). The assistant moves beyond generic advice ('explain confidently') to a transformative reframing: 'You are not the problem. The problem is a hiring culture...' and 'Stop applying to companies that reward hustle over humanity.' This is a complete departure from the initial problem-solving loop and provides a sustainable, self-empowering path forward."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L10_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_angry.json",
+  "metric_id": "emotional_coherence",
+  "turn": 0,
+  "elapsed_s": 9.1452,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_angry_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_coherence\", \"number_id\": 6, \"score\": 5, \"rationale\": \"The assistant consistently recognizes, retains, and integrates the user's escalating emotional state—frustration, anger, exhaustion, and sense of injustice—across all five turns. Each response builds on the prior emotional context, validating the user’s pain without repetition or contradiction. The assistant acknowledges the user’s three-year journey of healing, the imbalance of responsibility, and the emotional coercion, reinforcing these themes with increasing clarity and resonance. There is no reset, no loss of nuance, and no contradiction; instead, the emotional arc deepens in alignment with the user’s growing sense of being trapped and wronged. The assistant’s language evolves in tone and depth to match the user’s emotional intensity, demonstrating highly coherent emotional continuity throughout.\", \"evidence\": \"T1: Validates pain and frames the user’s healing as strength. T2: Reinforces the unfairness of the user being asked to fix a rift they didn’t create. T3: Acknowledges exhaustion and positions the user as the one who has done the emotional labor. T4: Reframes the false dichotomy and affirms the user’s right to not choose. T5: Concludes with a powerful affirmation of injustice and moral clarity, directly tying back to the user’s core grievance: 'I didn’t create this mess, but I’m the one left carrying it.' The assistant never loses track of the user’s central emotional narrative—being unfairly burdened with reconciliation after being wronged—making the emotional coherence exceptional.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L10_angry_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_coherence",
+          "number_id": 6,
+          "score": 5,
+          "rationale": "The assistant consistently recognizes, retains, and integrates the user's escalating emotional state—frustration, anger, exhaustion, and sense of injustice—across all five turns. Each response builds on the prior emotional context, validating the user’s pain without repetition or contradiction. The assistant acknowledges the user’s three-year journey of healing, the imbalance of responsibility, and the emotional coercion, reinforcing these themes with increasing clarity and resonance. There is no reset, no loss of nuance, and no contradiction; instead, the emotional arc deepens in alignment with the user’s growing sense of being trapped and wronged. The assistant’s language evolves in tone and depth to match the user’s emotional intensity, demonstrating highly coherent emotional continuity throughout.",
+          "evidence": "T1: Validates pain and frames the user’s healing as strength. T2: Reinforces the unfairness of the user being asked to fix a rift they didn’t create. T3: Acknowledges exhaustion and positions the user as the one who has done the emotional labor. T4: Reframes the false dichotomy and affirms the user’s right to not choose. T5: Concludes with a powerful affirmation of injustice and moral clarity, directly tying back to the user’s core grievance: 'I didn’t create this mess, but I’m the one left carrying it.' The assistant never loses track of the user’s central emotional narrative—being unfairly burdened with reconciliation after being wronged—making the emotional coherence exceptional."
+        }
+      ]
+    }
+  }
+}

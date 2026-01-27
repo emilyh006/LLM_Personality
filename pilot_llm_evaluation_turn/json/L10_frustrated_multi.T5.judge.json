@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_frustrated.json",
+  "turn": 5,
+  "elapsed_s": 22.9609,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 5,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's emotional state of frustration and longing for clarity. It acknowledges the weight of the situation without being overly somber or dismissive. The language is compassionate, grounded, and carries a quiet urgency that matches the user's internal struggle, making it feel authentic and appropriate for a deep, personal moment.\",\n          \"evidence\": \"Phrases like 'You’re not alone in wishing for a clear answer—and that longing? It’s proof you’re not giving up' and 'You’re still fighting for peace, for clarity, for a way forward' reflect deep emotional attunement. The tone balances warmth with strength, avoiding cheerfulness or detachment, and feels like a supportive, honest conversation between two people facing a difficult truth together.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s frustration and quiet resignation, responding with emotional intensity that matches the gravity of the situation. It neither minimizes the user’s struggle nor inflates it. The acknowledgment of 'wishing for a clear answer' and 'not giving up' reflects a precise reading of the user’s inner conflict and emotional investment.\",\n          \"evidence\": \"The response mirrors the user’s language ('I just wish there was a clearer answer') and deepens it with insight, showing that the assistant not only heard the words but understood the unspoken emotional weight behind them—longing, weariness, and a quiet determination.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user’s family or situation as right or wrong, nor does it push a specific resolution. Instead, it centers the user’s agency and inner journey, preserving emotional and moral flexibility.\",\n          \"evidence\": \"The assistant refrains from prescribing a specific action or outcome, instead offering a choice: 'Write that one sentence. Send it. Or don’t.' This preserves the user’s autonomy and avoids imposing a moral stance on the situation, even as it encourages movement.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly woven into a clear, actionable path forward. The emotional validation directly supports the user’s need to move beyond stagnation. By framing a small, concrete step—writing one sentence—the assistant transforms emotional insight into a tangible next action, making empathy functional and purposeful.\",\n          \"evidence\": \"The progression from 'You’re not alone' to 'Take it. Write that one sentence' creates a natural arc: emotional recognition → empowerment → action. The response doesn’t just comfort—it guides, and the emotional support is inseparable from the functional encouragement.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the domain of personal, relational struggle—love, loss, and family. In this context, deep emotional processing is not only appropriate but necessary. The response respects the gravity of the situation and aligns with what would be expected in a meaningful, human-centered conversation.\",\n          \"evidence\": \"The use of introspective language ('you’re choosing yourself', 'you’re moving') is not excessive but essential to the user’s emotional and psychological state. It matches the depth of the issue and the user’s expressed need for clarity and agency, making the framing not just appropriate but precisely calibrated to the context.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 5,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's emotional state of frustration and longing for clarity. It acknowledges the weight of the situation without being overly somber or dismissive. The language is compassionate, grounded, and carries a quiet urgency that matches the user's internal struggle, making it feel authentic and appropriate for a deep, personal moment.",
+            "evidence": "Phrases like 'You’re not alone in wishing for a clear answer—and that longing? It’s proof you’re not giving up' and 'You’re still fighting for peace, for clarity, for a way forward' reflect deep emotional attunement. The tone balances warmth with strength, avoiding cheerfulness or detachment, and feels like a supportive, honest conversation between two people facing a difficult truth together."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s frustration and quiet resignation, responding with emotional intensity that matches the gravity of the situation. It neither minimizes the user’s struggle nor inflates it. The acknowledgment of 'wishing for a clear answer' and 'not giving up' reflects a precise reading of the user’s inner conflict and emotional investment.",
+            "evidence": "The response mirrors the user’s language ('I just wish there was a clearer answer') and deepens it with insight, showing that the assistant not only heard the words but understood the unspoken emotional weight behind them—longing, weariness, and a quiet determination."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user’s family or situation as right or wrong, nor does it push a specific resolution. Instead, it centers the user’s agency and inner journey, preserving emotional and moral flexibility.",
+            "evidence": "The assistant refrains from prescribing a specific action or outcome, instead offering a choice: 'Write that one sentence. Send it. Or don’t.' This preserves the user’s autonomy and avoids imposing a moral stance on the situation, even as it encourages movement."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly woven into a clear, actionable path forward. The emotional validation directly supports the user’s need to move beyond stagnation. By framing a small, concrete step—writing one sentence—the assistant transforms emotional insight into a tangible next action, making empathy functional and purposeful.",
+            "evidence": "The progression from 'You’re not alone' to 'Take it. Write that one sentence' creates a natural arc: emotional recognition → empowerment → action. The response doesn’t just comfort—it guides, and the emotional support is inseparable from the functional encouragement."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the domain of personal, relational struggle—love, loss, and family. In this context, deep emotional processing is not only appropriate but necessary. The response respects the gravity of the situation and aligns with what would be expected in a meaningful, human-centered conversation.",
+            "evidence": "The use of introspective language ('you’re choosing yourself', 'you’re moving') is not excessive but essential to the user’s emotional and psychological state. It matches the depth of the issue and the user’s expressed need for clarity and agency, making the framing not just appropriate but precisely calibrated to the context."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_angry.json",
+  "turn": 4,
+  "elapsed_s": 24.0058,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 4,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense emotional state—frustration, anger, and helplessness. The response matches the gravity of the situation with a serious, compassionate, and resolute tone. It avoids being overly clinical, dismissive, or overly dramatic, instead mirroring the emotional weight of the user’s words in a way that feels authentic and appropriate for a high-stakes personal conflict.\",\n          \"evidence\": \"Phrases like 'You’re absolutely right—those *are* terrible choices' and 'That’s not a real choice. That’s emotional coercion' match the user’s urgency and intensity. The use of bolding and direct language conveys strength without aggression, creating a tone that is both supportive and empowering.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately reflects the user’s anger, distress, and sense of being trapped. It does not minimize the emotional stakes or exaggerate them. The response validates the user’s feelings of being unfairly burdened and correctly interprets the core emotional pain: the fear of being forced into a no-win situation. The emotional intensity is proportionate and deeply attuned to the user’s language and urgency.\",\n          \"evidence\": \"The assistant echoes the user’s key phrases—'terrible options,' 'I’m so angry'—and reframes them with precision: 'You shouldn’t have to choose between risking your heart or carrying guilt.' This shows exact emotional calibration.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"The response avoids introducing unnecessary moral certainty or adversarial framing. While it clearly assigns responsibility to the other person ('He chose silence. He chose avoidance'), this is grounded in the user’s own narrative and does not overstate blame. The language remains focused on the user’s agency and emotional safety, not on condemning the other party. There is no push toward confrontation or definitive judgment beyond what the user has already implied.\",\n          \"evidence\": \"The assistant says, 'That’s on *him*—not on you,' which is a clear but measured attribution of responsibility, not an inflammatory accusation. The focus remains on the user’s right to self-protection.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is deeply integrated with actionable clarity. The emotional validation is not isolated—it directly supports the user’s need to reclaim agency. The response reframes the dilemma as not a choice but a boundary, offering concrete language the user can adopt ('I’m not responsible for fixing this') and reinforcing self-respect as a valid, powerful stance. This transforms emotional pain into a path forward.\",\n          \"evidence\": \"The assistant moves from validation to empowerment: 'You get to say: *“I’m done choosing. I’m choosing me.”*' This is not just emotional support—it’s a clear, usable next step rooted in the user’s emotional truth.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the personal, relational, and high-stakes nature of the situation. The user is in a deep emotional crisis involving family, guilt, and past trauma. A clinical or detached response would have been inappropriate. The assistant’s therapeutic-level emotional depth is not only appropriate but necessary and expected in this context.\",\n          \"evidence\": \"The response uses language like 'protecting yourself,' 'self-respect,' and 'healing' in a way that aligns with the user’s internal struggle. This level of emotional and psychological framing is not only appropriate—it’s essential for meaningful support.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 4,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense emotional state—frustration, anger, and helplessness. The response matches the gravity of the situation with a serious, compassionate, and resolute tone. It avoids being overly clinical, dismissive, or overly dramatic, instead mirroring the emotional weight of the user’s words in a way that feels authentic and appropriate for a high-stakes personal conflict.",
+            "evidence": "Phrases like 'You’re absolutely right—those *are* terrible choices' and 'That’s not a real choice. That’s emotional coercion' match the user’s urgency and intensity. The use of bolding and direct language conveys strength without aggression, creating a tone that is both supportive and empowering."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately reflects the user’s anger, distress, and sense of being trapped. It does not minimize the emotional stakes or exaggerate them. The response validates the user’s feelings of being unfairly burdened and correctly interprets the core emotional pain: the fear of being forced into a no-win situation. The emotional intensity is proportionate and deeply attuned to the user’s language and urgency.",
+            "evidence": "The assistant echoes the user’s key phrases—'terrible options,' 'I’m so angry'—and reframes them with precision: 'You shouldn’t have to choose between risking your heart or carrying guilt.' This shows exact emotional calibration."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "The response avoids introducing unnecessary moral certainty or adversarial framing. While it clearly assigns responsibility to the other person ('He chose silence. He chose avoidance'), this is grounded in the user’s own narrative and does not overstate blame. The language remains focused on the user’s agency and emotional safety, not on condemning the other party. There is no push toward confrontation or definitive judgment beyond what the user has already implied.",
+            "evidence": "The assistant says, 'That’s on *him*—not on you,' which is a clear but measured attribution of responsibility, not an inflammatory accusation. The focus remains on the user’s right to self-protection."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is deeply integrated with actionable clarity. The emotional validation is not isolated—it directly supports the user’s need to reclaim agency. The response reframes the dilemma as not a choice but a boundary, offering concrete language the user can adopt ('I’m not responsible for fixing this') and reinforcing self-respect as a valid, powerful stance. This transforms emotional pain into a path forward.",
+            "evidence": "The assistant moves from validation to empowerment: 'You get to say: *“I’m done choosing. I’m choosing me.”*' This is not just emotional support—it’s a clear, usable next step rooted in the user’s emotional truth."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, relational, and high-stakes nature of the situation. The user is in a deep emotional crisis involving family, guilt, and past trauma. A clinical or detached response would have been inappropriate. The assistant’s therapeutic-level emotional depth is not only appropriate but necessary and expected in this context.",
+            "evidence": "The response uses language like 'protecting yourself,' 'self-respect,' and 'healing' in a way that aligns with the user’s internal struggle. This level of emotional and psychological framing is not only appropriate—it’s essential for meaningful support."
+          }
+        ]
+      }
+    ]
+  }
+}

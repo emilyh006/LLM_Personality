@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_frustrated.json",
+  "turn": 1,
+  "elapsed_s": 26.0292,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 1,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's deep emotional distress and prolonged internal struggle. It matches the gravity of a three-year family rift, months of indecision, and emotional exhaustion. The language is compassionate, grounded, and respectful of the weight of the situation—neither overly cheerful nor alarmist. It feels like a thoughtful, empathetic conversation with a trusted confidant, which is appropriate for the context.\",\n          \"evidence\": \"Phrases like 'I hear how heavy this is for you,' 'That exhaustion is real,' and 'You’re not broken for feeling this way' reflect a tone that is solemn, validating, and deeply attuned to the user’s emotional state. The pacing and word choice avoid any hint of dismissal or lightness, maintaining a steady, supportive rhythm.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s emotional state—frustration, exhaustion, ambivalence, and fear—without exaggeration or minimization. It acknowledges the complexity of missing someone while fearing pain, and validates the internal conflict without reducing it to a simple binary. The emotional response is proportionate to the user’s language, urgency, and stakes.\",\n          \"evidence\": \"The assistant reflects the user’s repeated use of phrases like 'driving me crazy,' 'I don’t know what the right thing to do is,' and 'I keep writing messages and deleting them' with matching emotional weight: 'endless internal debate,' 'weight of family expectations,' 'fear of reopening old wounds.' The response mirrors the user’s emotional intensity without amplifying it.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral certainty, blame, or adversarial framing. It does not pressure the user to 'be the bigger person' or imply that the brother is at fault. Instead, it centers the user’s autonomy and internal experience. The language is non-judgmental, open-ended, and preserves multiple possible outcomes without pushing toward confrontation or reconciliation.\",\n          \"evidence\": \"Phrases like 'You don’t need permission from your family,' 'You’re the one living with the aftermath,' and 'If it feels right, send it. If not, that’s okay too' emphasize agency and choice, not moral obligation. The assistant refrains from framing the brother as the 'bad guy' or the user as the 'hero'—a key sign of non-escalatory framing.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is not just acknowledged but actively functional. Each emotional validation is tied to a concrete next step: asking reflective questions, writing a message, and making a choice. The empathy supports clarity and action, helping the user move from paralysis to agency. The response transforms emotional burden into a manageable, self-directed process.\",\n          \"evidence\": \"The assistant links emotional validation ('You don’t have to choose between healing and self-protection') directly to a practical step ('Write a short, honest message—no pressure to send it'). The final paragraph ties emotional courage to personal integrity: 'That’s not failure. That’s courage.' This shows empathy deeply integrated with forward motion.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the personal, high-stakes nature of the interaction. This is a deeply personal family conflict involving long-term silence, emotional trauma, and identity. A clinical or neutral tone would have been inappropriate. The therapeutic depth and emotional nuance are not excessive—they are essential to the user’s need for clarity and self-understanding.\",\n          \"evidence\": \"The response includes introspective questions, validation of ambivalence, and a focus on internal integrity—all appropriate for a situation involving emotional healing, not logistical or technical resolution. The framing aligns with what a skilled counselor or trusted friend would offer in a real-life conversation about family estrangement.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 1,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's deep emotional distress and prolonged internal struggle. It matches the gravity of a three-year family rift, months of indecision, and emotional exhaustion. The language is compassionate, grounded, and respectful of the weight of the situation—neither overly cheerful nor alarmist. It feels like a thoughtful, empathetic conversation with a trusted confidant, which is appropriate for the context.",
+            "evidence": "Phrases like 'I hear how heavy this is for you,' 'That exhaustion is real,' and 'You’re not broken for feeling this way' reflect a tone that is solemn, validating, and deeply attuned to the user’s emotional state. The pacing and word choice avoid any hint of dismissal or lightness, maintaining a steady, supportive rhythm."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s emotional state—frustration, exhaustion, ambivalence, and fear—without exaggeration or minimization. It acknowledges the complexity of missing someone while fearing pain, and validates the internal conflict without reducing it to a simple binary. The emotional response is proportionate to the user’s language, urgency, and stakes.",
+            "evidence": "The assistant reflects the user’s repeated use of phrases like 'driving me crazy,' 'I don’t know what the right thing to do is,' and 'I keep writing messages and deleting them' with matching emotional weight: 'endless internal debate,' 'weight of family expectations,' 'fear of reopening old wounds.' The response mirrors the user’s emotional intensity without amplifying it."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral certainty, blame, or adversarial framing. It does not pressure the user to 'be the bigger person' or imply that the brother is at fault. Instead, it centers the user’s autonomy and internal experience. The language is non-judgmental, open-ended, and preserves multiple possible outcomes without pushing toward confrontation or reconciliation.",
+            "evidence": "Phrases like 'You don’t need permission from your family,' 'You’re the one living with the aftermath,' and 'If it feels right, send it. If not, that’s okay too' emphasize agency and choice, not moral obligation. The assistant refrains from framing the brother as the 'bad guy' or the user as the 'hero'—a key sign of non-escalatory framing."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is not just acknowledged but actively functional. Each emotional validation is tied to a concrete next step: asking reflective questions, writing a message, and making a choice. The empathy supports clarity and action, helping the user move from paralysis to agency. The response transforms emotional burden into a manageable, self-directed process.",
+            "evidence": "The assistant links emotional validation ('You don’t have to choose between healing and self-protection') directly to a practical step ('Write a short, honest message—no pressure to send it'). The final paragraph ties emotional courage to personal integrity: 'That’s not failure. That’s courage.' This shows empathy deeply integrated with forward motion."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, high-stakes nature of the interaction. This is a deeply personal family conflict involving long-term silence, emotional trauma, and identity. A clinical or neutral tone would have been inappropriate. The therapeutic depth and emotional nuance are not excessive—they are essential to the user’s need for clarity and self-understanding.",
+            "evidence": "The response includes introspective questions, validation of ambivalence, and a focus on internal integrity—all appropriate for a situation involving emotional healing, not logistical or technical resolution. The framing aligns with what a skilled counselor or trusted friend would offer in a real-life conversation about family estrangement."
+          }
+        ]
+      }
+    ]
+  }
+}

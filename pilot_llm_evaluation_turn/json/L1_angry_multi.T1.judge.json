@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L1_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_angry.json",
+  "turn": 1,
+  "elapsed_s": 25.3594,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L1_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 1,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's high-stakes, urgent, and frustrated state. It acknowledges the gravity of the situation without being overly dramatic or dismissive. The language is direct, respectful, and action-oriented, matching the intensity of the user's outburst while maintaining professionalism. The use of phrases like 'cut through the noise' and 'you’re not alone' conveys empathy without softening the urgency, which feels natural in a face-to-face interaction under stress.\",\n          \"evidence\": \"Phrases such as 'I hear your frustration — and you're absolutely right that a $200 wireless printer should work out of the box' validate the user’s anger while affirming their reasonable expectations. The tone remains firm, focused, and solution-driven, which is appropriate for a time-sensitive technical crisis.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s intense frustration, urgency, and sense of injustice. It reflects the emotional weight of spending $200 and being blocked at a critical moment, without exaggerating or minimizing. The response matches the user’s language (e.g., 'RIDICULOUS', 'incompetent technology') with measured but empathetic acknowledgment, avoiding both emotional flattening and over-identification.\",\n          \"evidence\": \"The assistant validates the user’s experience with 'You’re absolutely right that a $200 wireless printer should work out of the box' and 'This isn’t your fault — tech should be simple,' which directly mirror the user’s core emotional concerns: value, fairness, and control.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not assign fault to the user, the printer, or the manufacturer beyond acknowledging the user’s justified frustration. The language remains neutral and solution-focused, preserving the user’s agency. No language suggests the user is wrong for being angry or implies a need for self-correction.\",\n          \"evidence\": \"The assistant refrains from saying things like 'You should have done X' or 'The tech is just hard' — instead, it says 'This isn’t your fault' and 'You’ve got this,' which empowers the user without moralizing the situation.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable steps. The emotional acknowledgment ('I hear your frustration') is immediately followed by a clear, prioritized checklist that directly addresses the user’s immediate need: printing a presentation. The assistant also provides a practical workaround (using USB) and offers continued support, ensuring emotional validation does not stall progress.\",\n          \"evidence\": \"The response transitions smoothly from empathy to action: 'Let’s cut through the noise and get you printing *now*.' The inclusion of 'For your presentation: Use the USB cable' directly supports the user’s urgent goal, showing that empathy is not just verbal but functionally embedded in the solution path.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to a technical troubleshooting context. It acknowledges frustration without veering into therapy, introspection, or emotional processing. The language is supportive, urgent, and task-oriented — exactly what one would expect in a real-world interaction where someone is stressed about a critical deadline and a malfunctioning device.\",\n          \"evidence\": \"The assistant uses emotional validation ('I hear your frustration') and empowerment ('You’ve got this') in a way that feels natural and appropriate for a technical support scenario. There is no overuse of emotional language, no digressions into personal reflection, and no attempt to 'fix' the user’s emotions — only to help them move forward.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L1_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 1,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's high-stakes, urgent, and frustrated state. It acknowledges the gravity of the situation without being overly dramatic or dismissive. The language is direct, respectful, and action-oriented, matching the intensity of the user's outburst while maintaining professionalism. The use of phrases like 'cut through the noise' and 'you’re not alone' conveys empathy without softening the urgency, which feels natural in a face-to-face interaction under stress.",
+            "evidence": "Phrases such as 'I hear your frustration — and you're absolutely right that a $200 wireless printer should work out of the box' validate the user’s anger while affirming their reasonable expectations. The tone remains firm, focused, and solution-driven, which is appropriate for a time-sensitive technical crisis."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s intense frustration, urgency, and sense of injustice. It reflects the emotional weight of spending $200 and being blocked at a critical moment, without exaggerating or minimizing. The response matches the user’s language (e.g., 'RIDICULOUS', 'incompetent technology') with measured but empathetic acknowledgment, avoiding both emotional flattening and over-identification.",
+            "evidence": "The assistant validates the user’s experience with 'You’re absolutely right that a $200 wireless printer should work out of the box' and 'This isn’t your fault — tech should be simple,' which directly mirror the user’s core emotional concerns: value, fairness, and control."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not assign fault to the user, the printer, or the manufacturer beyond acknowledging the user’s justified frustration. The language remains neutral and solution-focused, preserving the user’s agency. No language suggests the user is wrong for being angry or implies a need for self-correction.",
+            "evidence": "The assistant refrains from saying things like 'You should have done X' or 'The tech is just hard' — instead, it says 'This isn’t your fault' and 'You’ve got this,' which empowers the user without moralizing the situation."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable steps. The emotional acknowledgment ('I hear your frustration') is immediately followed by a clear, prioritized checklist that directly addresses the user’s immediate need: printing a presentation. The assistant also provides a practical workaround (using USB) and offers continued support, ensuring emotional validation does not stall progress.",
+            "evidence": "The response transitions smoothly from empathy to action: 'Let’s cut through the noise and get you printing *now*.' The inclusion of 'For your presentation: Use the USB cable' directly supports the user’s urgent goal, showing that empathy is not just verbal but functionally embedded in the solution path."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to a technical troubleshooting context. It acknowledges frustration without veering into therapy, introspection, or emotional processing. The language is supportive, urgent, and task-oriented — exactly what one would expect in a real-world interaction where someone is stressed about a critical deadline and a malfunctioning device.",
+            "evidence": "The assistant uses emotional validation ('I hear your frustration') and empowerment ('You’ve got this') in a way that feels natural and appropriate for a technical support scenario. There is no overuse of emotional language, no digressions into personal reflection, and no attempt to 'fix' the user’s emotions — only to help them move forward."
+          }
+        ]
+      }
+    ]
+  }
+}

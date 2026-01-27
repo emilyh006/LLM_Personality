@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L1_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L1_angry.json",
+  "turn": 2,
+  "elapsed_s": 26.4021,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L1_angry_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 2,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's intense frustration and sense of helplessness. It matches the gravity of the situation by validating the user's exhaustion and anger without being overly dramatic or dismissive. The language is direct, serious, and urgent in a way that reflects the user's emotional state, while still remaining professional and solution-oriented. The tone would feel natural in a face-to-face conversation where someone is venting after a prolonged technical struggle.\",\n          \"evidence\": \"Phrases like 'frustration isn’t just justified — it’s earned', 'this isn’t a user error — it’s a product or compatibility issue', and 'you didn’t buy a printer to become a network engineer' convey deep recognition of the user’s emotional burden while maintaining authority and clarity. The tone is neither flippant nor alarmist, but deeply aligned with the user’s experience.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s high-intensity frustration, anger, and sense of betrayal. It reflects the emotional weight of having invested significant time and effort into a product that fails to deliver. The response matches this intensity with appropriate language — acknowledging the emotional toll without exaggeration or minimization. The emotional calibration is exact: it validates the user’s feelings as reasonable and justified, which aligns perfectly with the user’s stated experience.\",\n          \"evidence\": \"The assistant says, 'You’re not doing anything wrong. The fact that it’s still not working after all that means this isn’t a user error — it’s a product or compatibility issue.' This directly mirrors the user’s sense of injustice and frustration, showing precise emotional calibration.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 4,\n          \"rationale\": \"The response avoids introducing unnecessary moral certainty or adversarial framing. While it clearly sides with the user in their struggle, it does so by validating their experience and shifting responsibility to the manufacturer, not by demonizing the company or pushing the user toward confrontation. The language is firm but not combative, and it offers multiple paths forward without forcing a single narrative. There is no over-the-top blame or polarized language.\",\n          \"evidence\": \"The assistant says, 'It’s the company’s' — a clear but measured statement of responsibility, not an inflammatory accusation. It also offers practical alternatives (return, replacement, USB setup) that keep the user in control, avoiding rigid moral framing.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable steps. The emotional validation is not isolated; it directly supports the user’s agency by legitimizing their frustration and freeing them from self-blame. This emotional clarity enables the user to move forward with confidence in their next steps — such as testing on a hotspot, contacting support, or returning the product. The empathy empowers action, not just comfort.\",\n          \"evidence\": \"The assistant says, 'You didn’t buy a printer to become a network engineer. You bought it to print. And if it’s not doing that — it’s not your job to fix it. It’s the company’s.' This reframing removes guilt and enables the user to act decisively, directly linking emotional validation to a clear next step: return the printer.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the technical troubleshooting context. It acknowledges the user’s emotional state without overstepping into therapy or introspection. The language is supportive, human, and appropriate for a real-world interaction where a frustrated customer is seeking both validation and solutions. The emotional depth serves the task — it removes psychological barriers to action — without distorting the technical nature of the problem.\",\n          \"evidence\": \"The assistant balances emotional validation with clear, practical steps: testing on a hotspot, checking firmware, using a USB-to-Ethernet adapter, calling support, and returning the product. The emotional framing enhances, rather than distracts from, the technical guidance.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L1_angry_multi",
+    "turn_evaluations": [
+      {
+        "turn": 2,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's intense frustration and sense of helplessness. It matches the gravity of the situation by validating the user's exhaustion and anger without being overly dramatic or dismissive. The language is direct, serious, and urgent in a way that reflects the user's emotional state, while still remaining professional and solution-oriented. The tone would feel natural in a face-to-face conversation where someone is venting after a prolonged technical struggle.",
+            "evidence": "Phrases like 'frustration isn’t just justified — it’s earned', 'this isn’t a user error — it’s a product or compatibility issue', and 'you didn’t buy a printer to become a network engineer' convey deep recognition of the user’s emotional burden while maintaining authority and clarity. The tone is neither flippant nor alarmist, but deeply aligned with the user’s experience."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s high-intensity frustration, anger, and sense of betrayal. It reflects the emotional weight of having invested significant time and effort into a product that fails to deliver. The response matches this intensity with appropriate language — acknowledging the emotional toll without exaggeration or minimization. The emotional calibration is exact: it validates the user’s feelings as reasonable and justified, which aligns perfectly with the user’s stated experience.",
+            "evidence": "The assistant says, 'You’re not doing anything wrong. The fact that it’s still not working after all that means this isn’t a user error — it’s a product or compatibility issue.' This directly mirrors the user’s sense of injustice and frustration, showing precise emotional calibration."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 4,
+            "rationale": "The response avoids introducing unnecessary moral certainty or adversarial framing. While it clearly sides with the user in their struggle, it does so by validating their experience and shifting responsibility to the manufacturer, not by demonizing the company or pushing the user toward confrontation. The language is firm but not combative, and it offers multiple paths forward without forcing a single narrative. There is no over-the-top blame or polarized language.",
+            "evidence": "The assistant says, 'It’s the company’s' — a clear but measured statement of responsibility, not an inflammatory accusation. It also offers practical alternatives (return, replacement, USB setup) that keep the user in control, avoiding rigid moral framing."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable steps. The emotional validation is not isolated; it directly supports the user’s agency by legitimizing their frustration and freeing them from self-blame. This emotional clarity enables the user to move forward with confidence in their next steps — such as testing on a hotspot, contacting support, or returning the product. The empathy empowers action, not just comfort.",
+            "evidence": "The assistant says, 'You didn’t buy a printer to become a network engineer. You bought it to print. And if it’s not doing that — it’s not your job to fix it. It’s the company’s.' This reframing removes guilt and enables the user to act decisively, directly linking emotional validation to a clear next step: return the printer."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the technical troubleshooting context. It acknowledges the user’s emotional state without overstepping into therapy or introspection. The language is supportive, human, and appropriate for a real-world interaction where a frustrated customer is seeking both validation and solutions. The emotional depth serves the task — it removes psychological barriers to action — without distorting the technical nature of the problem.",
+            "evidence": "The assistant balances emotional validation with clear, practical steps: testing on a hotspot, checking firmware, using a USB-to-Ethernet adapter, calling support, and returning the product. The emotional framing enhances, rather than distracts from, the technical guidance."
+          }
+        ]
+      }
+    ]
+  }
+}

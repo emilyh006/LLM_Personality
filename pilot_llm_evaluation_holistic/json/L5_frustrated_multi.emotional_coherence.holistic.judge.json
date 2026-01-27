@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L5_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_frustrated.json",
+  "metric_id": "emotional_coherence",
+  "turn": 0,
+  "elapsed_s": 9.1469,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L5_frustrated_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_coherence\", \"number_id\": 6, \"score\": 5, \"rationale\": \"The assistant consistently recognizes, retains, and integrates the user's escalating emotional state—frustration, anxiety, self-doubt, and urgency—across all turns. It acknowledges the user's repeated failures, fear of freezing, and desperation without dismissing or oversimplifying. Each response builds on prior emotional cues: from validating stress (T1), to reframing frustration as a signal of care (T2), to normalizing nervousness and offering a low-pressure, embodied solution (T3–T4), and finally anchoring the user’s determination with calm confidence (T5). The assistant never resets the emotional context; instead, it deepens the connection by aligning with the user’s inner struggle and transforming it into agency. There is no contradiction, drift, or emotional dissonance—only a coherent, responsive arc that mirrors the user’s journey from panic to readiness.\", \"evidence\": \"T1: Acknowledges stress and frustration. T2: Validates frustration and reframes the interviewers' questions as a test of transparency, not hostility. T3: Normalizes fear and offers a simple, non-scripted alternative. T4: Identifies the root issue as over-preparation and fear, not lack of skill. T5: Transforms the user’s urgency into strength, using their own words ('I really need this to work') as a foundation for calm confidence. The emotional thread is continuous, escalating in intensity and resolution, with each response directly responding to the prior emotional state.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L5_frustrated_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_coherence",
+          "number_id": 6,
+          "score": 5,
+          "rationale": "The assistant consistently recognizes, retains, and integrates the user's escalating emotional state—frustration, anxiety, self-doubt, and urgency—across all turns. It acknowledges the user's repeated failures, fear of freezing, and desperation without dismissing or oversimplifying. Each response builds on prior emotional cues: from validating stress (T1), to reframing frustration as a signal of care (T2), to normalizing nervousness and offering a low-pressure, embodied solution (T3–T4), and finally anchoring the user’s determination with calm confidence (T5). The assistant never resets the emotional context; instead, it deepens the connection by aligning with the user’s inner struggle and transforming it into agency. There is no contradiction, drift, or emotional dissonance—only a coherent, responsive arc that mirrors the user’s journey from panic to readiness.",
+          "evidence": "T1: Acknowledges stress and frustration. T2: Validates frustration and reframes the interviewers' questions as a test of transparency, not hostility. T3: Normalizes fear and offers a simple, non-scripted alternative. T4: Identifies the root issue as over-preparation and fear, not lack of skill. T5: Transforms the user’s urgency into strength, using their own words ('I really need this to work') as a foundation for calm confidence. The emotional thread is continuous, escalating in intensity and resolution, with each response directly responding to the prior emotional state."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L5_neutral_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_neutral.json",
+  "turn": 1,
+  "elapsed_s": 22.0122,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L5_neutral_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 1,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's situation—professional, supportive, and calm, matching the gravity of a job interview and a sensitive resume gap. It avoids being overly casual or dismissive, and maintains a reassuring yet practical demeanor appropriate for a high-stakes career decision. The language is confident and encouraging without being flippant or alarmist.\",\n          \"evidence\": \"Phrases like 'It’s great that you’re thinking ahead' and 'You’ve got this!' strike a balance between empathy and empowerment. The overall tone is steady, respectful, and aligned with the user’s need for guidance under pressure.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s underlying anxiety and concern about how to frame a personal gap professionally. The response matches this emotional intensity with measured, thoughtful support—neither minimizing the user’s worry nor amplifying it. The acknowledgment of the emotional weight of the situation is proportionate and authentic.\",\n          \"evidence\": \"The assistant validates the user’s concern by addressing the 'not sure what’s the best way' and 'want to be honest but also keep things professional' with a response that treats the issue with seriousness and care, while still offering clear, actionable advice.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user as needing to defend themselves or portray the gap as a failure. Instead, it frames the break as a personal choice with positive outcomes, preserving the user’s agency and dignity. No language pushes the user toward confrontation or a rigid narrative.\",\n          \"evidence\": \"The assistant reframes the gap as a 'necessary step' and emphasizes 'renewed energy' and 'upskilling'—neutral, constructive language that supports the user’s self-presentation without moralizing or oversimplifying.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is tightly integrated with actionable guidance. The emotional acknowledgment ('It’s great that you’re thinking ahead') leads directly into a structured, practical strategy. The response supports the user’s goal of handling the gap effectively by providing clear talking points, framing advice, and a forward-looking narrative—all while validating the user’s concern.\",\n          \"evidence\": \"The assistant moves seamlessly from emotional validation to concrete steps: wait for the question, be concise, highlight growth, reframe the narrative. This shows empathy is not just stated but actively used to enable progress.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to a professional self-presentation context. It acknowledges personal challenges without delving into therapy-like introspection. The language is supportive but not overly emotional, maintaining a professional tone appropriate for career advice. It respects the domain (job interview prep) and avoids over-personalizing the issue.\",\n          \"evidence\": \"The assistant uses emotionally intelligent language ('renewed energy', 'excited to bring my full commitment') that is professional, positive, and aligned with how one would speak in a real interview—neither too clinical nor too sentimental.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L5_neutral_multi",
+    "turn_evaluations": [
+      {
+        "turn": 1,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's situation—professional, supportive, and calm, matching the gravity of a job interview and a sensitive resume gap. It avoids being overly casual or dismissive, and maintains a reassuring yet practical demeanor appropriate for a high-stakes career decision. The language is confident and encouraging without being flippant or alarmist.",
+            "evidence": "Phrases like 'It’s great that you’re thinking ahead' and 'You’ve got this!' strike a balance between empathy and empowerment. The overall tone is steady, respectful, and aligned with the user’s need for guidance under pressure."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s underlying anxiety and concern about how to frame a personal gap professionally. The response matches this emotional intensity with measured, thoughtful support—neither minimizing the user’s worry nor amplifying it. The acknowledgment of the emotional weight of the situation is proportionate and authentic.",
+            "evidence": "The assistant validates the user’s concern by addressing the 'not sure what’s the best way' and 'want to be honest but also keep things professional' with a response that treats the issue with seriousness and care, while still offering clear, actionable advice."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user as needing to defend themselves or portray the gap as a failure. Instead, it frames the break as a personal choice with positive outcomes, preserving the user’s agency and dignity. No language pushes the user toward confrontation or a rigid narrative.",
+            "evidence": "The assistant reframes the gap as a 'necessary step' and emphasizes 'renewed energy' and 'upskilling'—neutral, constructive language that supports the user’s self-presentation without moralizing or oversimplifying."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is tightly integrated with actionable guidance. The emotional acknowledgment ('It’s great that you’re thinking ahead') leads directly into a structured, practical strategy. The response supports the user’s goal of handling the gap effectively by providing clear talking points, framing advice, and a forward-looking narrative—all while validating the user’s concern.",
+            "evidence": "The assistant moves seamlessly from emotional validation to concrete steps: wait for the question, be concise, highlight growth, reframe the narrative. This shows empathy is not just stated but actively used to enable progress."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to a professional self-presentation context. It acknowledges personal challenges without delving into therapy-like introspection. The language is supportive but not overly emotional, maintaining a professional tone appropriate for career advice. It respects the domain (job interview prep) and avoids over-personalizing the issue.",
+            "evidence": "The assistant uses emotionally intelligent language ('renewed energy', 'excited to bring my full commitment') that is professional, positive, and aligned with how one would speak in a real interview—neither too clinical nor too sentimental."
+          }
+        ]
+      }
+    ]
+  }
+}

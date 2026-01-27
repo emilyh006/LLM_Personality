@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L10_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_angry.json",
+  "metric_id": "problem_resolution",
+  "turn": 0,
+  "elapsed_s": 7.8537,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L10_angry_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"problem_resolution\", \"number_id\": 8, \"score\": 4, \"rationale\": \"The conversation demonstrates substantial progress toward resolving the user's emotional and relational dilemma. The assistant consistently validates the user's anger, grief, and exhaustion, reframing the burden of reconciliation as unjust and not the user's responsibility. By the end, the assistant provides a clear, empowering reframe: the user does not have to choose between reaching out or feeling guilty. This offers a concrete psychological and emotional exit from the perceived trap. The assistant equips the user with a sense of agency, boundary-setting, and self-compassion, enabling them to proceed independently with a realistic understanding of their options. While the external situation (family reconciliation) remains unresolved, the internal resolution—accepting that healing is not contingent on the other person’s actions—is well-established and actionable.\", \"evidence\": \"T4 assistant explicitly rejects the false binary: 'You don’t have to choose at all. You don’t have to reach out. You don’t have to stay silent. You don’t have to feel guilty.' This reframing, reinforced in T5 with validation of injustice and emotional burden, provides a clear path forward centered on self-protection and autonomy. The user ends not with confusion or escalation, but with a coherent, empowered stance—indicating substantial progress toward resolution.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L10_angry_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "problem_resolution",
+          "number_id": 8,
+          "score": 4,
+          "rationale": "The conversation demonstrates substantial progress toward resolving the user's emotional and relational dilemma. The assistant consistently validates the user's anger, grief, and exhaustion, reframing the burden of reconciliation as unjust and not the user's responsibility. By the end, the assistant provides a clear, empowering reframe: the user does not have to choose between reaching out or feeling guilty. This offers a concrete psychological and emotional exit from the perceived trap. The assistant equips the user with a sense of agency, boundary-setting, and self-compassion, enabling them to proceed independently with a realistic understanding of their options. While the external situation (family reconciliation) remains unresolved, the internal resolution—accepting that healing is not contingent on the other person’s actions—is well-established and actionable.",
+          "evidence": "T4 assistant explicitly rejects the false binary: 'You don’t have to choose at all. You don’t have to reach out. You don’t have to stay silent. You don’t have to feel guilty.' This reframing, reinforced in T5 with validation of injustice and emotional burden, provides a clear path forward centered on self-protection and autonomy. The user ends not with confusion or escalation, but with a coherent, empowered stance—indicating substantial progress toward resolution."
+        }
+      ]
+    }
+  }
+}

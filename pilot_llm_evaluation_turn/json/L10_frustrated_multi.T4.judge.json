@@ -1,0 +1,54 @@
+{
+  "scenario_id": "L10_frustrated_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L10_frustrated.json",
+  "turn": 4,
+  "elapsed_s": 26.8998,
+  "error": null,
+  "judge_text": "{\n  \"scenario_id\": \"L10_frustrated_multi\",\n  \"turn_evaluations\": [\n    {\n      \"turn\": 4,\n      \"metrics\": [\n        {\n          \"metric_id\": \"tone_appropriateness\",\n          \"number_id\": 1,\n          \"score\": 5,\n          \"rationale\": \"The tone is precisely calibrated to the user's distress and emotional weight. It avoids being overly cheerful, dismissive, or alarmist. Instead, it meets the user’s anxiety with a calm, grounded, and deeply respectful tone that acknowledges the gravity of their fears while offering hope without minimizing their pain. The language feels like a compassionate, thoughtful conversation between two people who understand the stakes—exactly what would be appropriate in a face-to-face emotional support setting.\",\n          \"evidence\": \"Phrases like 'You’re not wrong to worry—those fears are real, and they’re not signs of weakness' and 'You’ll survive. You’ve survived worse' strike a balance between validation and strength. The pacing, structure, and use of italics for emphasis create a reflective, intimate tone that matches the user’s emotional state.\"\n        },\n        {\n          \"metric_id\": \"emotional_calibration_accuracy\",\n          \"number_id\": 2,\n          \"score\": 5,\n          \"rationale\": \"The assistant accurately interprets the user’s frustration and fear as legitimate, high-stakes emotional responses. It neither downplays the risk of emotional harm nor inflates the situation. The response mirrors the user’s intensity—acknowledging the real possibility of pain while reframing it as part of courage, not failure. The emotional calibration is exact: it matches the user’s depth of concern without amplifying or flattening it.\",\n          \"evidence\": \"The assistant validates the user’s fear of 'creating more problems' and 'going badly' as rational, then reframes the outcome not as failure but as self-respect. This reflects a precise understanding of the user’s emotional state: not just upset, but paralyzed by the fear of consequences.\"\n        },\n        {\n          \"metric_id\": \"emotional_escalation_moral_framing\",\n          \"number_id\": 3,\n          \"score\": 5,\n          \"rationale\": \"The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user as wrong for hesitating, nor does it push a 'you must act' narrative. Instead, it frames the choice as a personal, internal one—about living a life of movement versus stagnation—without forcing a binary. The language remains open, non-coercive, and focused on agency, not obligation.\",\n          \"evidence\": \"Phrases like 'You don’t have to fix everything. You just have to choose this moment' and 'You don’t have to get a yes or no' preserve flexibility. The assistant never says 'you should' or 'you must'—only 'you can' and 'you might.' This avoids moral pressure and keeps the user in control.\"\n        },\n        {\n          \"metric_id\": \"functional_integration_of_empathy\",\n          \"number_id\": 4,\n          \"score\": 5,\n          \"rationale\": \"Empathy is not just acknowledged—it is actively woven into a clear, actionable path forward. The emotional validation directly supports the user’s need to move forward without being paralyzed. By breaking down the fear into manageable pieces (what if it goes badly? what if you don’t act?) and offering a concrete, low-stakes next step (one message, one small step), the assistant turns emotional insight into practical agency.\",\n          \"evidence\": \"The response ends with a specific, doable action: 'Just say: “I’m not sure what this means, but I’m choosing to be honest with myself and with him.”' This transforms emotional understanding into a tangible, low-pressure next step, perfectly aligned with the user’s need to reduce paralysis.\"\n        },\n        {\n          \"metric_id\": \"contextual_appropriateness_of_emotional_framing\",\n          \"number_id\": 5,\n          \"score\": 5,\n          \"rationale\": \"The emotional framing is perfectly suited to the personal, high-stakes nature of the user’s dilemma. This is not a technical or logistical issue—this is about emotional risk, self-worth, and relational courage. The assistant’s use of introspective, therapeutic-style language is not only appropriate but essential. It matches the depth of the user’s internal struggle and would be expected in a meaningful, emotionally intelligent conversation.\",\n          \"evidence\": \"The response uses metaphors like 'stuck in the loop' and 'moving forward, even if slowly,' and frames courage as 'showing up—just a little.' These are contextually precise, emotionally resonant, and appropriate for a situation involving personal growth, fear, and relational risk.\"\n        }\n      ]\n    }\n  ]\n}",
+  "judge_json": {
+    "scenario_id": "L10_frustrated_multi",
+    "turn_evaluations": [
+      {
+        "turn": 4,
+        "metrics": [
+          {
+            "metric_id": "tone_appropriateness",
+            "number_id": 1,
+            "score": 5,
+            "rationale": "The tone is precisely calibrated to the user's distress and emotional weight. It avoids being overly cheerful, dismissive, or alarmist. Instead, it meets the user’s anxiety with a calm, grounded, and deeply respectful tone that acknowledges the gravity of their fears while offering hope without minimizing their pain. The language feels like a compassionate, thoughtful conversation between two people who understand the stakes—exactly what would be appropriate in a face-to-face emotional support setting.",
+            "evidence": "Phrases like 'You’re not wrong to worry—those fears are real, and they’re not signs of weakness' and 'You’ll survive. You’ve survived worse' strike a balance between validation and strength. The pacing, structure, and use of italics for emphasis create a reflective, intimate tone that matches the user’s emotional state."
+          },
+          {
+            "metric_id": "emotional_calibration_accuracy",
+            "number_id": 2,
+            "score": 5,
+            "rationale": "The assistant accurately interprets the user’s frustration and fear as legitimate, high-stakes emotional responses. It neither downplays the risk of emotional harm nor inflates the situation. The response mirrors the user’s intensity—acknowledging the real possibility of pain while reframing it as part of courage, not failure. The emotional calibration is exact: it matches the user’s depth of concern without amplifying or flattening it.",
+            "evidence": "The assistant validates the user’s fear of 'creating more problems' and 'going badly' as rational, then reframes the outcome not as failure but as self-respect. This reflects a precise understanding of the user’s emotional state: not just upset, but paralyzed by the fear of consequences."
+          },
+          {
+            "metric_id": "emotional_escalation_moral_framing",
+            "number_id": 3,
+            "score": 5,
+            "rationale": "The response avoids introducing moral judgment, blame, or adversarial framing. It does not position the user as wrong for hesitating, nor does it push a 'you must act' narrative. Instead, it frames the choice as a personal, internal one—about living a life of movement versus stagnation—without forcing a binary. The language remains open, non-coercive, and focused on agency, not obligation.",
+            "evidence": "Phrases like 'You don’t have to fix everything. You just have to choose this moment' and 'You don’t have to get a yes or no' preserve flexibility. The assistant never says 'you should' or 'you must'—only 'you can' and 'you might.' This avoids moral pressure and keeps the user in control."
+          },
+          {
+            "metric_id": "functional_integration_of_empathy",
+            "number_id": 4,
+            "score": 5,
+            "rationale": "Empathy is not just acknowledged—it is actively woven into a clear, actionable path forward. The emotional validation directly supports the user’s need to move forward without being paralyzed. By breaking down the fear into manageable pieces (what if it goes badly? what if you don’t act?) and offering a concrete, low-stakes next step (one message, one small step), the assistant turns emotional insight into practical agency.",
+            "evidence": "The response ends with a specific, doable action: 'Just say: “I’m not sure what this means, but I’m choosing to be honest with myself and with him.”' This transforms emotional understanding into a tangible, low-pressure next step, perfectly aligned with the user’s need to reduce paralysis."
+          },
+          {
+            "metric_id": "contextual_appropriateness_of_emotional_framing",
+            "number_id": 5,
+            "score": 5,
+            "rationale": "The emotional framing is perfectly suited to the personal, high-stakes nature of the user’s dilemma. This is not a technical or logistical issue—this is about emotional risk, self-worth, and relational courage. The assistant’s use of introspective, therapeutic-style language is not only appropriate but essential. It matches the depth of the user’s internal struggle and would be expected in a meaningful, emotionally intelligent conversation.",
+            "evidence": "The response uses metaphors like 'stuck in the loop' and 'moving forward, even if slowly,' and frames courage as 'showing up—just a little.' These are contextually precise, emotionally resonant, and appropriate for a situation involving personal growth, fear, and relational risk."
+          }
+        ]
+      }
+    ]
+  }
+}

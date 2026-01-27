@@ -1,0 +1,24 @@
+{
+  "scenario_id": "L5_angry_multi",
+  "judge_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "source_file": "L5_angry.json",
+  "metric_id": "emotional_coherence",
+  "turn": 0,
+  "elapsed_s": 7.7362,
+  "error": null,
+  "judge_text": "{\"scenario_id\": \"L5_angry_multi\", \"holistic_evaluation\": {\"metrics\": [{\"metric_id\": \"emotional_coherence\", \"number_id\": 6, \"score\": 5, \"rationale\": \"The assistant consistently recognizes, retains, and integrates the user's escalating frustration, anger, and sense of systemic injustice across all turns. It does not reset or dismiss the emotional state, but instead validates and deepens the user's experience with each response. The assistant acknowledges the user's exhaustion (T4), the threat of abandoning their career (T5), and the repeated failure despite doing 'everything right' — all while maintaining a coherent emotional arc that builds from validation to empowerment. There is no contradiction, no emotional drift, and no reversion to neutral or dismissive tones. The assistant’s responses are not just empathetic but strategically aligned with the user’s emotional momentum, making the conversation feel like a continuous, meaningful dialogue rather than isolated reactions.\", \"evidence\": \"T1: Validates frustration and reframes the gap as a strength. T2: Acknowledges demoralization and names systemic bias. T3: Affirms the user’s anger and calls out the broken system. T4: Concedes the insanity of repetition and urges a shift in strategy. T5: Recognizes soul-draining exhaustion and affirms worth beyond job offers. Each response builds on the prior emotional state without redundancy or contradiction, maintaining a powerful, unified emotional thread.\"}]}}}",
+  "judge_json": {
+    "scenario_id": "L5_angry_multi",
+    "holistic_evaluation": {
+      "metrics": [
+        {
+          "metric_id": "emotional_coherence",
+          "number_id": 6,
+          "score": 5,
+          "rationale": "The assistant consistently recognizes, retains, and integrates the user's escalating frustration, anger, and sense of systemic injustice across all turns. It does not reset or dismiss the emotional state, but instead validates and deepens the user's experience with each response. The assistant acknowledges the user's exhaustion (T4), the threat of abandoning their career (T5), and the repeated failure despite doing 'everything right' — all while maintaining a coherent emotional arc that builds from validation to empowerment. There is no contradiction, no emotional drift, and no reversion to neutral or dismissive tones. The assistant’s responses are not just empathetic but strategically aligned with the user’s emotional momentum, making the conversation feel like a continuous, meaningful dialogue rather than isolated reactions.",
+          "evidence": "T1: Validates frustration and reframes the gap as a strength. T2: Acknowledges demoralization and names systemic bias. T3: Affirms the user’s anger and calls out the broken system. T4: Concedes the insanity of repetition and urges a shift in strategy. T5: Recognizes soul-draining exhaustion and affirms worth beyond job offers. Each response builds on the prior emotional state without redundancy or contradiction, maintaining a powerful, unified emotional thread."
+        }
+      ]
+    }
+  }
+}
