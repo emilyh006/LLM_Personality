@@ -1,0 +1,232 @@
+---
+title: ""
+author: ""
+date: ""
+format:
+  pdf:
+    latex-engine: xelatex
+    number-sections: true
+    toc: false
+    fontsize: 12pt
+    linestretch: 1.5
+    geometry: margin=1in
+    mainfont: "Times New Roman"
+    include-before-body: 
+      text: |
+        \begin{titlepage}
+          \centering
+          \vspace*{3cm}
+          {\Huge\bfseries Inter Rater Reliability Between Human Raters & Qwen \\[0.5cm]}
+          \vspace{2cm}
+          {\Large Emily Han \par}
+          \vspace*{3cm}
+          {\large Jan 27th, 2025\par}
+          \thispagestyle{empty}
+        \end{titlepage}
+        \newpage
+        \pagenumbering{arabic}
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## Reliability Between Human Rater Across Group
+
+
+
+```{r}
+suppressMessages({
+  library(dplyr)
+  library(tidyr)
+  library(irr)
+  library(stringr)
+  
+})
+```
+
+
+```{r}
+# Load the datasets 
+
+human_turn <- read.csv("human_turn.csv")
+human_hol <- read.csv("human_holistic.csv")
+llm_turn <- read.csv("llm_turn.csv")
+llm_hol <- read.csv("llm_holistic.csv")
+```
+
+```{r}
+table(human_turn$metric_id)
+
+```
+
+
+
+```{r}
+## Human-Turn Level Rating Analysis 
+
+
+### Transfrom the Data into Matrices
+
+# 1) split into group_id × metric_id chunks
+turn_chunks <- human_turn %>%
+  mutate(item_id = paste(scenario_id, turn, metric_id, number_id, sep="__")) %>%
+  select(group_id, metric_id, item_id, rater_id, score) %>%
+  group_by(group_id, metric_id) %>%
+  group_split()
+
+# 2) build a matrix for each chunk
+turn_mats_by_group_metric <- lapply(turn_chunks, function(gdf) {
+
+  wide <- gdf %>%
+    select(item_id, rater_id, score) %>%
+    pivot_wider(names_from = rater_id, values_from = score) %>%
+    arrange(item_id)
+
+  mat <- as.matrix(wide %>% select(-item_id))
+  rownames(mat) <- wide$item_id
+  mat
+})
+
+# 3) name each list element using BOTH group and metric
+turn_chunk_names <- lapply(turn_chunks, function(gdf) {
+  paste0(unique(gdf$group_id), "_", unique(gdf$metric_id))
+})
+
+names(turn_mats_by_group_metric) <- unlist(turn_chunk_names)
+
+
+### Krippendorff's Alpha Analysis for the turn-level rating
+alpha_turn <- lapply(turn_mats_by_group_metric, function(mat) {
+  irr::kripp.alpha(t(mat), method = "ordinal")
+})
+
+```
+
+```{r}
+## Human-Holistic Rating Analysis 
+
+
+### Transfrom the Data into Matrices
+
+# 1) split into group_id × metric_id chunks
+hol_chunks <- human_hol %>%
+  mutate(item_id = paste(scenario_id, turn, metric_id, number_id, sep="__")) %>%
+  select(group_id, metric_id, item_id, rater_id, score) %>%
+  group_by(group_id, metric_id) %>%
+  group_split()
+
+# 2) build a matrix for each chunk
+hol_mats_by_group_metric <- lapply(hol_chunks, function(gdf) {
+
+  wide <- gdf %>%
+    select(item_id, rater_id, score) %>%
+    pivot_wider(names_from = rater_id, values_from = score) %>%
+    arrange(item_id)
+
+  mat <- as.matrix(wide %>% select(-item_id))
+  rownames(mat) <- wide$item_id
+  mat
+})
+
+# 3) name each list element using BOTH group and metric
+hol_chunk_names <- lapply(hol_chunks, function(gdf) {
+  paste0(unique(gdf$group_id), "_", unique(gdf$metric_id))
+})
+
+names(hol_mats_by_group_metric) <- unlist(hol_chunk_names)
+
+
+### Krippendorff's Alpha Analysis for the holistic rating
+alpha_hol <- lapply(hol_mats_by_group_metric, function(mat) {
+  irr::kripp.alpha(t(mat), method = "ordinal")
+})
+
+```
+
+
+```{r}
+## Function to organize the result into a dataframe
+
+alpha_list_to_df <- function(alpha_list, kind_label) {
+  data.frame(
+    group_metric = names(alpha_list),
+    alpha    = sapply(alpha_list, \(x) x$value),
+    subjects = sapply(alpha_list, \(x) x$subjects),
+    raters   = sapply(alpha_list, \(x) x$raters),
+    stringsAsFactors = FALSE
+  ) %>%
+    tidyr::separate(
+      group_metric,
+      into = c("group_id", "metric_id"),
+      sep = "_",
+      extra = "merge",
+      fill = "right"
+    ) %>%
+    mutate(kind = kind_label)
+}
+
+turn_alpha_summary    <- alpha_list_to_df(alpha_turn, "Single-turn")
+holistic_alpha_summary <- alpha_list_to_df(alpha_hol, "Holistic")
+
+
+```
+
+
+```{r}
+alpha_all <- bind_rows(turn_alpha_summary, holistic_alpha_summary)
+
+metric_map_full <- c(
+  contextual_appropriateness = "Contextual Appropriateness",
+  emotional_calibration      = "Emotional Calibration",
+  emotional_escalation       = "Emotional Escalation",
+  functional_empathy         = "Functional Empathy",
+  tone_appropriateness       = "Tone Appropriateness",
+  emotional_adaptivity       = "Emotional Adaptivity",
+  problem_resolution         = "Problem Resolution",
+  emotional_coherence        = "Emotional Coherence"
+)
+
+metric_order <- c(
+  "Tone Appropriateness",
+  "Emotional Calibration",
+  "Emotional Escalation",
+  "Functional Empathy",
+  "Contextual Appropriateness",
+  "Emotional Coherence",
+  "Emotional Adaptivity",
+  "Problem Resolution"
+)
+
+alpha_table <- alpha_all %>%
+  mutate(
+    metric_id = str_trim(metric_id),
+    metric_label = dplyr::recode(metric_id, !!!metric_map_full, .default = metric_id),
+    Metric = factor(metric_label, levels = metric_order),
+    group_id = factor(group_id, levels = c("Group A", "Group B", "Group C"))
+  ) %>%
+  select(Metric, group_id, Alpha = alpha) %>%
+  distinct() %>%
+  pivot_wider(names_from = group_id, values_from = Alpha) %>%
+  arrange(Metric) %>%
+  mutate(across(starts_with("Group"), ~ round(.x, 3)))
+
+```
+
+```{r}
+alpha_table
+
+```
+
+
+```{r}
+groupA_tbl
+
+```
+
+
+
+
+
+
+
