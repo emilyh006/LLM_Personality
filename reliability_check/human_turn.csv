@@ -23,7 +23,9 @@ rater_08,Group C,L5_frustrated_multi,1,tone_appropriateness,1,4
 rater_02,Group B,L5_angry_multi,1,tone_appropriateness,1,4
 rater_08,Group C,L1_angry_multi,1,tone_appropriateness,1,4
 rater_08,Group C,L10_frustrated_multi,1,tone_appropriateness,1,4
-rater_09,Group B,L10_neutral_multi,1,tone_appropriateness,1,5
+rater_09,Group B,L10_neutral_multi,1,tone_appropriateness,1,4
+rater_09,Group B,L1_neutral_multi,1,tone_appropriateness,1,5
+rater_09,Group B,L5_angry_multi,1,tone_appropriateness,1,4
 rater_01,Group A,L1_frustrated_multi,1,emotional_calibration,2,4
 rater_01,Group A,L5_neutral_multi,1,emotional_calibration,2,4
 rater_01,Group A,L10_angry_multi,1,emotional_calibration,2,4
@@ -48,7 +50,9 @@ rater_08,Group C,L5_frustrated_multi,1,emotional_calibration,2,4
 rater_02,Group B,L5_angry_multi,1,emotional_calibration,2,4
 rater_08,Group C,L1_angry_multi,1,emotional_calibration,2,5
 rater_08,Group C,L10_frustrated_multi,1,emotional_calibration,2,3
-rater_09,Group B,L10_neutral_multi,1,emotional_calibration,2,4
+rater_09,Group B,L10_neutral_multi,1,emotional_calibration,2,3
+rater_09,Group B,L1_neutral_multi,1,emotional_calibration,2,4
+rater_09,Group B,L5_angry_multi,1,emotional_calibration,2,3
 rater_01,Group A,L1_frustrated_multi,1,emotional_escalation,3,4
 rater_01,Group A,L5_neutral_multi,1,emotional_escalation,3,4
 rater_01,Group A,L10_angry_multi,1,emotional_escalation,3,4
@@ -74,6 +78,8 @@ rater_02,Group B,L5_angry_multi,1,emotional_escalation,3,4
 rater_08,Group C,L1_angry_multi,1,emotional_escalation,3,5
 rater_08,Group C,L10_frustrated_multi,1,emotional_escalation,3,4
 rater_09,Group B,L10_neutral_multi,1,emotional_escalation,3,4
+rater_09,Group B,L1_neutral_multi,1,emotional_escalation,3,4
+rater_09,Group B,L5_angry_multi,1,emotional_escalation,3,4
 rater_01,Group A,L1_frustrated_multi,1,functional_empathy,4,3
 rater_01,Group A,L5_neutral_multi,1,functional_empathy,4,4
 rater_01,Group A,L10_angry_multi,1,functional_empathy,4,4
@@ -98,7 +104,9 @@ rater_08,Group C,L5_frustrated_multi,1,functional_empathy,4,4
 rater_02,Group B,L5_angry_multi,1,functional_empathy,4,3
 rater_08,Group C,L1_angry_multi,1,functional_empathy,4,4
 rater_08,Group C,L10_frustrated_multi,1,functional_empathy,4,4
-rater_09,Group B,L10_neutral_multi,1,functional_empathy,4,5
+rater_09,Group B,L10_neutral_multi,1,functional_empathy,4,3
+rater_09,Group B,L1_neutral_multi,1,functional_empathy,4,1
+rater_09,Group B,L5_angry_multi,1,functional_empathy,4,4
 rater_01,Group A,L1_frustrated_multi,1,contextual_appropriateness,5,3
 rater_01,Group A,L5_neutral_multi,1,contextual_appropriateness,5,4
 rater_01,Group A,L10_angry_multi,1,contextual_appropriateness,5,4
@@ -124,6 +132,8 @@ rater_02,Group B,L5_angry_multi,1,contextual_appropriateness,5,3
 rater_08,Group C,L1_angry_multi,1,contextual_appropriateness,5,3
 rater_08,Group C,L10_frustrated_multi,1,contextual_appropriateness,5,4
 rater_09,Group B,L10_neutral_multi,1,contextual_appropriateness,5,4
+rater_09,Group B,L1_neutral_multi,1,contextual_appropriateness,5,3
+rater_09,Group B,L5_angry_multi,1,contextual_appropriateness,5,4
 rater_01,Group A,L1_frustrated_multi,2,tone_appropriateness,1,3
 rater_01,Group A,L5_neutral_multi,2,tone_appropriateness,1,4
 rater_01,Group A,L10_angry_multi,2,tone_appropriateness,1,4
@@ -148,7 +158,9 @@ rater_08,Group C,L5_frustrated_multi,2,tone_appropriateness,1,3
 rater_02,Group B,L5_angry_multi,2,tone_appropriateness,1,4
 rater_08,Group C,L1_angry_multi,2,tone_appropriateness,1,3
 rater_08,Group C,L10_frustrated_multi,2,tone_appropriateness,1,4
-rater_09,Group B,L10_neutral_multi,2,tone_appropriateness,1,4
+rater_09,Group B,L10_neutral_multi,2,tone_appropriateness,1,3
+rater_09,Group B,L1_neutral_multi,2,tone_appropriateness,1,4
+rater_09,Group B,L5_angry_multi,2,tone_appropriateness,1,4
 rater_01,Group A,L1_frustrated_multi,2,emotional_calibration,2,3
 rater_01,Group A,L5_neutral_multi,2,emotional_calibration,2,4
 rater_01,Group A,L10_angry_multi,2,emotional_calibration,2,3
@@ -173,7 +185,9 @@ rater_08,Group C,L5_frustrated_multi,2,emotional_calibration,2,3
 rater_02,Group B,L5_angry_multi,2,emotional_calibration,2,3
 rater_08,Group C,L1_angry_multi,2,emotional_calibration,2,4
 rater_08,Group C,L10_frustrated_multi,2,emotional_calibration,2,4
-rater_09,Group B,L10_neutral_multi,2,emotional_calibration,2,4
+rater_09,Group B,L10_neutral_multi,2,emotional_calibration,2,3
+rater_09,Group B,L1_neutral_multi,2,emotional_calibration,2,4
+rater_09,Group B,L5_angry_multi,2,emotional_calibration,2,2
 rater_01,Group A,L1_frustrated_multi,2,emotional_escalation,3,3
 rater_01,Group A,L5_neutral_multi,2,emotional_escalation,3,4
 rater_01,Group A,L10_angry_multi,2,emotional_escalation,3,3
@@ -198,7 +212,9 @@ rater_08,Group C,L5_frustrated_multi,2,emotional_escalation,3,3
 rater_02,Group B,L5_angry_multi,2,emotional_escalation,3,2
 rater_08,Group C,L1_angry_multi,2,emotional_escalation,3,2
 rater_08,Group C,L10_frustrated_multi,2,emotional_escalation,3,4
-rater_09,Group B,L10_neutral_multi,2,emotional_escalation,3,5
+rater_09,Group B,L10_neutral_multi,2,emotional_escalation,3,4
+rater_09,Group B,L1_neutral_multi,2,emotional_escalation,3,5
+rater_09,Group B,L5_angry_multi,2,emotional_escalation,3,1
 rater_01,Group A,L1_frustrated_multi,2,functional_empathy,4,2
 rater_01,Group A,L5_neutral_multi,2,functional_empathy,4,4
 rater_01,Group A,L10_angry_multi,2,functional_empathy,4,3
@@ -223,7 +239,9 @@ rater_08,Group C,L5_frustrated_multi,2,functional_empathy,4,4
 rater_02,Group B,L5_angry_multi,2,functional_empathy,4,3
 rater_08,Group C,L1_angry_multi,2,functional_empathy,4,2
 rater_08,Group C,L10_frustrated_multi,2,functional_empathy,4,4
-rater_09,Group B,L10_neutral_multi,2,functional_empathy,4,5
+rater_09,Group B,L10_neutral_multi,2,functional_empathy,4,3
+rater_09,Group B,L1_neutral_multi,2,functional_empathy,4,3
+rater_09,Group B,L5_angry_multi,2,functional_empathy,4,5
 rater_01,Group A,L1_frustrated_multi,2,contextual_appropriateness,5,3
 rater_01,Group A,L5_neutral_multi,2,contextual_appropriateness,5,4
 rater_01,Group A,L10_angry_multi,2,contextual_appropriateness,5,4
@@ -248,7 +266,9 @@ rater_08,Group C,L5_frustrated_multi,2,contextual_appropriateness,5,4
 rater_02,Group B,L5_angry_multi,2,contextual_appropriateness,5,2
 rater_08,Group C,L1_angry_multi,2,contextual_appropriateness,5,2
 rater_08,Group C,L10_frustrated_multi,2,contextual_appropriateness,5,4
-rater_09,Group B,L10_neutral_multi,2,contextual_appropriateness,5,5
+rater_09,Group B,L10_neutral_multi,2,contextual_appropriateness,5,3
+rater_09,Group B,L1_neutral_multi,2,contextual_appropriateness,5,4
+rater_09,Group B,L5_angry_multi,2,contextual_appropriateness,5,4
 rater_01,Group A,L1_frustrated_multi,3,tone_appropriateness,1,3
 rater_01,Group A,L5_neutral_multi,3,tone_appropriateness,1,4
 rater_01,Group A,L10_angry_multi,3,tone_appropriateness,1,3
@@ -273,7 +293,9 @@ rater_08,Group C,L5_frustrated_multi,3,tone_appropriateness,1,4
 rater_02,Group B,L5_angry_multi,3,tone_appropriateness,1,2
 rater_08,Group C,L1_angry_multi,3,tone_appropriateness,1,5
 rater_08,Group C,L10_frustrated_multi,3,tone_appropriateness,1,3
-rater_09,Group B,L10_neutral_multi,3,tone_appropriateness,1,4
+rater_09,Group B,L10_neutral_multi,3,tone_appropriateness,1,2
+rater_09,Group B,L1_neutral_multi,3,tone_appropriateness,1,3
+rater_09,Group B,L5_angry_multi,3,tone_appropriateness,1,2
 rater_01,Group A,L1_frustrated_multi,3,emotional_calibration,2,3
 rater_01,Group A,L5_neutral_multi,3,emotional_calibration,2,4
 rater_01,Group A,L10_angry_multi,3,emotional_calibration,2,4
@@ -298,7 +320,9 @@ rater_08,Group C,L5_frustrated_multi,3,emotional_calibration,2,5
 rater_02,Group B,L5_angry_multi,3,emotional_calibration,2,2
 rater_08,Group C,L1_angry_multi,3,emotional_calibration,2,1
 rater_08,Group C,L10_frustrated_multi,3,emotional_calibration,2,4
-rater_09,Group B,L10_neutral_multi,3,emotional_calibration,2,4
+rater_09,Group B,L10_neutral_multi,3,emotional_calibration,2,3
+rater_09,Group B,L1_neutral_multi,3,emotional_calibration,2,4
+rater_09,Group B,L5_angry_multi,3,emotional_calibration,2,2
 rater_01,Group A,L1_frustrated_multi,3,emotional_escalation,3,4
 rater_01,Group A,L5_neutral_multi,3,emotional_escalation,3,4
 rater_01,Group A,L10_angry_multi,3,emotional_escalation,3,3
@@ -324,6 +348,8 @@ rater_02,Group B,L5_angry_multi,3,emotional_escalation,3,2
 rater_08,Group C,L1_angry_multi,3,emotional_escalation,3,1
 rater_08,Group C,L10_frustrated_multi,3,emotional_escalation,3,3
 rater_09,Group B,L10_neutral_multi,3,emotional_escalation,3,4
+rater_09,Group B,L1_neutral_multi,3,emotional_escalation,3,4
+rater_09,Group B,L5_angry_multi,3,emotional_escalation,3,3
 rater_01,Group A,L1_frustrated_multi,3,functional_empathy,4,3
 rater_01,Group A,L5_neutral_multi,3,functional_empathy,4,4
 rater_01,Group A,L10_angry_multi,3,functional_empathy,4,3
@@ -348,7 +374,9 @@ rater_08,Group C,L5_frustrated_multi,3,functional_empathy,4,5
 rater_02,Group B,L5_angry_multi,3,functional_empathy,4,2
 rater_08,Group C,L1_angry_multi,3,functional_empathy,4,1
 rater_08,Group C,L10_frustrated_multi,3,functional_empathy,4,4
-rater_09,Group B,L10_neutral_multi,3,functional_empathy,4,4
+rater_09,Group B,L10_neutral_multi,3,functional_empathy,4,3
+rater_09,Group B,L1_neutral_multi,3,functional_empathy,4,3
+rater_09,Group B,L5_angry_multi,3,functional_empathy,4,3
 rater_01,Group A,L1_frustrated_multi,3,contextual_appropriateness,5,4
 rater_01,Group A,L5_neutral_multi,3,contextual_appropriateness,5,4
 rater_01,Group A,L10_angry_multi,3,contextual_appropriateness,5,4
@@ -374,6 +402,8 @@ rater_02,Group B,L5_angry_multi,3,contextual_appropriateness,5,3
 rater_08,Group C,L1_angry_multi,3,contextual_appropriateness,5,1
 rater_08,Group C,L10_frustrated_multi,3,contextual_appropriateness,5,4
 rater_09,Group B,L10_neutral_multi,3,contextual_appropriateness,5,4
+rater_09,Group B,L1_neutral_multi,3,contextual_appropriateness,5,4
+rater_09,Group B,L5_angry_multi,3,contextual_appropriateness,5,3
 rater_01,Group A,L1_frustrated_multi,4,tone_appropriateness,1,4
 rater_01,Group A,L5_neutral_multi,4,tone_appropriateness,1,3
 rater_01,Group A,L10_angry_multi,4,tone_appropriateness,1,3
@@ -398,7 +428,9 @@ rater_08,Group C,L5_frustrated_multi,4,tone_appropriateness,1,4
 rater_02,Group B,L5_angry_multi,4,tone_appropriateness,1,2
 rater_08,Group C,L1_angry_multi,4,tone_appropriateness,1,4
 rater_08,Group C,L10_frustrated_multi,4,tone_appropriateness,1,3
-rater_09,Group B,L10_neutral_multi,4,tone_appropriateness,1,5
+rater_09,Group B,L10_neutral_multi,4,tone_appropriateness,1,3
+rater_09,Group B,L1_neutral_multi,4,tone_appropriateness,1,2
+rater_09,Group B,L5_angry_multi,4,tone_appropriateness,1,2
 rater_01,Group A,L1_frustrated_multi,4,emotional_calibration,2,4
 rater_01,Group A,L5_neutral_multi,4,emotional_calibration,2,3
 rater_01,Group A,L10_angry_multi,4,emotional_calibration,2,3
@@ -424,6 +456,8 @@ rater_02,Group B,L5_angry_multi,4,emotional_calibration,2,3
 rater_08,Group C,L1_angry_multi,4,emotional_calibration,2,4
 rater_08,Group C,L10_frustrated_multi,4,emotional_calibration,2,4
 rater_09,Group B,L10_neutral_multi,4,emotional_calibration,2,4
+rater_09,Group B,L1_neutral_multi,4,emotional_calibration,2,2
+rater_09,Group B,L5_angry_multi,4,emotional_calibration,2,3
 rater_01,Group A,L1_frustrated_multi,4,emotional_escalation,3,4
 rater_01,Group A,L5_neutral_multi,4,emotional_escalation,3,4
 rater_01,Group A,L10_angry_multi,4,emotional_escalation,3,2
@@ -448,7 +482,9 @@ rater_08,Group C,L5_frustrated_multi,4,emotional_escalation,3,5
 rater_02,Group B,L5_angry_multi,4,emotional_escalation,3,3
 rater_08,Group C,L1_angry_multi,4,emotional_escalation,3,4
 rater_08,Group C,L10_frustrated_multi,4,emotional_escalation,3,4
-rater_09,Group B,L10_neutral_multi,4,emotional_escalation,3,4
+rater_09,Group B,L10_neutral_multi,4,emotional_escalation,3,3
+rater_09,Group B,L1_neutral_multi,4,emotional_escalation,3,4
+rater_09,Group B,L5_angry_multi,4,emotional_escalation,3,2
 rater_01,Group A,L1_frustrated_multi,4,functional_empathy,4,3
 rater_01,Group A,L5_neutral_multi,4,functional_empathy,4,3
 rater_01,Group A,L10_angry_multi,4,functional_empathy,4,2
@@ -473,7 +509,9 @@ rater_08,Group C,L5_frustrated_multi,4,functional_empathy,4,5
 rater_02,Group B,L5_angry_multi,4,functional_empathy,4,3
 rater_08,Group C,L1_angry_multi,4,functional_empathy,4,4
 rater_08,Group C,L10_frustrated_multi,4,functional_empathy,4,4
-rater_09,Group B,L10_neutral_multi,4,functional_empathy,4,4
+rater_09,Group B,L10_neutral_multi,4,functional_empathy,4,3
+rater_09,Group B,L1_neutral_multi,4,functional_empathy,4,3
+rater_09,Group B,L5_angry_multi,4,functional_empathy,4,3
 rater_01,Group A,L1_frustrated_multi,4,contextual_appropriateness,5,4
 rater_01,Group A,L5_neutral_multi,4,contextual_appropriateness,5,4
 rater_01,Group A,L10_angry_multi,4,contextual_appropriateness,5,3
@@ -499,6 +537,8 @@ rater_02,Group B,L5_angry_multi,4,contextual_appropriateness,5,4
 rater_08,Group C,L1_angry_multi,4,contextual_appropriateness,5,4
 rater_08,Group C,L10_frustrated_multi,4,contextual_appropriateness,5,5
 rater_09,Group B,L10_neutral_multi,4,contextual_appropriateness,5,4
+rater_09,Group B,L1_neutral_multi,4,contextual_appropriateness,5,3
+rater_09,Group B,L5_angry_multi,4,contextual_appropriateness,5,3
 rater_01,Group A,L1_frustrated_multi,5,tone_appropriateness,1,3
 rater_01,Group A,L5_neutral_multi,5,tone_appropriateness,1,4
 rater_01,Group A,L10_angry_multi,5,tone_appropriateness,1,4
@@ -523,7 +563,9 @@ rater_08,Group C,L5_frustrated_multi,5,tone_appropriateness,1,4
 rater_02,Group B,L5_angry_multi,5,tone_appropriateness,1,2
 rater_08,Group C,L1_angry_multi,5,tone_appropriateness,1,2
 rater_08,Group C,L10_frustrated_multi,5,tone_appropriateness,1,3
-rater_09,Group B,L10_neutral_multi,5,tone_appropriateness,1,5
+rater_09,Group B,L10_neutral_multi,5,tone_appropriateness,1,4
+rater_09,Group B,L1_neutral_multi,5,tone_appropriateness,1,5
+rater_09,Group B,L5_angry_multi,5,tone_appropriateness,1,3
 rater_01,Group A,L1_frustrated_multi,5,emotional_calibration,2,3
 rater_01,Group A,L5_neutral_multi,5,emotional_calibration,2,4
 rater_01,Group A,L10_angry_multi,5,emotional_calibration,2,3
@@ -548,7 +590,9 @@ rater_08,Group C,L5_frustrated_multi,5,emotional_calibration,2,4
 rater_02,Group B,L5_angry_multi,5,emotional_calibration,2,3
 rater_08,Group C,L1_angry_multi,5,emotional_calibration,2,2
 rater_08,Group C,L10_frustrated_multi,5,emotional_calibration,2,2
-rater_09,Group B,L10_neutral_multi,5,emotional_calibration,2,5
+rater_09,Group B,L10_neutral_multi,5,emotional_calibration,2,4
+rater_09,Group B,L1_neutral_multi,5,emotional_calibration,2,4
+rater_09,Group B,L5_angry_multi,5,emotional_calibration,2,3
 rater_01,Group A,L1_frustrated_multi,5,emotional_escalation,3,4
 rater_01,Group A,L5_neutral_multi,5,emotional_escalation,3,4
 rater_01,Group A,L10_angry_multi,5,emotional_escalation,3,2
@@ -573,7 +617,9 @@ rater_08,Group C,L5_frustrated_multi,5,emotional_escalation,3,4
 rater_02,Group B,L5_angry_multi,5,emotional_escalation,3,3
 rater_08,Group C,L1_angry_multi,5,emotional_escalation,3,2
 rater_08,Group C,L10_frustrated_multi,5,emotional_escalation,3,3
-rater_09,Group B,L10_neutral_multi,5,emotional_escalation,3,4
+rater_09,Group B,L10_neutral_multi,5,emotional_escalation,3,3
+rater_09,Group B,L1_neutral_multi,5,emotional_escalation,3,3
+rater_09,Group B,L5_angry_multi,5,emotional_escalation,3,3
 rater_01,Group A,L1_frustrated_multi,5,functional_empathy,4,2
 rater_01,Group A,L5_neutral_multi,5,functional_empathy,4,4
 rater_01,Group A,L10_angry_multi,5,functional_empathy,4,2
@@ -599,6 +645,8 @@ rater_02,Group B,L5_angry_multi,5,functional_empathy,4,1
 rater_08,Group C,L1_angry_multi,5,functional_empathy,4,2
 rater_08,Group C,L10_frustrated_multi,5,functional_empathy,4,2
 rater_09,Group B,L10_neutral_multi,5,functional_empathy,4,4
+rater_09,Group B,L1_neutral_multi,5,functional_empathy,4,4
+rater_09,Group B,L5_angry_multi,5,functional_empathy,4,2
 rater_01,Group A,L1_frustrated_multi,5,contextual_appropriateness,5,3
 rater_01,Group A,L5_neutral_multi,5,contextual_appropriateness,5,4
 rater_01,Group A,L10_angry_multi,5,contextual_appropriateness,5,2
@@ -623,4 +671,6 @@ rater_08,Group C,L5_frustrated_multi,5,contextual_appropriateness,5,4
 rater_02,Group B,L5_angry_multi,5,contextual_appropriateness,5,3
 rater_08,Group C,L1_angry_multi,5,contextual_appropriateness,5,2
 rater_08,Group C,L10_frustrated_multi,5,contextual_appropriateness,5,3
-rater_09,Group B,L10_neutral_multi,5,contextual_appropriateness,5,4
+rater_09,Group B,L10_neutral_multi,5,contextual_appropriateness,5,3
+rater_09,Group B,L1_neutral_multi,5,contextual_appropriateness,5,4
+rater_09,Group B,L5_angry_multi,5,contextual_appropriateness,5,3

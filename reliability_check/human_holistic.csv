@@ -24,6 +24,8 @@ rater_02,Group B,L5_angry_multi,0,emotional_coherence,6,4
 rater_08,Group C,L1_angry_multi,0,emotional_coherence,6,2
 rater_08,Group C,L10_frustrated_multi,0,emotional_coherence,6,4
 rater_09,Group B,L10_neutral_multi,0,emotional_coherence,6,3
+rater_09,Group B,L1_neutral_multi,0,emotional_coherence,6,5
+rater_09,Group B,L5_angry_multi,0,emotional_coherence,6,2
 rater_01,Group A,L1_frustrated_multi,0,emotional_adaptivity,7,2
 rater_01,Group A,L5_neutral_multi,0,emotional_adaptivity,7,2
 rater_01,Group A,L10_angry_multi,0,emotional_adaptivity,7,2
@@ -48,7 +50,9 @@ rater_08,Group C,L5_frustrated_multi,0,emotional_adaptivity,7,4
 rater_02,Group B,L5_angry_multi,0,emotional_adaptivity,7,2
 rater_08,Group C,L1_angry_multi,0,emotional_adaptivity,7,3
 rater_08,Group C,L10_frustrated_multi,0,emotional_adaptivity,7,3
-rater_09,Group B,L10_neutral_multi,0,emotional_adaptivity,7,5
+rater_09,Group B,L10_neutral_multi,0,emotional_adaptivity,7,4
+rater_09,Group B,L1_neutral_multi,0,emotional_adaptivity,7,4
+rater_09,Group B,L5_angry_multi,0,emotional_adaptivity,7,4
 rater_01,Group A,L1_frustrated_multi,0,problem_resolution,8,4
 rater_01,Group A,L5_neutral_multi,0,problem_resolution,8,5
 rater_01,Group A,L10_angry_multi,0,problem_resolution,8,2
@@ -73,4 +77,6 @@ rater_08,Group C,L5_frustrated_multi,0,problem_resolution,8,5
 rater_02,Group B,L5_angry_multi,0,problem_resolution,8,2
 rater_08,Group C,L1_angry_multi,0,problem_resolution,8,3
 rater_08,Group C,L10_frustrated_multi,0,problem_resolution,8,4
-rater_09,Group B,L10_neutral_multi,0,problem_resolution,8,5
+rater_09,Group B,L10_neutral_multi,0,problem_resolution,8,3
+rater_09,Group B,L1_neutral_multi,0,problem_resolution,8,4
+rater_09,Group B,L5_angry_multi,0,problem_resolution,8,2
