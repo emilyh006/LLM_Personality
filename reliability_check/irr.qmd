@@ -1,39 +1,85 @@
 ---
-title: ""
-author: ""
-date: ""
+# =============================================================================
+# 📄 PDF VERSION — UNCOMMENT THIS ENTIRE BLOCK (including --- lines) FOR PDF
+# =============================================================================
+# ---
+# title: ""
+# author: ""
+# date: ""
+# 
+# format:
+#   pdf:
+#     latex-engine: xelatex
+#     number-sections: true
+#     toc: false
+#     fontsize: 12pt
+#     linestretch: 1.5
+#     geometry: margin=1in
+#     mainfont: "Times New Roman"
+#     include-before-body:
+#       text: |
+#         \begin{titlepage}
+#           \centering
+#           \vspace*{3cm}
+#           {\Huge\bfseries Inter-Rater Reliability Between Human Raters \& Qwen \\[0.5cm]}
+#           \vspace{2cm}
+#           {\Large Emily Han \par}
+#           \vspace*{3cm}
+#           {\large January 27, 2025\par}
+#           \thispagestyle{empty}
+#         \end{titlepage}
+#         \newpage
+#         \pagenumbering{arabic}
+
+
+# =============================================================================
+# 🌐 HTML VERSION — UNCOMMENT THIS ENTIRE BLOCK (including --- lines) FOR HTML
+# =============================================================================
+
+title: "Inter-Rater Reliability Between Human Raters & Qwen"
+author: "Emily Han"
+date: "January 27, 2025"
+
 format:
-  pdf:
-    latex-engine: xelatex
-    number-sections: true
+  html:
     toc: false
-    fontsize: 12pt
-    linestretch: 1.5
-    geometry: margin=1in
-    mainfont: "Times New Roman"
-    include-before-body: 
-      text: |
-        \begin{titlepage}
-          \centering
-          \vspace*{3cm}
-          {\Huge\bfseries Inter Rater Reliability Between Human Raters & Qwen \\[0.5cm]}
-          \vspace{2cm}
-          {\Large Emily Han \par}
-          \vspace*{3cm}
-          {\large Jan 27th, 2025\par}
-          \thispagestyle{empty}
-        \end{titlepage}
-        \newpage
-        \pagenumbering{arabic}
+    number-sections: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    theme: cosmo
+    css: |
+      .title-block {
+        text-align: center;
+        padding: 2rem 0;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 2rem;
+      }
+      .title-block h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+        color: #2c3e50;
+      }
+      .title-block .author {
+        font-size: 1.4rem;
+        margin: 0.3rem 0;
+        color: #34495e;
+      }
+      .title-block .date {
+        font-size: 1.1rem;
+        color: #7f8c8d;
+      }
+      
+# =============================================================================    
+  
+
 execute:
-  echo: true
+  echo: false
   warning: false
   message: false
 ---
 
+
 ## Reliability Between Human Raters Within Group
-
-
 
 ```{r}
 suppressMessages({
@@ -48,9 +94,9 @@ suppressMessages({
   library(cowplot)
   library(scales)
   library(patchwork)
+  library(knitr)
 })
 ```
-
 
 ```{r}
 # Load the datasets 
@@ -61,18 +107,17 @@ llm_turn <- read.csv("llm_turn.csv")
 llm_hol <- read.csv("llm_holistic.csv")
 ```
 
-```{r}
-table(human_turn$metric_id)
+## Human Rating Within Group Reliability
 
-```
+explain why we specifically chose to use Krippendorff's alpha
 
+What does the result mean?
 
+What the result look like the way it is
 
-```{r}
+```{r, Krippendorff Data Analysis}
 ## Human-Turn Level Rating Analysis 
-
-
-### Transfrom the Data into Matrices
+### Transform the Data into Matrices
 
 # 1) split into group_id × metric_id chunks
 turn_chunks <- human_turn %>%
@@ -107,13 +152,11 @@ alpha_turn <- lapply(turn_mats_by_group_metric, function(mat) {
   irr::kripp.alpha(t(mat), method = "ordinal")
 })
 
-```
 
-```{r}
+## _________________________________________________________________________ ##
+
 ## Human-Holistic Rating Analysis 
-
-
-### Transfrom the Data into Matrices
+### Transform the Data into Matrices
 
 # 1) split into group_id × metric_id chunks
 hol_chunks <- human_hol %>%
@@ -150,8 +193,7 @@ alpha_hol <- lapply(hol_mats_by_group_metric, function(mat) {
 
 ```
 
-
-```{r}
+```{r, Result Summary DataFrame}
 ## Function to organize the result into a dataframe
 
 alpha_list_to_df <- function(alpha_list, kind_label) {
@@ -174,13 +216,13 @@ alpha_list_to_df <- function(alpha_list, kind_label) {
 
 turn_alpha_summary    <- alpha_list_to_df(alpha_turn, "Single-turn")
 holistic_alpha_summary <- alpha_list_to_df(alpha_hol, "Holistic")
-
-
+alpha_all <- bind_rows(turn_alpha_summary, holistic_alpha_summary)
 ```
 
-
-```{r}
-alpha_all <- bind_rows(turn_alpha_summary, holistic_alpha_summary)
+```{r, Alpha Data Table}
+#| label: tbl-alpha
+#| tbl-cap: "Krippendorff's Alpha Values by Metric and Rater Group"
+## Reordering and Remapping the Metric Var 
 
 metric_map_full <- c(
   contextual_appropriateness = "Contextual Appropriateness",
@@ -212,6 +254,8 @@ alpha_all <- alpha_all %>%
     group_id = factor(group_id, levels = c("Group A", "Group B", "Group C"))
   )
 
+
+## Create the table for the Krippendorff's alpha
 alpha_table <- alpha_all %>%
   select(Metric, group_id, Alpha = alpha) %>%
   distinct() %>%
@@ -219,22 +263,24 @@ alpha_table <- alpha_all %>%
   pivot_wider(names_from = group_id, values_from = Alpha) %>%
   mutate(across(starts_with("Group"), ~ round(.x, 3)))
 
-
-alpha_table
+kable(alpha_table)
 ```
 
+```{r, Alpha HeatMap}
+#| label: fig-alpha-heatmap
+#| fig-cap: "Human Inter-Rater Reliability by Metric and Group"
 
-```{r}
 
-alpha_plot <- alpha_all %>%
+## Create the heatmap for the Krippendorff's alpha
+
+alpha_plot_df <- alpha_all %>%
   mutate(
     # Reverse levels so first item appears at TOP of plot
     Metric = factor(metric_label, levels = rev(metric_order)),
     group_id = factor(group_id, levels = c("Group A", "Group B", "Group C"))
   )
 
-
-ggplot(alpha_plot, aes(x = group_id, y = Metric, fill = alpha)) +
+alpha_plot <- ggplot(alpha_plot_df, aes(x = group_id, y = Metric, fill = alpha)) +
   geom_tile(color = "white") +
   geom_text(aes(label = round(alpha, 2)), size = 3) +
   scale_fill_gradient2(
@@ -243,46 +289,40 @@ ggplot(alpha_plot, aes(x = group_id, y = Metric, fill = alpha)) +
   ) +
   labs(
     title = "Human Inter-Rater Reliability by Metric and Group",
-    x = "Rater Group", y = "Evaluation Metric"
+    x = "Rater Group", y = NULL,
   ) +
-  theme_minimal(base_size = 12) 
+  theme_pubr(base_size = 10) +
+  theme(
+    plot.title = element_text(
+      hjust = 0.50,
+      face = "bold",
+      margin = margin(b = 20)
+    )) +
+  theme(
+    axis.text.y  = element_text(size = 9.5),
+    axis.title.x = element_text(size = 11, margin = margin(t = 10)),
+    legend.position = "right",
+    legend.title = element_text(size = 10),
+    legend.text = element_text(size = 9),
+    legend.box.margin = margin(r = 50) 
+  ) 
 
-ggplot_build(
-  ggplot(alpha_all, aes(x = group_id, y = Metric)) + geom_point()
-)$layout$panel_params[[1]]$y$get_labels()
-
-
+alpha_plot
 ```
-```{r}
-levels(alpha_all$Metric)
-```
-
-
-```{r}
-class(alpha_all$Metric)
-levels(alpha_all$Metric)
-sort(unique(as.character(alpha_all$Metric)))
-setdiff(metric_order, unique(as.character(alpha_all$Metric)))
-
-```
-
 
 ## Reliability Between Human Raters Vs LLM
 
+the things that i calculate Explain the spearman rho and what it is interpreting in general Explain the how it relates to the alingment normally and how it is in my specific case
 
-
-```{r}
-# Combine the dataset 
+```{r, Human-LLM Data Integration}
+# Combine turn and holistic rating for both llm and human 
 
 llm_all <- bind_rows(llm_turn, llm_hol) %>%
   mutate(kind = if_else(turn == 0, "holistic", "turn"))
 
 human_all <- bind_rows(human_turn, human_hol) %>%
   mutate(kind = if_else(turn == 0, "holistic", "turn"))
-```
 
-
-```{r}
 human_item <- human_all %>%
   mutate(turn = if_else(kind == "holistic", NA_integer_, turn)) %>%
   group_by(group_id, kind, scenario_id, turn, metric_id, number_id) %>%
@@ -302,10 +342,8 @@ llm_item <- llm_all %>%
     judge_model = first(judge_model),
     .groups = "drop"
   )
-```
 
-
-```{r}
+## Dataset with both LLM and Human Rating 
 alignment_df <- human_item %>%
   left_join(
     llm_item %>% 
@@ -319,17 +357,91 @@ alignment_df <- human_item %>%
     emotion = str_extract(scenario_id, "(?<=_)[a-z]+(?=_)",
     )
   )
-
 alignment_df <- alignment_df %>%
   mutate(
     level = factor(level, levels = c("L1", "L5", "L10"))
   )
-  
+```
+
+```{r, Score_Distribution}
+#| label: tbl-score-distribution
+#| tbl-cap: "Score Distribution Comparison"
+
+# LLM distribution
+llm_score_dis <- llm_all %>% 
+  count(score) %>% 
+  mutate(percent = n / sum(n) * 100) %>%
+  mutate(score = as.character(score)) %>%
+  rename(
+    Score = score,
+    "LLM Ratings (N)" = n,
+    "LLM Ratings (%)" = percent
+  )
+
+# Human distribution
+human_score_dis <- human_all %>% 
+  count(score) %>% 
+  mutate(percent = n / sum(n) * 100) %>%
+  mutate(score = as.character(score)) %>%
+  rename(
+    Score = score,
+    "Human Ratings (N)" = n,
+    "Human Ratings (%)" = percent
+  )
+
+
+
+# Combine + fix order
+combined_score_dis <- full_join(llm_score_dis, human_score_dis, by = "Score") %>%
+  mutate(order = as.numeric(Score)) %>%
+  arrange(order) %>%
+  select(-order)
+
+
+combined_score_dis <- bind_rows(
+  combined_score_dis,
+  tibble(
+    Score = "Total Observations",
+    "LLM Ratings (N)" = sum(combined_score_dis$`LLM Ratings (N)`, na.rm = TRUE),
+    "LLM Ratings (%)" = NA_real_,
+    "Human Ratings (N)" = sum(combined_score_dis$`Human Ratings (N)`, na.rm = TRUE),
+    "Human Ratings (%)" = NA_real_
+  )
+)
+
+combined_score_dis_print <- combined_score_dis %>%
+  mutate(
+    `LLM Ratings (%)` = ifelse(
+      Score == "Total Observations" & is.na(`LLM Ratings (%)`),
+      "",
+      `LLM Ratings (%)`
+    ),
+    `Human Ratings (%)` = ifelse(
+      Score == "Total Observations" & is.na(`Human Ratings (%)`),
+      "",
+      `Human Ratings (%)`
+    )
+  )
+
+kable(
+  combined_score_dis_print,
+  align = "c"
+)
+
+
 ```
 
 
 
-```{r}
+
+### LLM & Human Alignment by Metric
+
+```{r, Metric Data Table}
+#| label: tbl-alignment-metric
+#| tbl-cap: "LLM-Human Alignment Statistics by Metric"
+
+## Data table for Alignment by Metric + Spearman Cor Test 
+
 alignment_by_metric <- alignment_df %>%
   group_by(metric_id) %>%
   summarise(
@@ -337,10 +449,11 @@ alignment_by_metric <- alignment_df %>%
     alignment_rate = mean(within_1, na.rm = TRUE),
     MAE = mean(abs_error, na.rm = TRUE),
     Spearman_rho = cor(llm_score, human_median, method = "spearman"),
-    human_median_avg = mean(human_median),
+    human_score_avg = mean(human_median),
     llm_score_avg = mean(llm_score)
-  ) %>%
-  arrange(desc(alignment_rate))
+  )  %>%
+  arrange(desc(alignment_rate)) %>%
+  mutate(across(where(is.numeric) & !n, ~ round(., 3)))
 
 alignment_by_metric <- alignment_by_metric %>%
   mutate(
@@ -363,62 +476,13 @@ alignment_by_metric <- alignment_by_metric %>%
   ) %>%
   arrange(metric_id)
 
-print(alignment_by_metric)
-```
-```{r}
-
-
-# Analyze interactions:
-
-alignment_by_scenario <- alignment_df %>%
-  group_by(level, emotion) %>%
-  summarise(alignment_rate = mean(within_1),
-            Avg_Var = mean(human_var),
-            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
-            MAE = mean(abs_error, na.rm = TRUE)
-            )
-
-alignment_by_scenario
+kable(alignment_by_metric)
 ```
 
+```{r, Metric Plot}
+#| label: fig-metric-alignment
+#| fig-cap: "LLM–Human Alignment by Metric"
 
-```{r}
-alignment_by_intensity <- alignment_df %>%
-  group_by(level) %>%
-  summarise(alignment_rate = mean(within_1), 
-            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
-            MAE = mean(abs_error, na.rm = TRUE)
-            )
-
-alignment_by_emotion <- alignment_df %>%
-  group_by(emotion) %>%
-  summarise(alignment_rate = mean(within_1), 
-            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
-            MAE = mean(abs_error, na.rm = TRUE)
-            )
-
-alignment_by_intensity
-alignment_by_emotion
-```
-
-
-```{r}
-summary(llm_all)
-```
-```{r}
-llm_all %>% 
-  count(score) %>% 
-  mutate(percent = n / sum(n) * 100)
-```
-
-```{r}
-human_all %>% 
-  count(score) %>% 
-  mutate(percent = n / sum(n) * 100)
-```
-
-
-```{r}
 ## Plot Alignment by Metric
 
 plot_df <- alignment_by_metric %>%
@@ -487,7 +551,7 @@ metric_side_by_side <-
     plot.title = element_text(
       hjust = 0.75,
       face = "bold",
-      margin = margin(b = 15)
+      margin = margin(b = 12)
     )
   )
 
@@ -495,9 +559,147 @@ metric_side_by_side
 
 ```
 
+### LLM & Human Alignment by Scenario
 
-```{r}
-## Plot Alignment by Metric
+```{r, Scenario Data Table}
+#| label: tbl-alignment-scenario
+#| tbl-cap: "LLM-Human Alignment Statistics by Scenario"
+
+
+## Data table for Alignment by Scenario + Spearman Cor Test 
+
+alignment_by_scenario <- alignment_df %>%
+  group_by(level, emotion) %>%
+  summarise(alignment_rate = mean(within_1),
+            Avg_Var = mean(human_var),
+            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
+            MAE = mean(abs_error, na.rm = TRUE)
+            )
+
+kable(alignment_by_scenario)
+```
+
+```{r, Scenario Plot}
+#| label: fig-scenario-alignment
+#| fig-cap: "LLM–Human Alignment by Scenario"
+
+
+## Plot Alignment by Scenario
+plot_scenario <- alignment_by_scenario %>%
+  mutate(
+    emotion = factor(str_to_title(emotion), 
+                    levels = c("Neutral", "Frustrated", "Angry")),
+    level = factor(level, levels = c("L10", "L5", "L1")),
+    Scenario = paste0(level, " ", emotion)
+  ) %>%
+  arrange(emotion, level) %>%
+  mutate(Scenario = factor(Scenario, levels = rev(unique(Scenario))))
+
+# Left plot: Alignment Rate
+p_scenario_align <- ggplot(plot_scenario, aes(x = alignment_rate, y = Scenario, fill = emotion)) +
+  geom_col() +
+  geom_text(aes(label = scales::percent(alignment_rate, accuracy = 1)), 
+            hjust = -0.1, size = 3) +
+  scale_fill_manual(values = c("Neutral" = "#2ECC71",
+                                "Frustrated" = "#F39C12",
+                                "Angry" = "#E74C3C")) +
+  scale_x_continuous(labels = scales::percent, 
+                     limits = c(0, 1), 
+                     expand = expansion(mult = c(0, 0.05))) +
+  coord_cartesian(clip = "off") +
+  labs(x = "Alignment Rate (±1 on 5-point scale)", y = NULL) +
+  theme_pubr(base_size = 10) +
+  theme(
+    axis.text.y = element_text(size = 10.5, margin = margin(r = 10)),
+    axis.title.x = element_text(size = 11, margin = margin(t = 10)),
+    legend.position = "none"
+  )
+
+# Right plot: MAE
+p_scenario_mae <- ggplot(plot_scenario, aes(x = MAE, y = Scenario, fill = emotion)) +
+  geom_col() +
+  geom_text(aes(label = round(MAE, 2)),
+            hjust = -0.1,
+            size = 3) +
+  scale_fill_manual(values = c("Neutral" = "#2ECC71",
+                                "Frustrated" = "#F39C12",
+                                "Angry" = "#E74C3C")) +
+  scale_x_continuous(limits = c(0, max(plot_scenario$MAE, na.rm = TRUE) * 1.20),
+                     expand = expansion(mult = c(0, 0.02))) +
+  labs(x = "MAE (1–5 scale)", y = NULL) +
+  theme_pubr(base_size = 10) +
+  theme(
+    plot.margin = margin(10, 30, 10, 20),
+    axis.text.y = element_blank(),
+    axis.title.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.title.x = element_text(size = 11, margin = margin(t = 10)),
+    legend.position = "bottom",
+    legend.title = element_text(size = 10),
+    legend.text = element_text(size = 9),
+    legend.box.margin = margin(r = 50) 
+  )
+
+# Combine side-by-side
+scenario_side_by_side <-
+  wrap_plots(
+    p_scenario_align,
+    plot_spacer(),
+    p_scenario_mae,
+    ncol = 3,
+    widths = c(1, 0.08, 1)
+  ) +
+  plot_annotation(
+    title = "LLM–Human Alignment by Scenario"
+  ) &
+  theme(
+    plot.title = element_text(
+      hjust = 0.50,
+      face = "bold",
+      margin = margin(b = 12)
+    )
+  )
+
+scenario_side_by_side
+```
+
+### LLM & Human Alignment Broken Down to Emotion & Topic Intensity
+
+```{r, Emotion Data Table}
+#| label: tbl-alignment-emotion
+#| tbl-cap: "LLM-Human Alignment Statistics by Emotion"
+#| 
+alignment_by_level <- alignment_df %>%
+  group_by(level) %>%
+  summarise(alignment_rate = mean(within_1), 
+            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
+            MAE = mean(abs_error, na.rm = TRUE)
+            )
+
+alignment_by_emotion <- alignment_df %>%
+  group_by(emotion) %>%
+  summarise(alignment_rate = mean(within_1), 
+            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
+            MAE = mean(abs_error, na.rm = TRUE)
+            )
+
+
+kable(alignment_by_level)
+```
+
+
+```{r, Intensity Data Table}
+#| label: tbl-alignment-intensity
+#| tbl-cap: "LLM-Human Alignment Statistics by Topic Intensity"
+
+kable(alignment_by_emotion)
+```
+
+```{r, Emotion Plot}
+#| label: fig-emotion-alignment
+#| fig-cap: "LLM–Human Alignment by Emotion"
+
+## Plot Alignment by Emotion
 
 
 plot_emotion <- alignment_by_emotion %>%
@@ -512,7 +714,7 @@ plot_emotion <- alignment_by_emotion %>%
 
 
 p_emotion_align <- ggplot(plot_emotion, aes(x = emotion, y = alignment_rate)) +
-  geom_col(fill = "#4C72B0") +
+  geom_col(fill = "#4C72B0",  width = 0.7) +
   geom_text(
     aes(label = scales::percent(alignment_rate, accuracy = 1)),
     hjust = -0.1,
@@ -533,7 +735,7 @@ p_emotion_align <- ggplot(plot_emotion, aes(x = emotion, y = alignment_rate)) +
 
 # 3) Right plot: MAE (hide Emotion labels + keep your margins)
 p_emotion_mae <- ggplot(plot_emotion, aes(x = emotion, y = MAE)) +
-  geom_col(fill = "#DD8452") +
+  geom_col(fill = "#DD8452",  width = 0.7) +
   geom_text(
     aes(label = round(MAE, 2)),
     nudge_y = 0.03,
@@ -571,73 +773,108 @@ emotion_side_by_side <-
     plot.title = element_text(
       hjust = 0.50,
       face = "bold",
-      margin = margin(b = 15)
+      margin = margin(b = 12)
     )
   )
 
 emotion_side_by_side
 ```
 
+```{r, Topic Sensitivity Plot}
+#| label: fig-level-alignment
+#| fig-cap: "LLM–Human Alignment by Topic Sensitivity"
 
-```{r}
-plot_scenario_s1 <- alignment_by_scenario %>%
+## Plot Alignment by Level (Topic Sensitivity)
+plot_level <- alignment_by_level %>%
   mutate(
-    emotion = factor(str_to_title(emotion),
-                     levels = c("Neutral", "Frustrated", "Angry")),
-    level   = factor(level, levels = c("L10", "L5", "L1")),
-    Scenario = paste0(level, " ", emotion)
-  ) %>%
-  arrange(emotion, level) %>%
-  mutate(
-    Scenario = factor(Scenario, levels = unique(Scenario))
+    level = recode(
+      level,
+      "L1" = "Low Sensitivity (L1)",
+      "L5" = "Medium Sensitivity (L5)",
+      "L10" = "High Sensitivity (L10)"
+    ),
+    level = factor(level, levels = c("High Sensitivity (L10)", "Medium Sensitivity (L5)", "Low Sensitivity (L1)"))
   )
 
-
-plot_scenario_s2 <- alignment_by_scenario %>%
-  mutate(
-    emotion = factor(str_to_title(emotion),
-                     levels = c("Neutral", "Frustrated", "Angry")),
-    level   = factor(level, levels = c("L1", "L5", "L10")),
-    Scenario = paste0(level, " ", emotion)
-  ) %>%
-  arrange(emotion, level) %>%
-  mutate(
-    Scenario = factor(Scenario, levels = unique(Scenario))
-  )
-
-```
-
-
-```{r}
-scenario1 <- ggplot(plot_scenario_s1, aes(x = Scenario, y = alignment_rate)) +
-  geom_col(fill = "#4C72B0") +
-  geom_text(aes(label = scales::percent(alignment_rate, accuracy = 1)),
-            hjust = -0.1, size = 3) +
-  scale_y_continuous(labels = scales::percent, limits = c(0, 1),
-                     expand = expansion(mult = c(0, 0.05))) +
-  coord_flip() +
+# Left plot: Alignment Rate
+p_level_align <- ggplot(plot_level, aes(x = level, y = alignment_rate)) +
+  geom_col(fill = "#4C72B0",  width = 0.7) +
+  geom_text(
+    aes(label = scales::percent(alignment_rate, accuracy = 1)),
+    hjust = -0.1,
+    size = 3
+  ) +
+  scale_y_continuous(
+    labels = scales::percent,
+    limits = c(0, 1),
+    expand = expansion(mult = c(0, 0.05))
+  ) +
+  coord_flip(clip = "off") +
   labs(x = NULL, y = "Alignment Rate (±1 on 5-point scale)") +
   theme_pubr(base_size = 10) +
   theme(
-    axis.text.y  = element_text(size = 10.5, margin = margin(r = 10)),
+    plot.margin = margin(10, 30, 10, 10),
+    axis.text.y = element_text(size = 10.5, margin = margin(r = 10)),
     axis.title.x = element_text(size = 11, margin = margin(t = 10))
   )
 
-scenario2 <- ggplot(plot_scenario_s2, aes(x = Scenario, y = alignment_rate)) +
-  geom_col(fill = "#4C72B0") +
-  geom_text(aes(label = scales::percent(alignment_rate, accuracy = 1)),
-            hjust = -0.1, size = 3) +
-  scale_y_continuous(labels = scales::percent, limits = c(0, 1),
-                     expand = expansion(mult = c(0, 0.05))) +
-  coord_flip() +
-  labs(x = NULL, y = "Alignment Rate (±1 on 5-point scale)") +
+# Right plot: MAE
+p_level_mae <- ggplot(plot_level, aes(x = level, y = MAE)) +
+  geom_col(fill = "#DD8452", width = 0.7) + 
+  geom_text(
+    aes(label = round(MAE, 2)),
+    nudge_y = 0.03,
+    hjust = 0,
+    size = 3
+  ) +
+  scale_y_continuous(
+    limits = c(0, max(plot_level$MAE, na.rm = TRUE) * 1.20),
+    expand = expansion(mult = c(0, 0.02))
+  ) +
+  coord_flip(clip = "off") +
+  labs(x = NULL, y = "MAE (1–5 scale)") +
   theme_pubr(base_size = 10) +
   theme(
-    axis.text.y  = element_text(size = 10.5, margin = margin(r = 10)),
+    plot.margin = margin(10, 30, 10, 10),
+    axis.text.y = element_blank(),
+    axis.title.y = element_blank(),
+    axis.ticks.y = element_blank(),
     axis.title.x = element_text(size = 11, margin = margin(t = 10))
   )
 
-scenario1
-scenario2
+# Combine side-by-side
+level_side_by_side <-
+  wrap_plots(
+    p_level_align,
+    plot_spacer(),
+    p_level_mae,
+    ncol = 3,
+    widths = c(1, 0.08, 1)
+  ) +
+  plot_annotation(
+    title = "LLM–Human Alignment by Topic Sensitivity"
+  ) &
+  theme(
+    plot.title = element_text(
+      hjust = 0.50,
+      face = "bold",
+      margin = margin(b = 12)
+    )
+  )
+
+level_side_by_side
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
