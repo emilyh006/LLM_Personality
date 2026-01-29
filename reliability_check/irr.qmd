@@ -31,7 +31,7 @@ execute:
   message: false
 ---
 
-## Reliability Between Human Rater Across Group
+## Reliability Between Human Raters Within Group
 
 
 
@@ -41,7 +41,13 @@ suppressMessages({
   library(tidyr)
   library(irr)
   library(stringr)
-  
+  library(ggplot2)
+  library(tidyverse)
+  library(ggrepel)
+  library(ggpubr)
+  library(cowplot)
+  library(scales)
+  library(patchwork)
 })
 ```
 
@@ -198,35 +204,440 @@ metric_order <- c(
   "Problem Resolution"
 )
 
-alpha_table <- alpha_all %>%
-  mutate(
+alpha_all <- alpha_all %>%
+    mutate(
     metric_id = str_trim(metric_id),
     metric_label = dplyr::recode(metric_id, !!!metric_map_full, .default = metric_id),
     Metric = factor(metric_label, levels = metric_order),
     group_id = factor(group_id, levels = c("Group A", "Group B", "Group C"))
-  ) %>%
+  )
+
+alpha_table <- alpha_all %>%
   select(Metric, group_id, Alpha = alpha) %>%
   distinct() %>%
-  pivot_wider(names_from = group_id, values_from = Alpha) %>%
   arrange(Metric) %>%
+  pivot_wider(names_from = group_id, values_from = Alpha) %>%
   mutate(across(starts_with("Group"), ~ round(.x, 3)))
 
-```
 
-```{r}
 alpha_table
+```
+
+
+```{r}
+
+alpha_plot <- alpha_all %>%
+  mutate(
+    # Reverse levels so first item appears at TOP of plot
+    Metric = factor(metric_label, levels = rev(metric_order)),
+    group_id = factor(group_id, levels = c("Group A", "Group B", "Group C"))
+  )
+
+
+ggplot(alpha_plot, aes(x = group_id, y = Metric, fill = alpha)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = round(alpha, 2)), size = 3) +
+  scale_fill_gradient2(
+    low = "#d73027", mid = "#f7f7f7", high = "#1a9850",
+    midpoint = 0.4, na.value = "grey90", name = "Krippendorff’s α"
+  ) +
+  labs(
+    title = "Human Inter-Rater Reliability by Metric and Group",
+    x = "Rater Group", y = "Evaluation Metric"
+  ) +
+  theme_minimal(base_size = 12) 
+
+ggplot_build(
+  ggplot(alpha_all, aes(x = group_id, y = Metric)) + geom_point()
+)$layout$panel_params[[1]]$y$get_labels()
+
+
+```
+```{r}
+levels(alpha_all$Metric)
+```
+
+
+```{r}
+class(alpha_all$Metric)
+levels(alpha_all$Metric)
+sort(unique(as.character(alpha_all$Metric)))
+setdiff(metric_order, unique(as.character(alpha_all$Metric)))
+
+```
+
+
+## Reliability Between Human Raters Vs LLM
+
+
+
+```{r}
+# Combine the dataset 
+
+llm_all <- bind_rows(llm_turn, llm_hol) %>%
+  mutate(kind = if_else(turn == 0, "holistic", "turn"))
+
+human_all <- bind_rows(human_turn, human_hol) %>%
+  mutate(kind = if_else(turn == 0, "holistic", "turn"))
+```
+
+
+```{r}
+human_item <- human_all %>%
+  mutate(turn = if_else(kind == "holistic", NA_integer_, turn)) %>%
+  group_by(group_id, kind, scenario_id, turn, metric_id, number_id) %>%
+  summarise(
+    human_median = median(score, na.rm = TRUE),
+    human_var = var(score, na.rm = TRUE),
+    n_humans = sum(!is.na(score)),
+    human_iqr = IQR(score, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+llm_item <- llm_all %>%
+  mutate(turn = if_else(kind == "holistic", NA_integer_, turn)) %>%
+  group_by(group_id, kind, scenario_id, turn, metric_id, number_id) %>%
+  summarise(
+    llm_score = score[1],
+    judge_model = first(judge_model),
+    .groups = "drop"
+  )
+```
+
+
+```{r}
+alignment_df <- human_item %>%
+  left_join(
+    llm_item %>% 
+      select(scenario_id, turn, number_id, llm_score),
+    by = c("scenario_id","turn","number_id")
+  ) %>%
+  mutate(
+    abs_error = abs(llm_score - human_median),
+    within_1  = abs_error <= 1,
+    level = str_extract(scenario_id, "^L\\d+"),
+    emotion = str_extract(scenario_id, "(?<=_)[a-z]+(?=_)",
+    )
+  )
+
+alignment_df <- alignment_df %>%
+  mutate(
+    level = factor(level, levels = c("L1", "L5", "L10"))
+  )
+  
+```
+
+
+
+```{r}
+alignment_by_metric <- alignment_df %>%
+  group_by(metric_id) %>%
+  summarise(
+    n = n(),
+    alignment_rate = mean(within_1, na.rm = TRUE),
+    MAE = mean(abs_error, na.rm = TRUE),
+    Spearman_rho = cor(llm_score, human_median, method = "spearman"),
+    human_median_avg = mean(human_median),
+    llm_score_avg = mean(llm_score)
+  ) %>%
+  arrange(desc(alignment_rate))
+
+alignment_by_metric <- alignment_by_metric %>%
+  mutate(
+    metric_id = case_when(
+      metric_id %in% c("tone_appropriateness", "Tone Appropriateness") ~ "Tone Appropriateness",
+      metric_id %in% c("emotional_calibration", "Emotional Calibration Accuracy") ~ "Emotional Calibration",
+      metric_id %in% c("emotional_escalation") ~ "Emotional Escalation",
+      metric_id %in% c("functional_empathy") ~ "Functional Empathy",
+      metric_id %in% c("contextual_appropriateness") ~ "Contextual Appropriateness",
+      metric_id %in% c("emotional_coherence") ~ "Emotional Coherence",
+      metric_id %in% c("emotional_adaptivity") ~ "Emotional Adaptivity",
+      metric_id %in% c("problem_resolution") ~ "Problem Resolution",
+      TRUE ~ metric_id
+    )
+  )
+
+alignment_by_metric <- alignment_by_metric %>%
+  mutate(
+    metric_id = factor(metric_id, levels = metric_order, ordered = TRUE)
+  ) %>%
+  arrange(metric_id)
+
+print(alignment_by_metric)
+```
+```{r}
+
+
+# Analyze interactions:
+
+alignment_by_scenario <- alignment_df %>%
+  group_by(level, emotion) %>%
+  summarise(alignment_rate = mean(within_1),
+            Avg_Var = mean(human_var),
+            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
+            MAE = mean(abs_error, na.rm = TRUE)
+            )
+
+alignment_by_scenario
+```
+
+
+```{r}
+alignment_by_intensity <- alignment_df %>%
+  group_by(level) %>%
+  summarise(alignment_rate = mean(within_1), 
+            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
+            MAE = mean(abs_error, na.rm = TRUE)
+            )
+
+alignment_by_emotion <- alignment_df %>%
+  group_by(emotion) %>%
+  summarise(alignment_rate = mean(within_1), 
+            Spearman_rho = cor(llm_score, human_median, method = "spearman"),
+            MAE = mean(abs_error, na.rm = TRUE)
+            )
+
+alignment_by_intensity
+alignment_by_emotion
+```
+
+
+```{r}
+summary(llm_all)
+```
+```{r}
+llm_all %>% 
+  count(score) %>% 
+  mutate(percent = n / sum(n) * 100)
+```
+
+```{r}
+human_all %>% 
+  count(score) %>% 
+  mutate(percent = n / sum(n) * 100)
+```
+
+
+```{r}
+## Plot Alignment by Metric
+
+plot_df <- alignment_by_metric %>%
+  mutate(
+    # Reverse levels so first item appears at TOP of plot
+    Metric = factor(metric_id, levels = rev(metric_order))
+  )
+
+p_align <- ggplot(plot_df, aes(x = Metric, y = alignment_rate)) +
+  geom_col(fill = "#4C72B0") +
+  geom_text(
+    aes(label = scales::percent(alignment_rate, accuracy = 1)),
+    hjust = -0.1,
+    size = 3
+  ) +
+  scale_y_continuous(
+    labels = scales::percent,
+    limits = c(0, 1),
+    expand = expansion(mult = c(0, 0.05))
+  ) +
+  coord_flip() +
+  labs(x = NULL, y = "Alignment Rate (±1 on 5-point scale)") +
+  theme_pubr(base_size = 10) +
+  theme(
+    axis.text.y  = element_text(size = 10.5, margin = margin(r = 10)),
+    axis.title.x = element_text(size = 11, margin = margin(t = 10))
+  )
+
+# 3) Right plot: MAE (hide Metric labels + keep your margins)
+p_mae <- ggplot(plot_df, aes(x = Metric, y = MAE)) +
+  geom_col(fill = "#DD8452") +
+  geom_text(
+    aes(label = round(MAE, 2)),
+    nudge_y = 0.03,
+    hjust = 0,
+    size = 3
+  ) +
+  scale_y_continuous(
+    limits = c(0, max(plot_df$MAE, na.rm = TRUE) * 1.20),
+    expand = expansion(mult = c(0, 0.02))
+  ) +
+  coord_flip(clip = "off") +
+  labs(x = NULL, y = "MAE (1–5 scale)") +
+  theme_pubr(base_size = 10) +
+  theme(
+    plot.margin = margin(10, 30, 10, 10),     # keep your right-margin for labels
+    axis.text.y  = element_blank(),           # ✅ don't show Metric labels twice
+    axis.title.y = element_blank(),           # ✅ remove duplicated axis title on left side
+    axis.ticks.y = element_blank(),           # optional: cleaner
+    axis.title.x = element_text(size = 11, margin = margin(t = 10))
+  )
+
+# 4) Combine side-by-side with ONE centered title for both
+metric_side_by_side <-
+  wrap_plots(
+    p_align,
+    plot_spacer(),   # 👈 creates space
+    p_mae,
+    ncol = 3,
+    widths = c(1, 0.08, 1)  # middle = gap size
+  ) +
+  plot_annotation(
+    title = "LLM–Human Alignment by Metric"
+  ) &
+  theme(
+    plot.title = element_text(
+      hjust = 0.75,
+      face = "bold",
+      margin = margin(b = 15)
+    )
+  )
+
+metric_side_by_side
 
 ```
 
 
 ```{r}
-groupA_tbl
+## Plot Alignment by Metric
+
+
+plot_emotion <- alignment_by_emotion %>%
+  mutate(
+    emotion = recode(
+      emotion,
+      "neutral" = "Neutral",
+      "angry" = "Angry",
+      "frustrated" = "Frustrated"
+    ))
+
+
+
+p_emotion_align <- ggplot(plot_emotion, aes(x = emotion, y = alignment_rate)) +
+  geom_col(fill = "#4C72B0") +
+  geom_text(
+    aes(label = scales::percent(alignment_rate, accuracy = 1)),
+    hjust = -0.1,
+    size = 3
+  ) +
+  scale_y_continuous(
+    labels = scales::percent,
+    limits = c(0, 1),
+    expand = expansion(mult = c(0, 0.05))
+  ) +
+  coord_flip() +
+  labs(x = NULL, y = "Alignment Rate (±1 on 5-point scale)") +
+  theme_pubr(base_size = 10) +
+  theme(
+    axis.text.y  = element_text(size = 10.5, margin = margin(r = 10)),
+    axis.title.x = element_text(size = 11, margin = margin(t = 10))
+  )
+
+# 3) Right plot: MAE (hide Emotion labels + keep your margins)
+p_emotion_mae <- ggplot(plot_emotion, aes(x = emotion, y = MAE)) +
+  geom_col(fill = "#DD8452") +
+  geom_text(
+    aes(label = round(MAE, 2)),
+    nudge_y = 0.03,
+    hjust = 0,
+    size = 3
+  ) +
+  scale_y_continuous(
+    limits = c(0, max(plot_emotion$MAE, na.rm = TRUE) * 1.20),
+    expand = expansion(mult = c(0, 0.02))
+  ) +
+  coord_flip(clip = "off") +
+  labs(x = NULL, y = "MAE (1–5 scale)") +
+  theme_pubr(base_size = 10) +
+  theme(
+    plot.margin = margin(10, 30, 10, 10),     # keep your right-margin for labels
+    axis.text.y  = element_blank(),           # ✅ don't show Metric labels twice
+    axis.title.y = element_blank(),           # ✅ remove duplicated axis title on left side
+    axis.ticks.y = element_blank(),           # optional: cleaner
+    axis.title.x = element_text(size = 11, margin = margin(t = 10))
+  )
+
+# 4) Combine side-by-side with ONE centered title for both
+emotion_side_by_side <-
+  wrap_plots(
+    p_emotion_align,
+    plot_spacer(),   # 👈 creates space
+    p_emotion_mae,
+    ncol = 3,
+    widths = c(1, 0.08, 1)  # middle = gap size
+  ) +
+  plot_annotation(
+    title = "LLM–Human Alignment by Emotion"
+  ) &
+  theme(
+    plot.title = element_text(
+      hjust = 0.50,
+      face = "bold",
+      margin = margin(b = 15)
+    )
+  )
+
+emotion_side_by_side
+```
+
+
+```{r}
+plot_scenario_s1 <- alignment_by_scenario %>%
+  mutate(
+    emotion = factor(str_to_title(emotion),
+                     levels = c("Neutral", "Frustrated", "Angry")),
+    level   = factor(level, levels = c("L10", "L5", "L1")),
+    Scenario = paste0(level, " ", emotion)
+  ) %>%
+  arrange(emotion, level) %>%
+  mutate(
+    Scenario = factor(Scenario, levels = unique(Scenario))
+  )
+
+
+plot_scenario_s2 <- alignment_by_scenario %>%
+  mutate(
+    emotion = factor(str_to_title(emotion),
+                     levels = c("Neutral", "Frustrated", "Angry")),
+    level   = factor(level, levels = c("L1", "L5", "L10")),
+    Scenario = paste0(level, " ", emotion)
+  ) %>%
+  arrange(emotion, level) %>%
+  mutate(
+    Scenario = factor(Scenario, levels = unique(Scenario))
+  )
 
 ```
 
 
+```{r}
+scenario1 <- ggplot(plot_scenario_s1, aes(x = Scenario, y = alignment_rate)) +
+  geom_col(fill = "#4C72B0") +
+  geom_text(aes(label = scales::percent(alignment_rate, accuracy = 1)),
+            hjust = -0.1, size = 3) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1),
+                     expand = expansion(mult = c(0, 0.05))) +
+  coord_flip() +
+  labs(x = NULL, y = "Alignment Rate (±1 on 5-point scale)") +
+  theme_pubr(base_size = 10) +
+  theme(
+    axis.text.y  = element_text(size = 10.5, margin = margin(r = 10)),
+    axis.title.x = element_text(size = 11, margin = margin(t = 10))
+  )
 
+scenario2 <- ggplot(plot_scenario_s2, aes(x = Scenario, y = alignment_rate)) +
+  geom_col(fill = "#4C72B0") +
+  geom_text(aes(label = scales::percent(alignment_rate, accuracy = 1)),
+            hjust = -0.1, size = 3) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1),
+                     expand = expansion(mult = c(0, 0.05))) +
+  coord_flip() +
+  labs(x = NULL, y = "Alignment Rate (±1 on 5-point scale)") +
+  theme_pubr(base_size = 10) +
+  theme(
+    axis.text.y  = element_text(size = 10.5, margin = margin(r = 10)),
+    axis.title.x = element_text(size = 11, margin = margin(t = 10))
+  )
 
-
-
+scenario1
+scenario2
+```
 
